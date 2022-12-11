@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+@font-face {
+  font-family: "Myriad";
+  src: url("../fonts/Myriad.ttf") format("ttf");
+}
+@font-face {
+  font-family: "SFProText";
+  src: url("../fonts/SF_Pro_Text.ttf") format("ttf");
+}
+@font-face {
+  font-family: "SFProDisplay";
+  src: url("../fonts/SF_Pro_Display.otf") format("otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "SFProText", "SFProDisplay", "Myriad", "Mulish", sans-serif;
+}
+
+.header {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+          backdrop-filter: saturate(180%) blur(20px);
+  z-index: 9999;
+  width: 100%;
+  min-width: 1024px;
+  height: 44px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.header .outClickOverlay {
+  display: none;
+}
+.header .outClickOverlay::before {
+  content: "";
+  width: 100%;
+  height: 44px;
+  background-color: rgba(0, 0, 0, 0.01);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.header .navBar {
+  margin: 0 auto;
+  max-width: 980px;
+  padding: 0 22px;
+  position: relative;
+  z-index: 2;
+  box-sizing: content-box;
+}
+.header .navBar .navList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 -8px;
+  width: auto;
+  height: 44px;
+  box-sizing: content-box;
+}
+.header .navBar .navList .navItem {
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+.header .navBar .navList .navItem a {
+  font-size: 12px;
+  line-height: 3.66667;
+  font-weight: 300;
+  color: #f5f5f7;
+  position: relative;
+  z-index: 1;
+  padding: 0 8px;
+  height: 44px;
+  opacity: 0.8;
+  transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  box-sizing: content-box;
+}
+.header .navBar .navList .navItem a .logo {
+  font-size: 18px;
+  color: #f5f5f7;
+  opacity: 0.8;
+}
+.header .navBar .navList .navItem a i {
+  font-size: 14px;
+  color: #f5f5f7;
+  opacity: 0.8;
+}
+.header .navBar .navList .navItem a:hover {
+  opacity: 1;
+}
+.header .navBar .navList .navItem a:hover .logo {
+  opacity: 1;
+}
+.header .navBar .navList .navItem a:hover i {
+  opacity: 1;
+}
+.header .navBar .navList .cart {
+  position: relative;
+}
+.header .navBar .navList .cart .cartBox {
+  display: none;
+  position: absolute;
+  right: -130px;
+  top: 48px;
+  border: 1px solid #d2d2d7;
+  background: #fff;
+  width: 288px;
+  height: 324px;
+  border-radius: 18px;
+}
+.header .navBar .navList .cart .cartBox .triangle::after {
+  content: "";
+  background: #fff;
+  border-radius: 2px 0 0 0;
+  left: 50%;
+  border: 0.5px solid #d2d2d7;
+  border-bottom: none;
+  border-right: none;
+  display: block;
+  position: absolute;
+  top: -8px;
+  width: 8px;
+  height: 8px;
+  transform: rotate(45deg) skew(4deg, 4deg);
+  transform-origin: 0% 0;
+  z-index: 1;
+}
+.header .navBar .navList .cart .cartBox .cartBoxContent {
+  margin: 0 auto;
+  min-height: 90px;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+}
+.header .navBar .navList .cart .cartBox .cartBoxContent .cartTitle {
+  color: #6e6e73;
+  padding: 35px 0 23px;
+  text-align: center;
+  letter-spacing: -0.016em;
+  font-size: 14px;
+  font-weight: 600;
+}
+.header .navBar .navList .cart .cartBox .cartBoxContent .cartNav {
+  margin-bottom: 9px;
+}
+.header .navBar .navList .cart .cartBox .cartBoxContent .cartNav ul {
+  margin: 12px 0 0;
+}
+.header .navBar .navList .cart .cartBox .cartBoxContent .cartNav ul li {
+  border-top: none;
+  border-top: 0.5px solid #d2d2d7;
+  transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.header .navBar .navList .cart .cartBox .cartBoxContent .cartNav ul li a {
+  color: #06c;
+  line-height: 44px;
+  padding: 0 28px;
+  letter-spacing: -0.016em;
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 1;
+  transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.header .navBar .navList .cart .cartBox .cartBoxContent .cartNav ul li a i {
+  color: #06c;
+  margin-left: -28px;
+  margin-right: 12px;
+  font-size: 16px;
+  transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}/*# sourceMappingURL=main.css.map */
