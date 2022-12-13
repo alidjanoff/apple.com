@@ -23,16 +23,12 @@
 .header {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.8);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-          backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
   z-index: 9999;
   width: 100%;
   min-width: 1024px;
   height: 44px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 .header .outClickOverlay {
   display: none;
@@ -173,4 +169,151 @@
   margin-right: 12px;
   font-size: 16px;
   transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.watch-bar {
+  width: 100%;
+  height: auto;
+  padding: 12px 0;
+}
+.watch-bar .watch-navBar {
+  width: 100%;
+  height: 100px;
+  margin-top: 44px;
+}
+.watch-bar .watch-navBar .row-navBar {
+  text-align: center;
+}
+.watch-bar .watch-navBar .row-navBar .watch-items {
+  display: flex;
+  margin: 0 34px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  justify-content: center;
+}
+.watch-bar .watch-navBar .row-navBar .watch-items .item {
+  margin-top: 3px;
+  padding: 0 5px 0 4px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 -0.1176470588em;
+  text-align: center;
+  display: inline-block;
+}
+.watch-bar .watch-navBar .row-navBar .watch-items .item .figure {
+  width: 28px;
+  height: 54px;
+  margin: 0 auto 3px;
+}
+.watch-bar .watch-navBar .row-navBar .watch-items .item .item-main-text {
+  font-size: 12px;
+  line-height: 1.3333733333;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  white-space: normal;
+  max-width: 7em;
+  margin: 0 auto;
+}
+.watch-bar .watch-navBar .row-navBar .watch-items .item .item-main-text a {
+  color: black;
+}
+.watch-bar .watch-navBar .row-navBar .watch-items .item .item-main-text a:hover {
+  color: #06c;
+}
+.watch-bar .watch-navBar .row-navBar .watch-items .item .item-date-text {
+  font-size: 10px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: -0.008em;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+.watch-bar .watch-navBar .row-navBar .watch-items .item .item-date-text a {
+  color: #bf4800;
+}
+.watch-bar .watch-navBar .row-navBar .watch-items .item-2,
+.watch-bar .watch-navBar .row-navBar .watch-items .item-3,
+.watch-bar .watch-navBar .row-navBar .watch-items .item-4 {
+  padding: 0 9px;
+}
+.watch-bar .watch-navBar .row-navBar .watch-items .item-8 {
+  padding: 0 15px;
+}
+.watch-bar .watch-navBar .row-navBar .watch-items .item-8 a img {
+  width: 28px;
+  height: 54px;
+}
+.watch-bar .watch-navBar .row-navBar .watch-items .item-5 {
+  padding: 0 9px;
+}
+.watch-bar .watch-navBar .row-navBar .watch-items .item-5 .figure {
+  width: 38px;
+  height: 54px;
+}
+.watch-bar .watch-navBar .row-navBar .watch-items .item-6 {
+  padding: 0 9px;
+}
+.watch-bar .watch-navBar .row-navBar .watch-items .item-6 .figure {
+  width: 56px;
+  height: 54px;
+}
+.watch-bar .watch-navBar .row-navBar .watch-items .item-7 {
+  padding: 0 16px;
+}
+.watch-bar .watch-navBar .row-navBar .watch-items .item-7 .figure {
+  width: 45px;
+  height: 54px;
+}
+.watch-bar .watch-navBar .row-navBar .watch-items .item-9 {
+  padding: 0 20px;
+}
+.watch-bar .watch-navBar .row-navBar .watch-items .item-9 .figure {
+  width: 39px;
+  height: 54px;
+}
+.watch-bar .watch-navBar .row-navBar .watch-items .item-10 {
+  padding: 0 9px;
+}
+.watch-bar .watch-navBar .row-navBar .watch-items .item-11 {
+  padding: 0 20px;
+}
+.watch-bar .watch-navBar .row-navBar .watch-items .item-11 .figure {
+  width: 35px;
+  height: 54px;
+}
+.watch-bar .watch-navBar .row-navBar .watch-items .item-12 {
+  padding: 0 20px;
+}
+.watch-bar .watch-navBar .row-navBar .watch-items .item-12 .figure {
+  width: 35px;
+  height: 54px;
+}
+.watch-bar .watch-navBar .row-navBar .watch-items .item-13 {
+  padding: 0 4px 0 9px;
+}
+.watch-bar .watch-navBar .row-navBar .watch-items .item-13 .figure {
+  width: 63px;
+  height: 54px;
+}
+.watch-bar .watch-navBar .row-navBar .holiday-gift {
+  padding-top: 1em;
+  padding-bottom: 0.94118em;
+}
+.watch-bar .watch-navBar .row-navBar .holiday-gift p {
+  font-size: 14px;
+  line-height: 1.42859;
+  font-weight: 400;
+  letter-spacing: -0.016em;
+}
+.watch-bar .watch-navBar .row-navBar .holiday-gift p a {
+  color: #06c;
+}
+.watch-bar .watch-navBar .row-navBar .holiday-gift p a:hover {
+  text-decoration: underline;
+}
+.watch-bar .watch-navBar .row-navBar .holiday-gift p a .icon {
+  display: inline;
+  position: static;
+  padding-left: 0.3em;
 }/*# sourceMappingURL=main.css.map */

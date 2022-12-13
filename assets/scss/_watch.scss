@@ -1,1 +1,150 @@
 //? ---------------------------- Hüseyn İsgəndərov --------------------------- */
+//watch-bar
+.watch-bar {
+  width: 100%;
+  height: auto;
+  padding: 12px 0;
+  .watch-navBar {
+    width: 100%;
+    height: 100px;
+    margin-top: 44px;
+    .row-navBar {
+      text-align: center;
+      .watch-items {
+        display: flex;
+        margin: 0 34px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        justify-content: center;
+        .item {
+          margin-top: 3px;
+          padding: 0 5px 0 4px;
+          display: inline-block;
+          vertical-align: top;
+          margin: 0 -0.1176470588em;
+          text-align: center;
+          display: inline-block;
+          .figure {
+            width: 28px;
+            height: 54px;
+            margin: 0 auto 3px;
+          }
+          .item-main-text {
+            font-size: 12px;
+            line-height: 1.3333733333;
+            font-weight: 400;
+            letter-spacing: -0.01em;
+            white-space: normal;
+            max-width: 7em;
+            margin: 0 auto;
+            a {
+              color: black;
+              &:hover {
+                color: #06c;
+              }
+            }
+          }
+          .item-date-text {
+            font-size: 10px;
+            line-height: 1.2;
+            font-weight: 400;
+            letter-spacing: -0.008em;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            a {
+              color: #bf4800;
+            }
+          }
+        }
+        .item-2,
+        .item-3,
+        .item-4 {
+          padding: 0 9px;
+        }
+        .item-8 {
+          padding: 0 15px;
+          a {
+            img {
+              width: 28px;
+              height: 54px;
+            }
+          }
+        }
+        .item-5 {
+          padding: 0 9px;
+          .figure {
+            width: 38px;
+            height: 54px;
+          }
+        }
+        .item-6 {
+          padding: 0 9px;
+          .figure {
+            width: 56px;
+            height: 54px;
+          }
+        }
+        .item-7 {
+          padding: 0 16px;
+          .figure {
+            width: 45px;
+            height: 54px;
+          }
+        }
+        .item-9 {
+          padding: 0 20px;
+          .figure {
+            width: 39px;
+            height: 54px;
+          }
+        }
+        .item-10 {
+          padding: 0 9px;
+        }
+        .item-11 {
+          padding: 0 20px;
+          .figure {
+            width: 35px;
+            height: 54px;
+          }
+        }
+        .item-12 {
+          padding: 0 20px;
+          .figure {
+            width: 35px;
+            height: 54px;
+          }
+        }
+        .item-13 {
+          padding: 0 4px 0 9px;
+          .figure {
+            width: 63px;
+            height: 54px;
+          }
+        }
+      }
+      .holiday-gift {
+        padding-top: 1em;
+        padding-bottom: 0.94118em;
+        p {
+          font-size: 14px;
+          line-height: 1.42859;
+          font-weight: 400;
+          letter-spacing: -0.016em;
+          a {
+            color: #06c;
+            &:hover {
+              text-decoration: underline;
+            }
+            .icon {
+              display: inline;
+              position: static;
+              padding-left: 0.3em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
