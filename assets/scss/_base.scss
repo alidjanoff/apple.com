@@ -24,3 +24,15 @@
   text-decoration: none;
   font-family: "SFProText", "SFProDisplay", "Myriad", "Mulish", sans-serif;
 }
+
+//? Base container
+.container{
+  max-width: 1024px;
+  margin: 0 auto;
+}
+@media (max-width: 1024px){
+  .container{
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
