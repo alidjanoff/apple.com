@@ -1,1 +1,51 @@
-//? ---------------------------- Rəsul Ağaməmmədli --------------------------- */
+//? ---------------------------- Rəsul Ağaməmmədli --------------------------- *//
+
+.storehome-banner {
+  overflow: hidden;
+  .drop-wrapper {
+    animation: 0.8s ease-in-out forwards;
+ padding-top: 44px;
+    .content-wrapper {
+      background-color: #fff;
+      padding: 0.76471em 0;
+      text-align: center;
+      .content-row {
+        display: flex;
+        flex-wrap: wrap;
+        color: #fff;
+        margin: 0 auto;
+        width: 980px;
+        .column-in {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 850px;
+          position: relative;
+          margin: 0 auto;
+          padding: 3px 0;
+          i {
+            color: gray;
+          }
+          .column-text {
+            cursor: auto;
+            font-size: 14px;
+            line-height: 1.42859;
+            font-weight: 400;
+            letter-spacing: -0.016em;
+            color: #1d1d1f;
+            span {
+              top: -0.5em;
+              position: relative;
+              font-size: 0.6em;
+              vertical-align: baseline;
+            }
+            a {
+              color: #06c;
+              letter-spacing: inherit;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -17,7 +17,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  font-family: "SFProText", "SFProDisplay", "Myriad", "Mulish", sans-serif;
+  font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 .container {
@@ -205,4 +205,54 @@
   .header .container .navBar .navList .cart {
     display: block;
   }
+}
+.storehome-banner {
+  overflow: hidden;
+}
+.storehome-banner .drop-wrapper {
+  -webkit-animation: 0.8s ease-in-out forwards;
+          animation: 0.8s ease-in-out forwards;
+  padding-top: 44px;
+}
+.storehome-banner .drop-wrapper .content-wrapper {
+  background-color: #fff;
+  padding: 0.76471em 0;
+  text-align: center;
+}
+.storehome-banner .drop-wrapper .content-wrapper .content-row {
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+  margin: 0 auto;
+  width: 980px;
+}
+.storehome-banner .drop-wrapper .content-wrapper .content-row .column-in {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 850px;
+  position: relative;
+  margin: 0 auto;
+  padding: 3px 0;
+}
+.storehome-banner .drop-wrapper .content-wrapper .content-row .column-in i {
+  color: gray;
+}
+.storehome-banner .drop-wrapper .content-wrapper .content-row .column-in .column-text {
+  cursor: auto;
+  font-size: 14px;
+  line-height: 1.42859;
+  font-weight: 400;
+  letter-spacing: -0.016em;
+  color: #1d1d1f;
+}
+.storehome-banner .drop-wrapper .content-wrapper .content-row .column-in .column-text span {
+  top: -0.5em;
+  position: relative;
+  font-size: 0.6em;
+  vertical-align: baseline;
+}
+.storehome-banner .drop-wrapper .content-wrapper .content-row .column-in .column-text a {
+  color: #06c;
+  letter-spacing: inherit;
 }/*# sourceMappingURL=main.css.map */
