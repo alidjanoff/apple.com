@@ -206,6 +206,7 @@
     display: block;
   }
 }
+/* --------------------------- Start first section -------------------------- */
 .storehome-banner {
   overflow: hidden;
 }
@@ -230,7 +231,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 850px;
+  width: 980px;
   position: relative;
   margin: 0 auto;
   padding: 3px 0;
@@ -255,4 +256,121 @@
 .storehome-banner .drop-wrapper .content-wrapper .content-row .column-in .column-text a {
   color: #06c;
   letter-spacing: inherit;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/* ---------------------------- End first section --------------------------- */
+/* -------------------------- Start second section -------------------------- */
+.store {
+  background-color: #f5f5f7;
+}
+.store .shop-container {
+  min-height: 248px;
+  position: relative;
+  margin: 0 auto;
+  width: 980px;
+}
+.store .shop-container .row-shop {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.store .shop-container .row-shop .left-shop {
+  max-width: 640px;
+  padding: 80px 0 64px;
+  flex-basis: 66.66667%;
+  margin: 0;
+  min-width: 0;
+}
+.store .shop-container .row-shop .left-shop span {
+  color: #1d1d1f;
+  font-size: 48px;
+  line-height: 1.08349;
+  font-weight: 600;
+  letter-spacing: -0.003em;
+  margin: 0;
+  padding: 0;
+}
+.store .shop-container .row-shop .left-shop .shop-subheader {
+  color: #6e6e73;
+  font-size: 48px;
+  line-height: 1.08349;
+  font-weight: 600;
+  letter-spacing: -0.003em;
+}
+.store .shop-container .row-shop .right-shop {
+  position: absolute;
+  right: 0;
+  padding-bottom: 54px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  padding: 90px 0 54px;
+  flex-basis: 33.33333%;
+  max-width: 33.33333%;
+  margin: 0;
+  min-width: 0;
+}
+.store .shop-container .row-shop .right-shop .generic .shop-chat .chat-section {
+  font-size: 14px;
+  line-height: 1.42859;
+  font-weight: 400;
+  letter-spacing: -0.016em;
+  padding-bottom: 16px;
+  display: flex;
+}
+.store .shop-container .row-shop .right-shop .generic .shop-chat .chat-section .chatIcon img {
+  padding-right: 8px;
+}
+.store .shop-container .row-shop .right-shop .generic .shop-chat .chat-section .chat-container .chat-title {
+  color: #1d1d1f;
+  font-weight: 600;
+  padding-top: 0;
+  font-size: 14px;
+  line-height: 1.42859;
+  letter-spacing: -0.016em;
+}
+.store .shop-container .row-shop .right-shop .generic .shop-chat .chat-section .chat-container .chat-content {
+  font-size: 14px;
+  line-height: 1.42859;
+  font-weight: 400;
+  letter-spacing: -0.016em;
+}
+.store .shop-container .row-shop .right-shop .generic .shop-chat .chat-section .chat-container .chat-content a {
+  color: #06c;
+}
+.store .shop-container .row-shop .right-shop .generic .shop-chat .chat-section .chat-container .chat-content a:hover {
+  text-decoration: underline;
+}
+.store .shop-container .row-shop .right-shop .generic .shop-neareststore {
+  display: flex;
+  align-items: center;
+}
+.store .shop-container .row-shop .right-shop .generic .shop-neareststore .svgicon {
+  padding-left: 10px;
+  padding-right: 18px;
+}
+.store .shop-container .row-shop .right-shop .generic .shop-neareststore .near-container .near-title {
+  font-weight: 600;
+  padding-top: 0;
+  font-size: 14px;
+  line-height: 1.42859;
+  letter-spacing: -0.016em;
+  color: #1d1d1f;
+}
+.store .shop-container .row-shop .right-shop .generic .shop-neareststore .near-container .near-content {
+  font-size: 14px;
+  line-height: 1.42859;
+  font-weight: 400;
+  letter-spacing: -0.016em;
+}
+.store .shop-container .row-shop .right-shop .generic .shop-neareststore .near-container .near-content a {
+  color: #06c;
+}
+.store .shop-container .row-shop .right-shop .generic .shop-neareststore .near-container .near-content a:hover {
+  text-decoration: underline;
+}
+
+/* --------------------------- End second section --------------------------- */
+/* --------------------------- Start third section -------------------------- */
+/* ---------------------------- End third section --------------------------- *//*# sourceMappingURL=main.css.map */
