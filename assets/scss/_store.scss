@@ -142,7 +142,7 @@
             display: flex;
             align-items: center;
             .svgicon {
-              padding-left: 10px;
+              padding-left: 12px;
               padding-right: 18px;
             }
             .near-container {
@@ -176,5 +176,215 @@
 /* --------------------------- End second section --------------------------- */
 
 /* --------------------------- Start third section -------------------------- */
-
+.productNav {
+  background-color: #f5f5f7;
+  padding-bottom: 62px;
+  .card-shelf {
+    .cards-crop {
+      height: 148px;
+      padding-bottom: 26px;
+      .row-cards {
+        width: 100%;
+        vertical-align: top;
+        display: inline-flex;
+        padding-top: 10px;
+        padding-bottom: 40px;
+        .card-item {
+          margin-left: 0;
+          margin-right: 10px;
+          height: 148px;
+          display: flex;
+          transform: translateX(calc(max(1024px, 100vw) / 2 - 490px));
+          .item-in {
+            cursor: pointer;
+            vertical-align: top;
+            .card-content {
+              border-radius: 18px;
+              height: 148px;
+              min-width: 136px;
+              padding: 18px 8px 16px;
+              .card-image {
+                padding-bottom: 16px;
+              }
+              .card-info {
+                a {
+                  text-decoration: none;
+                  font-size: 14px;
+                  line-height: 1.42859;
+                  letter-spacing: -0.016em;
+                  font-weight: 600;
+                  display: block;
+                  color: #1d1d1f;
+                  text-align: center;
+                  white-space: nowrap;
+                  &:hover {
+                    text-decoration: underline;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 /* ---------------------------- End third section --------------------------- */
+
+/* -------------------------- Start fourth section -------------------------- */
+.cardsshelf {
+  background-color: #f5f5f7;
+  padding-bottom: 54px;
+  display: flex;
+  justify-content: center;
+  .main-shelf {
+    .shelf-header {
+      padding-bottom: 14px;
+      width: 980px;
+      margin: 0 auto;
+      .header-compact {
+        .mainHead {
+          color: #1d1d1f;
+          font-size: 28px;
+          line-height: 1.14286;
+          font-weight: 600;
+          letter-spacing: 0.007em;
+          display: inline;
+        }
+        .secondaryHead {
+          color: #6e6e73;
+          font-size: 28px;
+          line-height: 1.14286;
+          font-weight: 600;
+          letter-spacing: 0.007em;
+          display: inline;
+        }
+      }
+    }
+    .cards-scroller {
+      position: relative;
+      .scroller-content {
+        height: 29.41176rem;
+        padding-bottom: 26px;
+        .row-content {
+          width: 100%;
+          vertical-align: top;
+          display: flex;
+          padding-top: 10px;
+          padding-bottom: 40px;
+          .cardList_1 {
+            cursor: pointer;
+            background-image: url(../images/scroller-1.jpg);
+            width: 400px;
+            height: 500px;
+            margin-right: 20px;
+            margin-left: 0;
+            position: relative;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 20%);
+            }
+            .scroller-item {
+              .card-content {
+                .content-info {
+                  position: absolute;
+                  left: 0;
+                  padding: 30px;
+                  width: 20rem;
+                  .content-eyebrow {
+                    margin-bottom: 0.4em;
+                    font-size: 12px;
+                    line-height: 1.33337;
+                    letter-spacing: -0.01em;
+                    font-weight: 600;
+                    color: #6e6e73;
+                    width: 204px;
+                    padding-bottom: 8px;
+                  }
+                  .content-header {
+                    padding-top: 0;
+                    font-size: 28px;
+                    line-height: 1.14286;
+                    font-weight: 600;
+                    letter-spacing: 0.007em;
+                    a {
+                      color: #1d1d1f;
+                    }
+                  }
+                  .content-desk {
+                    font-size: 17px;
+                    line-height: 1.23536;
+                    font-weight: 400;
+                    letter-spacing: -0.022em;
+                    color: #1d1d1f;
+                    padding-top: 10px;
+                    margin-top: 0;
+                  }
+                }
+              }
+            }
+          }
+          .cardList_2 {
+            cursor: pointer;
+            background-image: url(../images/scroller-2.jpg);
+            width: 400px;
+            height: 500px;
+            margin-right: 20px;
+            margin-left: 0;
+            position: relative;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 20%);
+            }
+            .scroller-item {
+              .card-content {
+                .content-info {
+                  position: absolute;
+                  left: 0;
+                  padding: 30px;
+                  width: 20rem;
+                  .content-eyebrow {
+                    margin-bottom: 0.4em;
+                    font-size: 12px;
+                    line-height: 1.33337;
+                    letter-spacing: -0.01em;
+                    font-weight: 600;
+                    color: #f5f5f7;
+                    width: 204px;
+                    padding-bottom: 8px;
+                  }
+                  .content-header {
+                    padding-top: 0;
+                    font-size: 28px;
+                    line-height: 1.14286;
+                    font-weight: 600;
+                    letter-spacing: 0.007em;
+                    a {
+                      color: #fff;
+                    }
+                  }
+                  .content-desk {
+                    font-size: 17px;
+                    line-height: 1.23536;
+                    font-weight: 400;
+                    letter-spacing: -0.022em;
+                    color: #fff;
+                    padding-top: 10px;
+                    margin-top: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* --------------------------- End fourth section --------------------------- */
