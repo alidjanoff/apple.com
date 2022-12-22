@@ -24,13 +24,23 @@ body {
   overflow-y: scroll;
 }
 
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
 .header {
   background-color: rgba(0, 0, 0, 0.8);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
           backdrop-filter: saturate(180%) blur(20px);
   z-index: 9999;
   width: 100%;
-  min-width: 1024px;
   height: 44px;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -49,24 +59,22 @@ body {
   top: 0;
   left: 0;
 }
-.header .container .navBar {
+.header .navBar {
   margin: 0 auto;
   max-width: 980px;
   padding: 0 22px;
   position: relative;
   z-index: 2;
-  box-sizing: content-box;
 }
 .header .container .navBar .navList {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 -8px;
-  width: auto;
   height: 44px;
   box-sizing: content-box;
 }
-.header .container .navBar .navList .navItem {
+.header .navBar .navList .navItem {
   box-sizing: border-box;
   position: relative;
   z-index: 1;
@@ -176,248 +184,4 @@ body {
   margin-right: 12px;
   font-size: 16px;
   transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
-}
-
-.chapternav {
-  padding: 8px 0px;
-  margin: 0px 34px;
-  padding: 0px 0px 30px;
-  margin-top: 15px;
-}
-.chapternav .chapternav-items {
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-  text-align: center;
-  gap: 39px;
-  height: 80px;
-  -o-object-fit: fill;
-     object-fit: fill;
-}
-.chapternav .chapternav-items .chapter-item {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.chapternav .chapternav-items .chapter-item span:nth-child(1) {
-  font-size: 12px;
-  line-height: 1.33337;
-  font-weight: 400;
-  letter-spacing: -0.01em;
-  color: #1d1d1f;
-}
-.chapternav .chapternav-items .chapter-item span:nth-child(2) {
-  font-size: 10px;
-  line-height: 1.2;
-  font-weight: 400;
-  letter-spacing: -0.008em;
-  color: #bf4800;
-  width: 100%;
-}
-.chapternav .chapternav-items .chapter-item:nth-child(4) img {
-  width: 28px;
-  height: 54px;
-}
-.chapternav .chapternav-items .chapter-item:nth-child(5) img {
-  width: 28px;
-  height: 54px;
-}
-.chapternav .chapternav-items .chapter-item:nth-child(6) img {
-  width: 35px;
-  height: 54px;
-}
-.chapternav .chapternav-items .chapter-item:nth-child(7) img {
-  width: 50px;
-  height: 54px;
-}
-.chapternav .chapternav-items .chapter-item:nth-child(8) img {
-  width: 72px;
-  height: 54px;
-}
-.chapternav .chapternav-items .chapter-item:nth-child(9) img {
-  width: 33px;
-  height: 54px;
-}
-.chapternav .chapternav-items .chapter-item:nth-child(10) img {
-  width: 35px;
-  height: 54px;
-}
-.chapternav .chapternav-items .chapter-item:nth-child(10):hover {
-  background-color: pink;
-  color: #0066cc;
-}
-.chapternav .chapternav-items .chapter-item .chapternav-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  justify-self: center;
-}
-
-.ribbon {
-  background-color: #f5f5f7;
-  text-align: center;
-  padding-top: 0.94118em;
-  padding-bottom: 0.94118em;
-}
-.ribbon p {
-  color: #1d1d1f;
-  font-size: 14px;
-  font-weight: 100;
-  letter-spacing: 0.3px;
-}
-.ribbon p a {
-  color: #0066cc;
-  font-size: 14px;
-  font-weight: 100;
-}
-
-.macbookAirSection {
-  padding: 60px 0px;
-}
-.macbookAirSection .container .macbook-air {
-  height: 694px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-.macbookAirSection .container .macbook-air span {
-  font-weight: 600;
-  margin-bottom: 0.5em;
-  background: rgba(0, 0, 0, 0);
-  border-color: #bf4800;
-  color: #f56300;
-}
-.macbookAirSection .container .macbook-air h2 {
-  font-size: 56px;
-  line-height: 1.07143;
-  font-weight: 600;
-  letter-spacing: -0.005em;
-  color: #1d1d1f;
-}
-.macbookAirSection .container .macbook-air h3 {
-  font-size: 28px;
-  line-height: 1.14286;
-  font-weight: 600;
-  letter-spacing: 0.007em;
-}
-.macbookAirSection .container .macbook-air h5 {
-  font-size: 17px;
-  line-height: 1.47059;
-  font-weight: 400;
-  letter-spacing: -0.022em;
-  color: #1d1d1f;
-  padding-top: 18px;
-}
-.macbookAirSection .container .macbook-air .section-content {
-  background: url(../images/macbook_air_m2__r1jrymq4ftea_large.jpg);
-  background-position: center bottom;
-  margin-top: 46px;
-  width: 483px;
-  height: 369px;
-}
-.macbookAirSection .container .macbook-air .macbook-air-content-row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-.macbookAirSection .container .macbook-air .macbook-air-content-row button {
-  cursor: pointer;
-  display: inline-block;
-  text-align: center;
-  white-space: nowrap;
-  font-size: 17px;
-  line-height: 1.17648;
-  font-weight: 400;
-  letter-spacing: -0.022em;
-  border: none;
-  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  min-width: 28px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  border-radius: 980px;
-  background: #0071e3;
-  color: #fff;
-}
-.macbookAirSection .container .macbook-air .macbook-air-content-row a {
-  color: #06c;
-}
-
-.macbookProSection {
-  background-color: black;
-}
-.macbookProSection .container .macbook-pro {
-  text-align: center;
-  background: url(../images/macbook_pro_13__e3r46kd69eoi_large.jpg);
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  width: 100%;
-  height: 699px;
-}
-.macbookProSection .container .macbook-pro .macbook-pro-content {
-  padding-top: 90px;
-}
-.macbookProSection .container .macbook-pro .macbook-pro-content span {
-  font-weight: 600;
-  margin-bottom: 0.5em;
-  background: rgba(0, 0, 0, 0);
-  border-color: #bf4800;
-  color: #f56300;
-  margin-top: 90px;
-}
-.macbookProSection .container .macbook-pro .macbook-pro-content h2 {
-  font-size: 56px;
-  line-height: 1.07143;
-  font-weight: 600;
-  letter-spacing: -0.005em;
-  color: #f5f5f7;
-}
-.macbookProSection .container .macbook-pro .macbook-pro-content h3 {
-  font-size: 28px;
-  line-height: 1.14286;
-  font-weight: 600;
-  letter-spacing: 0.007em;
-  color: #f5f5f7;
-}
-.macbookProSection .container .macbook-pro .macbook-pro-content h5 {
-  font-size: 17px;
-  line-height: 1.47059;
-  font-weight: 400;
-  letter-spacing: -0.022em;
-  color: #f5f5f7;
-  padding-top: 18px;
-}
-.macbookProSection .container .macbook-pro .macbook-pro-content .macbook-pro-content-row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  padding-top: 15px;
-}
-.macbookProSection .container .macbook-pro .macbook-pro-content .macbook-pro-content-row button {
-  cursor: pointer;
-  display: inline-block;
-  text-align: center;
-  white-space: nowrap;
-  font-size: 17px;
-  line-height: 1.17648;
-  font-weight: 400;
-  letter-spacing: -0.022em;
-  border: none;
-  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  min-width: 28px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  border-radius: 980px;
-  background: #0071e3;
-  color: #fff;
-}
-.macbookProSection .container .macbook-pro .macbook-pro-content .macbook-pro-content-row a {
-  color: #06c;
 }/*# sourceMappingURL=main.css.map */
