@@ -43,6 +43,9 @@
             a {
               color: #06c;
               letter-spacing: inherit;
+              &:hover {
+                text-decoration: underline;
+              }
             }
           }
         }
@@ -235,6 +238,7 @@
 .cardsshelf {
   background-color: #f5f5f7;
   padding-bottom: 54px;
+  padding-top: 50px;
   display: flex;
   justify-content: center;
   .main-shelf {
@@ -382,9 +386,500 @@
               }
             }
           }
+          .cardList_3 {
+            cursor: pointer;
+            background-image: url(../images/scroller-3.jpg);
+            width: 400px;
+            height: 500px;
+            margin-right: 20px;
+            margin-left: 0;
+            position: relative;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 20%);
+            }
+            .scroller-item {
+              .card-content {
+                .content-info {
+                  position: absolute;
+                  padding: 30px;
+                  left: 0;
+                  width: 20rem;
+                  .content-eyebrow {
+                    margin-bottom: 0.4em;
+                    font-size: 12px;
+                    line-height: 1.33337;
+                    letter-spacing: -0.01em;
+                    font-weight: 600;
+                    color: #6e6e73;
+                    width: 204px;
+                    padding-bottom: 8px;
+                  }
+                  .content-header {
+                    padding-top: 0;
+                    font-size: 28px;
+                    line-height: 1.14286;
+                    font-weight: 600;
+                    letter-spacing: 0.007em;
+                    a {
+                      color: #1d1d1f;
+                    }
+                  }
+                  .content-desk {
+                    font-size: 17px;
+                    line-height: 1.23536;
+                    font-weight: 400;
+                    letter-spacing: -0.022em;
+                    color: #1d1d1f;
+                    padding-top: 10px;
+                    margin-top: 0;
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
   }
 }
 /* --------------------------- End fourth section --------------------------- */
+
+/* --------------------------- Start fifth section -------------------------- */
+.cards-holidays {
+  background-color: #f5f5f7;
+  padding-bottom: 54px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  .main-shelf {
+    .shelf-header {
+      padding-bottom: 14px;
+      width: 980px;
+      margin: 0 auto;
+      .header-compact {
+        .mainHead {
+          color: #1d1d1f;
+          font-size: 28px;
+          line-height: 1.14286;
+          font-weight: 600;
+          letter-spacing: 0.007em;
+          display: inline;
+        }
+        .secondaryHead {
+          color: #6e6e73;
+          font-size: 28px;
+          line-height: 1.14286;
+          font-weight: 600;
+          letter-spacing: 0.007em;
+          display: inline;
+        }
+      }
+    }
+    .cards-scroller {
+      position: relative;
+      .scroller-content {
+        height: 29.41176rem;
+        padding-bottom: 26px;
+        .row-content {
+          width: 100%;
+          vertical-align: top;
+          display: flex;
+          padding-top: 10px;
+          padding-bottom: 40px;
+          .cardList_1 {
+            cursor: pointer;
+            background-image: url(../images/holiday-1.jpg);
+            width: 400px;
+            height: 500px;
+            margin-right: 20px;
+            margin-left: 0;
+            position: relative;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 20%);
+            }
+            .scroller-item {
+              .card-content {
+                .content-info {
+                  position: absolute;
+                  left: 0;
+                  padding: 30px;
+                  width: 20rem;
+                  .content-eyebrow {
+                    margin-bottom: 0.4em;
+                    font-size: 12px;
+                    line-height: 1.33337;
+                    letter-spacing: -0.01em;
+                    font-weight: 600;
+                    color: #f5f5f7;
+                    width: 204px;
+                    padding-bottom: 8px;
+                  }
+                  .content-header {
+                    padding-top: 0;
+                    font-size: 28px;
+                    line-height: 1.14286;
+                    font-weight: 600;
+                    letter-spacing: 0.007em;
+                    a {
+                      color: #fff;
+                    }
+                  }
+                  .content-desk {
+                    font-size: 17px;
+                    line-height: 1.23536;
+                    font-weight: 400;
+                    letter-spacing: -0.022em;
+                    color: #fff;
+                    padding-top: 10px;
+                    margin-top: 0;
+                  }
+                }
+              }
+            }
+          }
+          .cardList_2 {
+            cursor: pointer;
+            background-image: url(../images/holiday-2.jpg);
+            width: 480px;
+            height: 500px;
+            margin-right: 20px;
+            margin-left: 0;
+            position: relative;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 20%);
+            }
+            .scroller-item {
+              .card-content {
+                .content-info {
+                  position: absolute;
+                  left: 0;
+                  padding: 30px;
+                  width: 30rem;
+                  .content-eyebrow {
+                    margin-bottom: 0.4em;
+                    font-size: 12px;
+                    line-height: 1.33337;
+                    letter-spacing: -0.01em;
+                    font-weight: 600;
+                    color: #6e6e73;
+                    width: 204px;
+                    padding-bottom: 8px;
+                  }
+                  .content-header {
+                    padding-top: 0;
+                    font-size: 28px;
+                    line-height: 1.14286;
+                    font-weight: 600;
+                    letter-spacing: 0.007em;
+                    a {
+                      color: #1d1d1f;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .cardList_3 {
+            cursor: pointer;
+            background-image: url(../images/holiday-3.jpg);
+            width: 400px;
+            height: 500px;
+            margin-right: 20px;
+            margin-left: 0;
+            position: relative;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 20%);
+            }
+            .scroller-item {
+              .card-content {
+                .content-info {
+                  position: absolute;
+                  padding: 30px;
+                  left: 0;
+                  width: 22rem;
+                  .content-eyebrow {
+                    margin-bottom: 0.4em;
+                    font-size: 12px;
+                    line-height: 1.33337;
+                    letter-spacing: -0.01em;
+                    font-weight: 600;
+                    color: #f5f5f7;
+                    width: 204px;
+                    padding-bottom: 8px;
+                  }
+                  .content-header {
+                    padding-top: 0;
+                    font-size: 28px;
+                    line-height: 1.14286;
+                    font-weight: 600;
+                    letter-spacing: 0.007em;
+                    a {
+                      color: #fff;
+                    }
+                  }
+                  .content-desk {
+                    font-size: 17px;
+                    line-height: 1.23536;
+                    font-weight: 400;
+                    letter-spacing: -0.022em;
+                    color: #fff;
+                    padding-top: 10px;
+                    margin-top: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* ---------------------------- End fifth section --------------------------- */
+
+/* --------------------------- Start sixth section -------------------------- */
+.apple-store {
+  background-color: #f5f5f7;
+  padding-bottom: 54px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  .apple-shelf {
+    .apple-header {
+      padding-bottom: 14px;
+      width: 980px;
+      margin: 0 auto;
+      .apple-head {
+        color: #1d1d1f;
+        font-size: 28px;
+        line-height: 1.14286;
+        font-weight: 600;
+        letter-spacing: 0.007em;
+        display: inline;
+      }
+      .secondary-head {
+        color: #6e6e73;
+        font-size: 28px;
+        line-height: 1.14286;
+        font-weight: 600;
+        letter-spacing: 0.007em;
+        display: inline;
+      }
+    }
+    .apple-scroller {
+      position: relative;
+      .scroller-content {
+        height: 14.11765rem;
+        padding-bottom: 26px;
+        .row-content {
+          width: 100%;
+          vertical-align: top;
+          display: flex;
+          padding-top: 10px;
+          padding-bottom: 40px;
+          .apple-cards_1 {
+            cursor: pointer;
+            background-color: #fff;
+            width: 313px;
+            height: 240px;
+            margin-right: 20px;
+            margin-left: 0;
+            position: relative;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 20%);
+            }
+            .scroller-item {
+              .card-content {
+                .content-info {
+                  width: 14.88235rem;
+                  padding: 30px;
+                  padding-bottom: 0;
+                  .content-icon {
+                    height: 48px;
+                    padding-bottom: 5px;
+                    i {
+                      color: #68cc45;
+                    }
+                  }
+                  .content-header {
+                    width: 17rem;
+                    font-size: 24px;
+                    line-height: 1.16667;
+                    font-weight: 600;
+                    letter-spacing: 0.009em;
+                    margin-top: 0;
+                    a {
+                      color: #1d1d1f;
+                      span {
+                        color: #68cc45;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .apple-cards_2 {
+            cursor: pointer;
+            background-color: #fff;
+            width: 313px;
+            height: 240px;
+            margin-right: 20px;
+            margin-left: 0;
+            position: relative;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 20%);
+            }
+            .scroller-item {
+              .card-content {
+                .content-info {
+                  width: 14.88235rem;
+                  padding: 30px;
+                  padding-bottom: 0;
+                  .content-icon {
+                    height: 48px;
+                    padding-bottom: 5px;
+                    i {
+                      color: #ff0053;
+                    }
+                  }
+                  .content-header {
+                    width: 18rem;
+                    font-size: 24px;
+                    line-height: 1.16667;
+                    font-weight: 600;
+                    letter-spacing: 0.009em;
+                    margin-top: 0;
+                    a {
+                      color: #1d1d1f;
+                      span {
+                        color: #ff0053;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .apple-cards_3 {
+            cursor: pointer;
+            background-color: #fff;
+            width: 313px;
+            height: 240px;
+            margin-right: 20px;
+            margin-left: 0;
+            position: relative;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 20%);
+            }
+            .scroller-item {
+              .card-content {
+                .content-info {
+                  width: 14.88235rem;
+                  padding: 30px;
+                  padding-bottom: 0;
+                  .content-icon {
+                    height: 48px;
+                    padding-bottom: 5px;
+                    i {
+                      color: #ac39ff;
+                    }
+                  }
+                  .content-header {
+                    width: 18rem;
+                    font-size: 24px;
+                    line-height: 1.16667;
+                    font-weight: 600;
+                    letter-spacing: 0.009em;
+                    margin-top: 0;
+                    a {
+                      color: #1d1d1f;
+                      span {
+                        color: #ac39ff;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .apple-cards_4 {
+            cursor: pointer;
+            background-color: #fff;
+            width: 313px;
+            height: 240px;
+            margin-right: 20px;
+            margin-left: 0;
+            position: relative;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 20%);
+            }
+            .scroller-item {
+              .card-content {
+                .content-info {
+                  width: 14.88235rem;
+                  padding: 30px;
+                  padding-bottom: 0;
+                  .content-icon {
+                    height: 48px;
+                    padding-bottom: 5px;
+                    i {
+                      color: #68cc45;
+                    }
+                  }
+                  .content-header {
+                    width: 18rem;
+                    font-size: 24px;
+                    line-height: 1.16667;
+                    font-weight: 600;
+                    letter-spacing: 0.009em;
+                    margin-top: 0;
+                    a {
+                      color: #1d1d1f;
+                      span {
+                        color: #68cc45;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* ---------------------------- End sixth section --------------------------- */

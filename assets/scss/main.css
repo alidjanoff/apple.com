@@ -257,6 +257,9 @@
   color: #06c;
   letter-spacing: inherit;
 }
+.storehome-banner .drop-wrapper .content-wrapper .content-row .column-in .column-text a:hover {
+  text-decoration: underline;
+}
 
 /* ---------------------------- End first section --------------------------- */
 /* -------------------------- Start second section -------------------------- */
@@ -428,6 +431,7 @@
 .cardsshelf {
   background-color: #f5f5f7;
   padding-bottom: 54px;
+  padding-top: 50px;
   display: flex;
   justify-content: center;
 }
@@ -568,5 +572,458 @@
   padding-top: 10px;
   margin-top: 0;
 }
+.cardsshelf .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 {
+  cursor: pointer;
+  background-image: url(../images/scroller-3.jpg);
+  width: 400px;
+  height: 500px;
+  margin-right: 20px;
+  margin-left: 0;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.cardsshelf .main-shelf .cards-scroller .scroller-content .row-content .cardList_3:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.cardsshelf .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 .scroller-item .card-content .content-info {
+  position: absolute;
+  padding: 30px;
+  left: 0;
+  width: 20rem;
+}
+.cardsshelf .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 .scroller-item .card-content .content-info .content-eyebrow {
+  margin-bottom: 0.4em;
+  font-size: 12px;
+  line-height: 1.33337;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+  color: #6e6e73;
+  width: 204px;
+  padding-bottom: 8px;
+}
+.cardsshelf .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 .scroller-item .card-content .content-info .content-header {
+  padding-top: 0;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+}
+.cardsshelf .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 .scroller-item .card-content .content-info .content-header a {
+  color: #1d1d1f;
+}
+.cardsshelf .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 .scroller-item .card-content .content-info .content-desk {
+  font-size: 17px;
+  line-height: 1.23536;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  color: #1d1d1f;
+  padding-top: 10px;
+  margin-top: 0;
+}
 
-/* --------------------------- End fourth section --------------------------- *//*# sourceMappingURL=main.css.map */
+/* --------------------------- End fourth section --------------------------- */
+/* --------------------------- Start fifth section -------------------------- */
+.cards-holidays {
+  background-color: #f5f5f7;
+  padding-bottom: 54px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.cards-holidays .main-shelf .shelf-header {
+  padding-bottom: 14px;
+  width: 980px;
+  margin: 0 auto;
+}
+.cards-holidays .main-shelf .shelf-header .header-compact .mainHead {
+  color: #1d1d1f;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+  display: inline;
+}
+.cards-holidays .main-shelf .shelf-header .header-compact .secondaryHead {
+  color: #6e6e73;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+  display: inline;
+}
+.cards-holidays .main-shelf .cards-scroller {
+  position: relative;
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content {
+  height: 29.41176rem;
+  padding-bottom: 26px;
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content {
+  width: 100%;
+  vertical-align: top;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content .cardList_1 {
+  cursor: pointer;
+  background-image: url(../images/holiday-1.jpg);
+  width: 400px;
+  height: 500px;
+  margin-right: 20px;
+  margin-left: 0;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content .cardList_1:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content .cardList_1 .scroller-item .card-content .content-info {
+  position: absolute;
+  left: 0;
+  padding: 30px;
+  width: 20rem;
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content .cardList_1 .scroller-item .card-content .content-info .content-eyebrow {
+  margin-bottom: 0.4em;
+  font-size: 12px;
+  line-height: 1.33337;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+  color: #f5f5f7;
+  width: 204px;
+  padding-bottom: 8px;
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content .cardList_1 .scroller-item .card-content .content-info .content-header {
+  padding-top: 0;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content .cardList_1 .scroller-item .card-content .content-info .content-header a {
+  color: #fff;
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content .cardList_1 .scroller-item .card-content .content-info .content-desk {
+  font-size: 17px;
+  line-height: 1.23536;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  color: #fff;
+  padding-top: 10px;
+  margin-top: 0;
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content .cardList_2 {
+  cursor: pointer;
+  background-image: url(../images/holiday-2.jpg);
+  width: 480px;
+  height: 500px;
+  margin-right: 20px;
+  margin-left: 0;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content .cardList_2:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content .cardList_2 .scroller-item .card-content .content-info {
+  position: absolute;
+  left: 0;
+  padding: 30px;
+  width: 30rem;
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content .cardList_2 .scroller-item .card-content .content-info .content-eyebrow {
+  margin-bottom: 0.4em;
+  font-size: 12px;
+  line-height: 1.33337;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+  color: #6e6e73;
+  width: 204px;
+  padding-bottom: 8px;
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content .cardList_2 .scroller-item .card-content .content-info .content-header {
+  padding-top: 0;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content .cardList_2 .scroller-item .card-content .content-info .content-header a {
+  color: #1d1d1f;
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 {
+  cursor: pointer;
+  background-image: url(../images/holiday-3.jpg);
+  width: 400px;
+  height: 500px;
+  margin-right: 20px;
+  margin-left: 0;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content .cardList_3:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 .scroller-item .card-content .content-info {
+  position: absolute;
+  padding: 30px;
+  left: 0;
+  width: 22rem;
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 .scroller-item .card-content .content-info .content-eyebrow {
+  margin-bottom: 0.4em;
+  font-size: 12px;
+  line-height: 1.33337;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+  color: #f5f5f7;
+  width: 204px;
+  padding-bottom: 8px;
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 .scroller-item .card-content .content-info .content-header {
+  padding-top: 0;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 .scroller-item .card-content .content-info .content-header a {
+  color: #fff;
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 .scroller-item .card-content .content-info .content-desk {
+  font-size: 17px;
+  line-height: 1.23536;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  color: #fff;
+  padding-top: 10px;
+  margin-top: 0;
+}
+
+/* ---------------------------- End fifth section --------------------------- */
+/* --------------------------- Start sixth section -------------------------- */
+.apple-store {
+  background-color: #f5f5f7;
+  padding-bottom: 54px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.apple-store .apple-shelf .apple-header {
+  padding-bottom: 14px;
+  width: 980px;
+  margin: 0 auto;
+}
+.apple-store .apple-shelf .apple-header .apple-head {
+  color: #1d1d1f;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+  display: inline;
+}
+.apple-store .apple-shelf .apple-header .secondary-head {
+  color: #6e6e73;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+  display: inline;
+}
+.apple-store .apple-shelf .apple-scroller {
+  position: relative;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content {
+  height: 14.11765rem;
+  padding-bottom: 26px;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content {
+  width: 100%;
+  vertical-align: top;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_1 {
+  cursor: pointer;
+  background-color: #fff;
+  width: 313px;
+  height: 240px;
+  margin-right: 20px;
+  margin-left: 0;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_1:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_1 .scroller-item .card-content .content-info {
+  width: 14.88235rem;
+  padding: 30px;
+  padding-bottom: 0;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_1 .scroller-item .card-content .content-info .content-icon {
+  height: 48px;
+  padding-bottom: 5px;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_1 .scroller-item .card-content .content-info .content-icon i {
+  color: #68cc45;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_1 .scroller-item .card-content .content-info .content-header {
+  width: 17rem;
+  font-size: 24px;
+  line-height: 1.16667;
+  font-weight: 600;
+  letter-spacing: 0.009em;
+  margin-top: 0;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_1 .scroller-item .card-content .content-info .content-header a {
+  color: #1d1d1f;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_1 .scroller-item .card-content .content-info .content-header a span {
+  color: #68cc45;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_2 {
+  cursor: pointer;
+  background-color: #fff;
+  width: 313px;
+  height: 240px;
+  margin-right: 20px;
+  margin-left: 0;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_2:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_2 .scroller-item .card-content .content-info {
+  width: 14.88235rem;
+  padding: 30px;
+  padding-bottom: 0;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_2 .scroller-item .card-content .content-info .content-icon {
+  height: 48px;
+  padding-bottom: 5px;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_2 .scroller-item .card-content .content-info .content-icon i {
+  color: #ff0053;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_2 .scroller-item .card-content .content-info .content-header {
+  width: 18rem;
+  font-size: 24px;
+  line-height: 1.16667;
+  font-weight: 600;
+  letter-spacing: 0.009em;
+  margin-top: 0;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_2 .scroller-item .card-content .content-info .content-header a {
+  color: #1d1d1f;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_2 .scroller-item .card-content .content-info .content-header a span {
+  color: #ff0053;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_3 {
+  cursor: pointer;
+  background-color: #fff;
+  width: 313px;
+  height: 240px;
+  margin-right: 20px;
+  margin-left: 0;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_3:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_3 .scroller-item .card-content .content-info {
+  width: 14.88235rem;
+  padding: 30px;
+  padding-bottom: 0;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_3 .scroller-item .card-content .content-info .content-icon {
+  height: 48px;
+  padding-bottom: 5px;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_3 .scroller-item .card-content .content-info .content-icon i {
+  color: #ac39ff;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_3 .scroller-item .card-content .content-info .content-header {
+  width: 18rem;
+  font-size: 24px;
+  line-height: 1.16667;
+  font-weight: 600;
+  letter-spacing: 0.009em;
+  margin-top: 0;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_3 .scroller-item .card-content .content-info .content-header a {
+  color: #1d1d1f;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_3 .scroller-item .card-content .content-info .content-header a span {
+  color: #ac39ff;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_4 {
+  cursor: pointer;
+  background-color: #fff;
+  width: 313px;
+  height: 240px;
+  margin-right: 20px;
+  margin-left: 0;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_4:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_4 .scroller-item .card-content .content-info {
+  width: 14.88235rem;
+  padding: 30px;
+  padding-bottom: 0;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_4 .scroller-item .card-content .content-info .content-icon {
+  height: 48px;
+  padding-bottom: 5px;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_4 .scroller-item .card-content .content-info .content-icon i {
+  color: #68cc45;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_4 .scroller-item .card-content .content-info .content-header {
+  width: 18rem;
+  font-size: 24px;
+  line-height: 1.16667;
+  font-weight: 600;
+  letter-spacing: 0.009em;
+  margin-top: 0;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_4 .scroller-item .card-content .content-info .content-header a {
+  color: #1d1d1f;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_4 .scroller-item .card-content .content-info .content-header a span {
+  color: #68cc45;
+}
+
+/* ---------------------------- End sixth section --------------------------- *//*# sourceMappingURL=main.css.map */
