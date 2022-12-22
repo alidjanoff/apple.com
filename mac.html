@@ -21,86 +21,96 @@
     <!--*----------------------------------------------------------------------- -->
     <header class="header">
       <span class="outClickOverlay"></span>
-      <nav class="navBar">
-        <ul class="navList">
-          <li class="navItem">
-            <a href="./index.html">
-              <i class="fa-brands fa-apple logo"></i>
-            </a>
-          </li>
-          <li class="navItem">
-            <a href="./store.html">Store</a>
-          </li>
-          <li class="navItem">
-            <a href="./mac.html">Mac</a>
-          </li>
-          <li class="navItem">
-            <a href="./ipad.html">iPad</a>
-          </li>
-          <li class="navItem">
-            <a href="./iphone.html">iPhone</a>
-          </li>
-          <li class="navItem">
-            <a href="./watch.html">Watch</a>
-          </li>
-          <li class="navItem">
-            <a href="./airpods.html">AirPods</a>
-          </li>
-          <li class="navItem">
-            <a href="./tv-home.html">TV & Home</a>
-          </li>
-          <li class="navItem">
-            <a href="./only-on-apple.html">Only of Apple</a>
-          </li>
-          <li class="navItem">
-            <a href="./accessories.html">Accessories</a>
-          </li>
-          <li class="navItem">
-            <a href="./support.html">Support</a>
-          </li>
-          <li class="navItem search">
-            <a href="#">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </a>
-          </li>
-          <li class="navItem cart">
-            <a href="#">
-              <i class="fa-solid fa-bag-shopping"></i>
-            </a>
-            <div class="cartBox">
-              <span class="triangle"></span>
-              <div class="cartBoxContent">
-                <p class="cartTitle">Your Bag is empty.</p>
-                <nav class="cartNav">
-                  <ul>
-                    <li>
-                      <a href="#"
-                        ><i class="fa-solid fa-bag-shopping"></i> Bag</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa-regular fa-bookmark"></i> Saved Items</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa-solid fa-box"></i> Orders</a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa-solid fa-gear"></i> Account</a>
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa-solid fa-circle-user"></i> Sign in</a
-                      >
-                    </li>
-                  </ul>
-                </nav>
+      <div class="container">
+        <nav class="navBar">
+          <ul class="navList">
+            <li class="mobileMenuIcon">
+              <i class="fa-solid fa-bars"></i>
+            </li>
+            <li class="navItem logoItem">
+              <a href="./index.html">
+                <i class="fa-brands fa-apple logo"></i>
+              </a>
+            </li>
+            <li class="navItem">
+              <a href="./store.html">Store</a>
+            </li>
+            <li class="navItem">
+              <a href="./mac.html">Mac</a>
+            </li>
+            <li class="navItem">
+              <a href="./ipad.html">iPad</a>
+            </li>
+            <li class="navItem">
+              <a href="./iphone.html">iPhone</a>
+            </li>
+            <li class="navItem">
+              <a href="./watch.html">Watch</a>
+            </li>
+            <li class="navItem">
+              <a href="./airpods.html">AirPods</a>
+            </li>
+            <li class="navItem">
+              <a href="./tv-home.html">TV & Home</a>
+            </li>
+            <li class="navItem">
+              <a href="./only-on-apple.html">Only of Apple</a>
+            </li>
+            <li class="navItem">
+              <a href="./accessories.html">Accessories</a>
+            </li>
+            <li class="navItem">
+              <a href="./support.html">Support</a>
+            </li>
+            <li class="navItem search">
+              <a href="#">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+            </li>
+            <li class="navItem cart">
+              <a href="#">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </a>
+              <div class="cartBox">
+                <span class="triangle"></span>
+                <div class="cartBoxContent">
+                  <p class="cartTitle">Your Bag is empty.</p>
+                  <nav class="cartNav">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <i class="fa-solid fa-bag-shopping"></i> Bag
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><i class="fa-regular fa-bookmark"></i> Saved Items</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-solid fa-box"></i> Orders</a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-solid fa-gear"></i> Account</a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><i class="fa-solid fa-circle-user"></i> Sign in</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
               </div>
-            </div>
-          </li>
-        </ul>
-      </nav>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Start Mobile Menu -->
+      <ul class="mobileMenu">
+        <li class="menuItem"></li>
+      </ul>
+      <!-- End Mobile Menu -->
     </header>
     <!--*----------------------------------------------------------------------- -->
     <!--*                              END HEADER                                -->
@@ -282,6 +292,7 @@
         </div>
       </section>
       <!-- Macbook Air Section END -->
+      <!-- Macbook PRO Section Start -->
       <div class="macbookProSection">
         <div class="container">
           <div class="macbook-pro">
@@ -299,7 +310,405 @@
         </div>
       </div>
     </main>
-    <!-- main END  -->
+    <!-- Macbook PRO Section END -->
+    <!-- Compare Promo START  -->
+    <section class="compare-gallery-section">
+      <div class="compare-promo-section">
+        <h2>Which Mac is right for you?</h2>
+        <div class="compare-table">
+          <div class="compare-table-items">
+            <div class="compare-table-item">
+              <div class="device-content">
+                <img
+                  src="./assets/images/compare_mba__fchj615oz0yi_large.png"
+                  alt="compare_mba"
+                />
+                <img
+                  src="./assets/images/compare_swatches_three_colors__bagzlsvl2ehu_large.png"
+                  alt="compare colors"
+                />
+                <h3>MacBook Air</h3>
+                <span class="chip-model">M1 chip</span>
+                <span class="price">From $999</span>
+                <button>Buy</button>
+                <a href="#">Learn more ></a>
+              </div>
+              <div class="display-cell">
+                <h4>13.3"</h4>
+                <p>Retina display1</p>
+              </div>
+              <div class="chip-cell">
+                <img
+                  src="./assets/images/compare_icon_m1__dsskrswqk7wy_large.png"
+                  alt="compare m1 chip"
+                />
+                <p>Apple M1 chip</p>
+              </div>
+              <div class="cpu-cell">
+                <h4>8-core</h4>
+                <p>CPU</p>
+              </div>
+              <div class="gpu-cell">
+                <h4>7-core</h4>
+                <p>GPU</p>
+              </div>
+              <div class="memory-cell">
+                <img
+                  src="./assets/images/compare_icon_unified_memory__emykppauav2a_large.png"
+                  alt="unified-memory"
+                />
+                <p>Up to 16GB unified memory</p>
+              </div>
+              <div class="storage-cell">
+                <h4>2TB</h4>
+                <p>Maximum configurable storage2</p>
+              </div>
+              <div class="battery-cell">
+                <img
+                  src="./assets/images/compare_icon_battery__fk0ughiyc3am_large.png"
+                  alt=""
+                />
+                <p>Up to 18 hours battery life3</p>
+              </div>
+              <div class="camera-cell">
+                <img
+                  src="./assets/images/compare_icon_camera__dlxow9r3leie_large.png"
+                  alt="compare-camera"
+                />
+                <p>720p FaceTime HD camera</p>
+              </div>
+              <div class="audio-cell">
+                <img
+                  src="./assets/images/compare_icon_mic__bkm7awuvc5qu_large.png"
+                  alt=""
+                />
+                <p>Three‑mic array Stereo speakers</p>
+              </div>
+              <div class="weight-cell">
+                <h4>2.8 lb.</h4>
+                <p>Weight</p>
+              </div>
+              <div class="keyboard-cell">
+                <img
+                  src="./assets/images/compare_icon_touchid__fanxgkqe1xei_large.png"
+                  alt=""
+                />
+                <p>Touch ID</p>
+              </div>
+            </div>
+            <div class="compare-table-item">
+              <div class="device-content">
+                <img
+                  src="./assets/images/compare_mbam2__bdesjk99hf4i_large.png"
+                  alt="compare_mba"
+                />
+                <img
+                  src="./assets/images/compare_swatches_four_colors__f837h0qw6oyi_large.png"
+                  alt="compare colors"
+                />
+                <span class="new">New</span>
+                <h3>MacBook Air</h3>
+                <span class="chip-model">M2 chip</span>
+                <span class="price">From $1199</span>
+                <button>Buy</button>
+                <a href="#">Learn more ></a>
+              </div>
+              <div class="display-cell">
+                <h4 class="inc">13.6"</h4>
+                <p>Liquid Retina display1</p>
+              </div>
+              <div class="chip-cell">
+                <img
+                  src="./assets/images/compare_icon_m2__c5vv0ufcdyc2_large.png"
+                  alt="compare m2 chip"
+                />
+                <p>Apple M2 chip</p>
+              </div>
+              <div class="cpu-cell">
+                <h4>8-core</h4>
+                <p>CPU</p>
+              </div>
+              <div class="gpu-cell">
+                <p>Up to</p>
+                <h4>10-core</h4>
+                <p>GPU</p>
+              </div>
+              <div class="memory-cell">
+                <img
+                  src="./assets/images/compare_icon_unified_memory__emykppauav2a_large.png"
+                  alt="unified-memory"
+                />
+                <p>Up to 24GB unified memory</p>
+              </div>
+              <div class="storage-cell">
+                <h4>2TB</h4>
+                <p>Maximum configurable storage2</p>
+              </div>
+              <div class="battery-cell">
+                <img
+                  src="./assets/images/compare_icon_battery__fk0ughiyc3am_large.png"
+                  alt=""
+                />
+                <p>Up to 18 hours battery life3</p>
+              </div>
+              <div class="camera-cell">
+                <img
+                  src="./assets/images/compare_icon_camera__dlxow9r3leie_large.png"
+                  alt="compare-camera"
+                />
+                <p>1080p FaceTime HD camera</p>
+              </div>
+              <div class="audio-cell">
+                <img
+                  src="./assets/images/compare_icon_mic__bkm7awuvc5qu_large.png"
+                  alt=""
+                />
+                <p>
+                  Three‑mic array Four-speaker sound system with Spatial Audio
+                </p>
+              </div>
+              <div class="weight-cell">
+                <h4>2.7 lb.</h4>
+                <p>Weight</p>
+              </div>
+              <div class="keyboard-cell">
+                <img
+                  src="./assets/images/compare_icon_touchid__fanxgkqe1xei_large.png"
+                  alt=""
+                />
+                <p>Touch ID</p>
+              </div>
+            </div>
+            <div class="compare-table-item">
+              <div class="device-content">
+                <img
+                  src="./assets/images/compare_mbp13__euj5z15300om_large.png"
+                  alt="compare_mba"
+                />
+                <img
+                  src="./assets/images/compare_swatches_two_colors__dfe181bip0ya_large.png"
+                  alt="compare colors"
+                />
+                <span class="new">New</span>
+                <h3>MacBook Pro 13”</h3>
+                <span class="chip-model"> &nbsp; </span>
+                <span class="price">From $1299</span>
+                <button>Buy</button>
+                <a href="#">Learn more ></a>
+              </div>
+              <div class="display-cell">
+                <h4>13.3"</h4>
+                <p>Retina display1</p>
+              </div>
+              <div class="chip-cell">
+                <img
+                  src="./assets/images/compare_icon_m2__c5vv0ufcdyc2_large.png"
+                  alt="compare m2 chip"
+                />
+                <p>Apple M2 chip</p>
+              </div>
+              <div class="cpu-cell">
+                <h4>8-core</h4>
+                <p>CPU</p>
+              </div>
+              <div class="gpu-cell">
+                <h4>7-core</h4>
+                <p>GPU</p>
+              </div>
+              <div class="memory-cell">
+                <img
+                  src="./assets/images/compare_icon_unified_memory__emykppauav2a_large.png"
+                  alt="unified-memory"
+                />
+                <p>Up to 16GB unified memory</p>
+              </div>
+              <div class="storage-cell">
+                <h4>2TB</h4>
+                <p>Maximum configurable storage2</p>
+              </div>
+              <div class="battery-cell">
+                <img
+                  src="./assets/images/compare_icon_battery__fk0ughiyc3am_large.png"
+                  alt=""
+                />
+                <p>Up to 20 hours battery life5</p>
+              </div>
+              <div class="camera-cell">
+                <img
+                  src="./assets/images/compare_icon_camera__dlxow9r3leie_large.png"
+                  alt="compare-camera"
+                />
+                <p>720p FaceTime HD camera</p>
+              </div>
+              <div class="audio-cell">
+                <img
+                  src="./assets/images/compare_icon_mic__bkm7awuvc5qu_large.png"
+                  alt=""
+                />
+                <p>
+                  Studio-quality three‑mic array Stereo speakers with Spatial
+                  Audio
+                </p>
+              </div>
+              <div class="weight-cell">
+                <h4>3.0 lb.</h4>
+                <p>Weight</p>
+              </div>
+              <div class="keyboard-cell">
+                <img
+                  src="./assets/images/compare_icon_touch_id_touch_bar__e6rwp5pfboae_large.png"
+                  alt=""
+                />
+                <p>Touch ID</p>
+              </div>
+            </div>
+            <div class="compare-table-item">
+              <div class="device-content">
+                <img
+                  src="./assets/images/compare_mbp14_and_16__f2dhysusb5im_large.png"
+                  alt="compare_mba"
+                />
+                <img
+                  src="./assets/images/compare_swatches_two_colors__dfe181bip0ya_large.png"
+                  alt="compare colors"
+                />
+                <h3>MacBook Pro 14” and 16”</h3>
+
+                <span class="price">From $1999</span>
+                <button>Buy</button>
+                <a href="#">Learn more ></a>
+              </div>
+              <div class="display-cell">
+                <h4>14.2” or 16.2”</h4>
+                <p>Liquid Retina XDR display1</p>
+              </div>
+              <div class="chip-cell">
+                <img
+                  src="./assets/images/compare_icon_m1_pro_max__d1toavnfl1m6_large.png"
+                  alt="compare m1 chip"
+                />
+                <p>Apple M1 Pro chip or Apple M1 Max chip</p>
+              </div>
+              <div class="chip-cell">
+                <p>Up to</p>
+                <h4>32-core</h4>
+                <p>CPU</p>
+              </div>
+              <div class="gpu-cell">
+                <h4>7-core</h4>
+                <p>GPU</p>
+              </div>
+              <div class="memory-cell">
+                <img
+                  src="./assets/images/compare_icon_unified_memory__emykppauav2a_large.png"
+                  alt="unified-memory"
+                />
+                <p>Up to 64GB unified memory</p>
+              </div>
+              <div class="storage-cell">
+                <h4>8TB</h4>
+                <p>Maximum configurable storage2</p>
+              </div>
+              <div class="baterry-cell">
+                <img
+                  src="./assets/images/compare_icon_battery__fk0ughiyc3am_large.png"
+                  alt=""
+                />
+                <p>Up to 21 hours battery life3</p>
+              </div>
+              <div class="camera-cell">
+                <img
+                  src="./assets/images/compare_icon_camera__dlxow9r3leie_large.png"
+                  alt="compare-camera"
+                />
+                <p>1080p FaceTime HD camera</p>
+              </div>
+              <div class="audio-cell">
+                <img
+                  src="./assets/images/compare_icon_mic__bkm7awuvc5qu_large.png"
+                  alt=""
+                />
+                <p>
+                  Studio-quality three‑mic array Six-speaker sound system with
+                  Spatial Audio
+                </p>
+              </div>
+              <div class="weight-cell">
+                <h4>3.5 lb. or 4.7 lb.</h4>
+                <p>Weight</p>
+              </div>
+              <div class="keyboard-cel">
+                <img
+                  src="./assets/images/compare_icon_touchid__fanxgkqe1xei_large.png"
+                  alt=""
+                />
+                <p>Touch ID</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="link-wrapper">
+        <a href="#">Compare all Mac models ></a>
+        <a href="#">Shop Mac > </a>
+      </div>
+    </section>
+    <!-- Compare Promo END  -->
+    <!-- Holiday Section Start -->
+    <section class="holiday-section">
+      <div class="holiday-contents">
+        <div class="holiday-content">
+          <figure>
+            <img
+              src="./assets/images/hol_logo_familypage_banner__bb5gnoqw7u0y_large.png"
+              alt=""
+            />
+          </figure>
+          <h3>It’s wow or never.</h3>
+          <p>Discover last‑minute gifts that will make a lasting impression.</p>
+          <a href="#">Shop the Holiday Gift Guide > </a>
+        </div>
+        <div class="holiday-figure">
+          <figure>
+            <img
+              src="./assets/images/hol_mac_familypage_banner__e3vyqut6qbyq_large.png"
+              alt=""
+            />
+          </figure>
+        </div>
+      </div>
+    </section>
+    <!-- Holiday Section END  -->
+    <!-- Retail Section Start  -->
+    <section class="retail-section">
+      <div class="retail-contents">
+        <div class="retail-content">
+          <h2>Behind the Mac</h2>
+          <h3>Hear the Force.</h3>
+          <p>
+            Learn how the pros at Skywalker Sound push the limits of sonic
+            storytelling.
+          </p>
+          <a href="#"
+            >Watch the film <i class="fa-regular fa-circle-play"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <!-- Retail Section END  -->
+    <!-- Promo Section Start  -->
+    <section class="promo-section">
+      <div class="promo-contents">
+        <div class="promo-content">
+          <h2>Save 5% on Mac with a new Apple Card.</h2>
+          <p>Shop in stores or online now through December 25.</p>
+          <p>Only at Apple. Exclusions and terms apply.◊◊</p>
+          <div><a href="#">Learn More > </a> <a href="#">Apply now ></a></div>
+        </div>
+      </div>
+    </section>
+    <!-- Promo Section END  -->
+    <!-- Main END  -->
     <!--*----------------------------------------------------------------------- -->
     <!--*                             START FOOTER                               -->
     <!--*----------------------------------------------------------------------- -->

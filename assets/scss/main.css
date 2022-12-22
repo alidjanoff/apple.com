@@ -20,10 +20,6 @@
   font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
-body {
-  overflow-y: scroll;
-}
-
 .container {
   max-width: 1024px;
   margin: 0 auto;
@@ -36,10 +32,12 @@ body {
   }
 }
 .header {
+  position: fixed;
   background-color: rgba(0, 0, 0, 0.8);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
           backdrop-filter: saturate(180%) blur(20px);
   z-index: 9999;
+  top: 0;
   width: 100%;
   height: 44px;
   -webkit-user-select: none;
@@ -47,10 +45,10 @@ body {
       -ms-user-select: none;
           user-select: none;
 }
-.header .container .outClickOverlay {
+.header .outClickOverlay {
   display: none;
 }
-.header .container .outClickOverlay::before {
+.header .outClickOverlay::before {
   content: "";
   width: 100%;
   height: 44px;
@@ -59,9 +57,7 @@ body {
   top: 0;
   left: 0;
 }
-.header .navBar {
-  margin: 0 auto;
-  max-width: 980px;
+.header .container .navBar {
   padding: 0 22px;
   position: relative;
   z-index: 2;
@@ -74,7 +70,18 @@ body {
   height: 44px;
   box-sizing: content-box;
 }
-.header .navBar .navList .navItem {
+.header .container .navBar .navList .mobileMenuIcon {
+  display: none;
+}
+.header .container .navBar .navList .mobileMenuIcon .fa-bars {
+  font-size: 18px;
+  color: #f5f5f7;
+  opacity: 0.8;
+}
+.header .container .navBar .navList .mobileMenuIcon .fa-bars:hover {
+  opacity: 1;
+}
+.header .container .navBar .navList .navItem {
   box-sizing: border-box;
   position: relative;
   z-index: 1;
@@ -184,4 +191,558 @@ body {
   margin-right: 12px;
   font-size: 16px;
   transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+@media (max-width: 833px) {
+  .header .container .navBar .navList .mobileMenuIcon {
+    display: block;
+  }
+  .header .container .navBar .navList .navItem {
+    display: none;
+  }
+  .header .container .navBar .navList .logoItem {
+    display: block;
+  }
+  .header .container .navBar .navList .cart {
+    display: block;
+  }
+}
+.chapternav {
+  padding: 8px 0px;
+  margin: 0px 34px;
+  padding: 44px 0px 30px 30px;
+  margin-top: 15px;
+}
+.chapternav .chapternav-items {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  text-align: center;
+  gap: 39px;
+  height: 80px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.chapternav .chapternav-items .chapter-item {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.chapternav .chapternav-items .chapter-item span:nth-child(1) {
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: #1d1d1f;
+}
+.chapternav .chapternav-items .chapter-item span:nth-child(2) {
+  font-size: 10px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: -0.008em;
+  color: #bf4800;
+  width: 100%;
+}
+.chapternav .chapternav-items .chapter-item:nth-child(4) img {
+  width: 28px;
+  height: 54px;
+}
+.chapternav .chapternav-items .chapter-item:nth-child(5) img {
+  width: 28px;
+  height: 54px;
+}
+.chapternav .chapternav-items .chapter-item:nth-child(6) img {
+  width: 35px;
+  height: 54px;
+}
+.chapternav .chapternav-items .chapter-item:nth-child(7) img {
+  width: 50px;
+  height: 54px;
+}
+.chapternav .chapternav-items .chapter-item:nth-child(8) img {
+  width: 72px;
+  height: 54px;
+}
+.chapternav .chapternav-items .chapter-item:nth-child(9) img {
+  width: 33px;
+  height: 54px;
+}
+.chapternav .chapternav-items .chapter-item:nth-child(10) img {
+  width: 35px;
+  height: 54px;
+}
+.chapternav .chapternav-items .chapter-item:nth-child(10):hover {
+  background-color: pink;
+  color: #0066cc;
+}
+.chapternav .chapternav-items .chapter-item .chapternav-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+}
+
+.ribbon {
+  background-color: #f5f5f7;
+  text-align: center;
+  padding-top: 0.94118em;
+  padding-bottom: 0.94118em;
+}
+.ribbon p {
+  color: #1d1d1f;
+  font-size: 14px;
+  font-weight: 100;
+  letter-spacing: 0.3px;
+}
+.ribbon p a {
+  color: #0066cc;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.macbookAirSection {
+  padding: 60px 0px;
+}
+.macbookAirSection .container .macbook-air {
+  height: 694px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.macbookAirSection .container .macbook-air span {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  background: rgba(0, 0, 0, 0);
+  border-color: #bf4800;
+  color: #f56300;
+}
+.macbookAirSection .container .macbook-air h2 {
+  font-size: 56px;
+  line-height: 1.07143;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  color: #1d1d1f;
+}
+.macbookAirSection .container .macbook-air h3 {
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+}
+.macbookAirSection .container .macbook-air h5 {
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  color: #1d1d1f;
+  padding-top: 18px;
+}
+.macbookAirSection .container .macbook-air .section-content {
+  background: url(../images/macbook_air_m2__r1jrymq4ftea_large.jpg);
+  background-position: center bottom;
+  margin-top: 46px;
+  width: 483px;
+  height: 369px;
+}
+.macbookAirSection .container .macbook-air .macbook-air-content-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.macbookAirSection .container .macbook-air .macbook-air-content-row button {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 17px;
+  line-height: 1.17648;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  border: none;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  min-width: 28px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 980px;
+  background: #0071e3;
+  color: #fff;
+}
+.macbookAirSection .container .macbook-air .macbook-air-content-row a {
+  color: #06c;
+}
+
+.macbookProSection {
+  background-color: black;
+}
+.macbookProSection .container .macbook-pro {
+  text-align: center;
+  background: url(../images/macbook_pro_13__e3r46kd69eoi_large.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  width: 100%;
+  height: 699px;
+}
+.macbookProSection .container .macbook-pro .macbook-pro-content {
+  padding-top: 90px;
+}
+.macbookProSection .container .macbook-pro .macbook-pro-content span {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  background: rgba(0, 0, 0, 0);
+  border-color: #bf4800;
+  color: #f56300;
+  margin-top: 90px;
+}
+.macbookProSection .container .macbook-pro .macbook-pro-content h2 {
+  font-size: 56px;
+  line-height: 1.07143;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  color: #f5f5f7;
+}
+.macbookProSection .container .macbook-pro .macbook-pro-content h3 {
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+  color: #f5f5f7;
+}
+.macbookProSection .container .macbook-pro .macbook-pro-content h5 {
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  color: #f5f5f7;
+  padding-top: 18px;
+}
+.macbookProSection .container .macbook-pro .macbook-pro-content .macbook-pro-content-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 15px;
+}
+.macbookProSection .container .macbook-pro .macbook-pro-content .macbook-pro-content-row button {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 17px;
+  line-height: 1.17648;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  border: none;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  min-width: 28px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 980px;
+  background: #0071e3;
+  color: #fff;
+}
+.macbookProSection .container .macbook-pro .macbook-pro-content .macbook-pro-content-row a {
+  color: #06c;
+}
+
+.compare-gallery-section {
+  padding: 110px 0px 0px;
+}
+.compare-gallery-section h2 {
+  text-align: center;
+}
+.compare-gallery-section .compare-table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.compare-gallery-section .compare-table .compare-table-items {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 39px;
+}
+.compare-gallery-section .compare-table .compare-table-items .compare-table-item {
+  text-align: center;
+  width: 219px;
+  border-bottom: 1px solid #d2d2d7;
+  padding: 6px 0px 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 39px;
+  -moz-column-gap: 34px;
+       column-gap: 34px;
+}
+.compare-gallery-section .compare-table .compare-table-items .compare-table-item .device-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid #d2d2d7;
+}
+.compare-gallery-section .compare-table .compare-table-items .compare-table-item .device-content h3 {
+  font-size: 24px;
+  line-height: 1.16667;
+  font-weight: 600;
+  letter-spacing: 0.009em;
+}
+.compare-gallery-section .compare-table .compare-table-items .compare-table-item .device-content .chip-model {
+  font-weight: 500;
+  margin-top: 4px;
+  font-size: 14px;
+  line-height: 1.42859;
+  letter-spacing: -0.016em;
+}
+.compare-gallery-section .compare-table .compare-table-items .compare-table-item .device-content img:nth-child(2) {
+  margin: 11px 0px 31px;
+}
+.compare-gallery-section .compare-table .compare-table-items .compare-table-item .device-content .new {
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: #bf4800;
+  position: absolute;
+  top: 206px;
+  left: 0px;
+  right: 0;
+}
+.compare-gallery-section .compare-table .compare-table-items .compare-table-item .device-content button {
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  background: #0071e3;
+  color: #fff;
+  border-radius: 980px;
+  border: none;
+  outline: none;
+  min-width: 23px;
+  padding-left: 11px;
+  padding-right: 11px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.compare-gallery-section .compare-table .compare-table-items .compare-table-item .device-content a {
+  font-size: 14px;
+  line-height: 1.42859;
+  font-weight: 400;
+  letter-spacing: -0.016em;
+  color: #06c;
+  margin-top: 8px;
+  padding-bottom: 22px;
+}
+.compare-gallery-section .compare-table .compare-table-items .compare-table-item .device-content .price {
+  padding-top: 16px;
+  font-size: 14px;
+  line-height: 1.42859;
+  font-weight: 400;
+  letter-spacing: -0.016em;
+}
+.compare-gallery-section .compare-table .compare-table-items .compare-table-item .device-content .price:nth-child(4) {
+  padding-top: 8px;
+}
+.compare-gallery-section .compare-table .compare-table-items .compare-table-item .chip-cell {
+  padding: 8px 0px 0px;
+}
+.compare-gallery-section .compare-table .compare-table-items .compare-table-item .cpu-cell {
+  padding: 15px 0px 0px;
+}
+.compare-gallery-section .compare-table .compare-table-items .compare-table-item .gpu-cell {
+  padding: 15px 0px 0px;
+}
+.compare-gallery-section .compare-table .compare-table-items .compare-table-item .memory-cell {
+  padding: 4px 0px 0px;
+}
+.compare-gallery-section .compare-table .compare-table-items .compare-table-item .keyboard.cell {
+  padding: 6px 0px 45px;
+}
+.compare-gallery-section .compare-table .compare-table-items .compare-table-item h4 {
+  font-size: 21px;
+  line-height: 1.19048;
+  font-weight: 600;
+  letter-spacing: 0.011em;
+}
+.compare-gallery-section .compare-table .compare-table-items .compare-table-item p {
+  font-size: 14px;
+  line-height: 1.42859;
+  font-weight: 400;
+  letter-spacing: -0.016em;
+}
+.compare-gallery-section .link-wrapper {
+  padding-top: 44px;
+  text-align: center;
+}
+.compare-gallery-section .link-wrapper a:nth-child(1) {
+  padding-right: 50px;
+}
+
+.holiday-section {
+  margin: 30px 70px;
+  height: 559px;
+}
+.holiday-section .holiday-contents {
+  background-color: #01012a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 17px 14px 13px 0px;
+}
+.holiday-section .holiday-contents .holiday-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.holiday-section .holiday-contents .holiday-content h3 {
+  font-size: 48px;
+  line-height: 1.08349;
+  font-weight: 600;
+  letter-spacing: -0.003em;
+  color: #fff;
+  padding: 0;
+}
+.holiday-section .holiday-contents .holiday-content p {
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  color: #fff;
+  margin: 17px 0;
+  width: 240px;
+}
+.holiday-section .holiday-contents .holiday-content a {
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  color: #2997ff;
+}
+
+.retail-section {
+  background: url(../images/btm_tile__background-yy.jpg);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+}
+.retail-section .retail-contents {
+  margin-left: 98px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+}
+.retail-section .retail-contents .retail-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.retail-section .retail-contents .retail-content h2 {
+  color: #f5f5f7;
+  font-size: 24px;
+  line-height: 1.16667;
+  font-weight: 600;
+  letter-spacing: 0.009em;
+}
+.retail-section .retail-contents .retail-content h3 {
+  color: #f5f5f7;
+  font-size: 48px;
+  line-height: 1.08349;
+  font-weight: 600;
+  letter-spacing: -0.003em;
+}
+.retail-section .retail-contents .retail-content p {
+  color: #f5f5f7;
+  margin-top: 20px;
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  width: 324px;
+  height: 50px;
+}
+.retail-section .retail-contents .retail-content a {
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  color: #2997ff;
+  margin-top: 14px;
+}
+
+.promo-section {
+  background: url(../images/apple_card_holiday2022__fh62atrzfgq6_large.jpg);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.promo-section .promo-contents {
+  margin-left: 98px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin: 0px 100px;
+  width: 40%;
+  z-index: 1;
+}
+.promo-section .promo-contents .promo-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px 40px;
+}
+.promo-section .promo-contents .promo-content h2 {
+  font-size: 48px;
+  line-height: 1.08349;
+  font-weight: 600;
+  letter-spacing: -0.003em;
+  color: #f5f5f7;
+}
+.promo-section .promo-contents .promo-content h3 {
+  color: #f5f5f7;
+  font-size: 48px;
+  line-height: 1.08349;
+  font-weight: 600;
+  letter-spacing: -0.003em;
+}
+.promo-section .promo-contents .promo-content p {
+  color: #f5f5f7;
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  width: 552px;
+  height: 58px;
+}
+.promo-section .promo-contents .promo-content a {
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  color: #2997ff;
+  margin-top: 14px;
+  padding-left: 30px;
 }/*# sourceMappingURL=main.css.map */

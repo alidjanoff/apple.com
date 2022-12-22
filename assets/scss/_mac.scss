@@ -3,7 +3,7 @@
 .chapternav {
   padding: 8px 0px;
   margin: 0px 34px;
-  padding: 0px 0px 30px;
+  padding: 44px 0px 30px 30px;
   margin-top: 15px;
 
   .chapternav-items {
@@ -110,6 +110,7 @@
   }
 }
 // Ribbon END
+// Macbook Air Section Start
 .macbookAirSection {
   padding: 60px 0px;
 
@@ -190,6 +191,8 @@
     }
   }
 }
+// Macbook Air Section END
+// Macbook PRO Section Start
 .macbookProSection {
   background-color: black;
 
@@ -233,7 +236,7 @@
           color: #f5f5f7;
           padding-top: 18px;
         }
-// Mac
+        // Mac
         .macbook-pro-content-row {
           display: flex;
           align-items: center;
@@ -269,3 +272,316 @@
     }
   }
 }
+// Macbook PRO Section END
+// Compare Promo START
+.compare-gallery-section {
+  padding: 110px 0px 0px;
+  h2 {
+    text-align: center;
+  }
+  .compare-table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // margin: 0 auto;
+    .compare-table-items {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      gap: 39px;
+
+      .compare-table-item {
+        text-align: center;
+        width: 219px;
+        border-bottom: 1px solid #d2d2d7;
+        padding: 6px 0px 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // justify-self: baseline;
+        flex-direction: column;
+        row-gap: 39px;
+        column-gap: 34px;
+        .device-content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          position: relative;
+          border-bottom: 1px solid #d2d2d7;
+          h3 {
+            font-size: 24px;
+            line-height: 1.16667;
+            font-weight: 600;
+            letter-spacing: 0.009em;
+          }
+          .chip-model {
+            font-weight: 500;
+            margin-top: 4px;
+            font-size: 14px;
+            line-height: 1.42859;
+            letter-spacing: -0.016em;
+          }
+          img {
+            &:nth-child(2) {
+              margin: 11px 0px 31px;
+            }
+          }
+          .new {
+            font-size: 12px;
+            line-height: 1.33337;
+            font-weight: 400;
+            letter-spacing: -0.01em;
+            color: #bf4800;
+            position: absolute;
+            top: 206px;
+            left: 0px;
+            right: 0;
+            // bottom: 200px;
+          }
+          button {
+            font-size: 12px;
+            line-height: 1.33337;
+            font-weight: 400;
+            letter-spacing: -0.01em;
+            background: #0071e3;
+            color: #fff;
+            border-radius: 980px;
+            border: none;
+            outline: none;
+            min-width: 23px;
+            padding-left: 11px;
+            padding-right: 11px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+          }
+          a {
+            font-size: 14px;
+            line-height: 1.42859;
+            font-weight: 400;
+            letter-spacing: -0.016em;
+            color: #06c;
+            margin-top: 8px;
+            padding-bottom: 22px;
+          }
+          .price {
+            padding-top: 16px;
+            font-size: 14px;
+            line-height: 1.42859;
+            font-weight: 400;
+            letter-spacing: -0.016em;
+
+            &:nth-child(4) {
+              padding-top: 8px;
+            }
+          }
+        }
+        .chip-cell {
+          padding: 8px 0px 0px;
+        }
+        .cpu-cell {
+          padding: 15px 0px 0px;
+        }
+        .gpu-cell {
+          padding: 15px 0px 0px;
+        }
+        .memory-cell {
+          padding: 4px 0px 0px;
+        }
+        .keyboard.cell {
+          padding: 6px 0px 45px;
+        }
+        h4 {
+          font-size: 21px;
+          line-height: 1.19048;
+          font-weight: 600;
+          letter-spacing: 0.011em;
+        }
+        p {
+          font-size: 14px;
+          line-height: 1.42859;
+          font-weight: 400;
+          letter-spacing: -0.016em;
+        }
+      }
+    }
+  }
+  .link-wrapper {
+    padding-top: 44px;
+    text-align: center;
+    a {
+      &:nth-child(1) {
+        padding-right: 50px;
+      }
+    }
+  }
+}
+// Compare Promo END
+// Holiday Section Start
+.holiday-section {
+  margin: 30px 70px;
+  height: 559px;
+  .holiday-contents {
+    background-color: #01012a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 17px 14px 13px 0px;
+    .holiday-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      // text-align: center;
+      h3 {
+        font-size: 48px;
+        line-height: 1.08349;
+        font-weight: 600;
+        letter-spacing: -0.003em;
+        color: #fff;
+        padding: 0;
+      }
+      p {
+        text-align: center;
+        font-size: 17px;
+        line-height: 1.47059;
+        font-weight: 400;
+        letter-spacing: -0.022em;
+        color: #fff;
+        margin: 17px 0;
+        width: 240px;
+      }
+      a {
+        font-size: 17px;
+        line-height: 1.47059;
+        font-weight: 400;
+        letter-spacing: -0.022em;
+        color: #2997ff;
+      }
+    }
+  }
+}
+// Holiday Section END
+// Retail Section Start
+.retail-section {
+  background: url(../images/btm_tile__background-yy.jpg);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  ////justify-content: center;
+  .retail-contents {
+    margin-left: 98px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    .retail-content {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      h2 {
+        color: #f5f5f7;
+        font-size: 24px;
+        line-height: 1.16667;
+        font-weight: 600;
+        letter-spacing: 0.009em;
+      }
+      h3 {
+        color: #f5f5f7;
+        font-size: 48px;
+        line-height: 1.08349;
+        font-weight: 600;
+        letter-spacing: -0.003em;
+      }
+      p {
+        color: #f5f5f7;
+        margin-top: 20px;
+        font-size: 17px;
+        line-height: 1.47059;
+        font-weight: 400;
+        letter-spacing: -0.022em;
+        width: 324px;
+        height: 50px;
+      }
+      a {
+        font-size: 17px;
+        line-height: 1.47059;
+        font-weight: 400;
+        letter-spacing: -0.022em;
+        color: #2997ff;
+        margin-top: 14px;
+      }
+    }
+  }
+}
+// Retail Section END
+// Promo Section Start
+.promo-section {
+  background: url(../images/apple_card_holiday2022__fh62atrzfgq6_large.jpg);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+  .promo-contents {
+    margin-left: 98px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 0px 100px;
+    width: 40%;
+    z-index: 1;
+    .promo-content {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 0px 40px;
+      h2 {
+        font-size: 48px;
+        line-height: 1.08349;
+        font-weight: 600;
+        letter-spacing: -0.003em;
+        color: #f5f5f7;
+      }
+      h3 {
+        color: #f5f5f7;
+        font-size: 48px;
+        line-height: 1.08349;
+        font-weight: 600;
+        letter-spacing: -0.003em;
+      }
+      p {
+        color: #f5f5f7;
+        // margin-top: 20px;
+        font-size: 17px;
+        line-height: 1.47059;
+        font-weight: 400;
+        letter-spacing: -0.022em;
+        width: 552px;
+        height: 58px;
+      }
+      a {
+        font-size: 17px;
+        line-height: 1.47059;
+        font-weight: 400;
+        letter-spacing: -0.022em;
+        color: #2997ff;
+        margin-top: 14px;
+        padding-left: 30px;
+      }
+    }
+  }
+}
+// Promo Section END
