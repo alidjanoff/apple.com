@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
 @font-face {
   font-family: "Myriad";
@@ -1026,4 +1027,691 @@
   color: #68cc45;
 }
 
-/* ---------------------------- End sixth section --------------------------- *//*# sourceMappingURL=main.css.map */
+/* ---------------------------- End sixth section --------------------------- */
+/* -------------------------- Start seventh section ------------------------- */
+.accessories {
+  background-color: #f5f5f7;
+  padding-bottom: 54px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.accessories .main-shelf .shelf-header {
+  padding-bottom: 14px;
+  width: 980px;
+  margin: 0 auto;
+}
+.accessories .main-shelf .shelf-header .header-compact .mainHead {
+  color: #1d1d1f;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+  display: inline;
+}
+.accessories .main-shelf .shelf-header .header-compact .secondaryHead {
+  color: #6e6e73;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+  display: inline;
+}
+.accessories .main-shelf .cards-scroller {
+  position: relative;
+}
+.accessories .main-shelf .cards-scroller .scroller-content {
+  height: 29.41176rem;
+  padding-bottom: 26px;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content {
+  width: 100%;
+  vertical-align: top;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_1 {
+  cursor: pointer;
+  background-image: url(../images/holiday-airpod.jpg);
+  width: 400px;
+  height: 500px;
+  margin-right: 20px;
+  margin-left: 0;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_1:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_1 .scroller-item .card-content .content-info {
+  position: absolute;
+  left: 0;
+  padding: 30px;
+  width: 24rem;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_1 .scroller-item .card-content .content-info .content-eyebrow {
+  margin-bottom: 0.4em;
+  font-size: 12px;
+  line-height: 1.33337;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+  color: #f5f5f7;
+  width: 204px;
+  padding-bottom: 8px;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_1 .scroller-item .card-content .content-info .content-header {
+  padding-top: 0;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_1 .scroller-item .card-content .content-info .content-header a {
+  color: #fff;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_1 .scroller-item .card-content .content-info .content-desk {
+  font-size: 17px;
+  line-height: 1.23536;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  color: #fff;
+  padding-top: 10px;
+  margin-top: 0;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_2 {
+  cursor: pointer;
+  background-color: #fff;
+  width: 313px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-left: 0;
+  padding: 30px;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_2:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_2 .scroller-item .recommcard-content .content-in {
+  padding-top: 41px;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_2 .scroller-item .recommcard-content .content-in .recommcard-img {
+  background-image: url(../images/İphone14ProMax.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  min-height: 230px;
+  padding-bottom: 0;
+  margin: 0 15px;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_2 .scroller-item .recommcard-content .content-in .recommcard-info {
+  display: flex;
+  flex-direction: column;
+  height: 8.76471rem;
+  position: relative;
+  padding: 20px 0 0;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_2 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-colorimage {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 19px;
+  padding-bottom: 14px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_2 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-colorimage .colorimage {
+  margin-right: 7px;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_2 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-colorimage .colorimage img {
+  width: 12px;
+  height: 12px;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_2 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-violator {
+  position: absolute;
+  margin-top: 41px;
+  width: 100%;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_2 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-violator span {
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: #bf4800;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_2 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-title {
+  margin-top: 7px;
+  padding-top: 3.64706rem;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_2 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-title a {
+  font-weight: 600;
+  color: #1d1d1f;
+  font-size: 18px;
+  line-height: 1.23536;
+  letter-spacing: -0.022em;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_2 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-price {
+  margin-top: 20px;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_2 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-price span {
+  color: #1d1d1f;
+  font-size: 15px;
+  line-height: 1.28577;
+  font-weight: 400;
+  letter-spacing: -0.016em;
+  padding-top: 0;
+  margin-top: auto;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_3 {
+  cursor: pointer;
+  background-color: #fff;
+  width: 313px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-left: 0;
+  padding: 30px;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_3:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in {
+  padding-top: 41px;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in .recommcard-img {
+  background-image: url(../images/İphone14.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  min-height: 230px;
+  padding-bottom: 0;
+  margin: 0 15px;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in .recommcard-info {
+  display: flex;
+  flex-direction: column;
+  height: 8.76471rem;
+  position: relative;
+  padding: 20px 0 0;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-colorimage {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 19px;
+  padding-bottom: 14px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-colorimage .colorimage {
+  margin-right: 7px;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-colorimage .colorimage img {
+  width: 12px;
+  height: 12px;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-violator {
+  position: absolute;
+  margin-top: 41px;
+  width: 100%;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-violator span {
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: #bf4800;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-title {
+  margin-top: 7px;
+  padding-top: 3.64706rem;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-title a {
+  font-weight: 600;
+  color: #1d1d1f;
+  font-size: 18px;
+  line-height: 1.23536;
+  letter-spacing: -0.022em;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-price {
+  margin-top: 20px;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-price span {
+  color: #1d1d1f;
+  font-size: 15px;
+  line-height: 1.28577;
+  font-weight: 400;
+  letter-spacing: -0.016em;
+  padding-top: 0;
+  margin-top: auto;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_4 {
+  cursor: pointer;
+  background-color: #fff;
+  width: 313px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-left: 0;
+  padding: 30px;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_4:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in {
+  padding-top: 41px;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-img {
+  background-image: url(../images/Starlight.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  min-height: 230px;
+  padding-bottom: 0;
+  margin: 0 15px;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-info {
+  display: flex;
+  flex-direction: column;
+  height: 8.76471rem;
+  position: relative;
+  padding: 20px 0 0;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-colorimage {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 19px;
+  padding-bottom: 14px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-colorimage .colorimage {
+  margin-right: 7px;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-colorimage .colorimage img {
+  width: 12px;
+  height: 12px;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-violator {
+  position: absolute;
+  margin-top: 41px;
+  width: 100%;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-violator span {
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: #bf4800;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-title {
+  margin-top: 7px;
+  padding-top: 3.64706rem;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-title a {
+  font-weight: 600;
+  color: #1d1d1f;
+  font-size: 18px;
+  line-height: 1.23536;
+  letter-spacing: -0.022em;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-price {
+  margin-top: 42px;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-price span {
+  color: #1d1d1f;
+  font-size: 15px;
+  line-height: 1.28577;
+  font-weight: 400;
+  letter-spacing: -0.016em;
+  padding-top: 0;
+  margin-top: auto;
+}
+
+/* --------------------------- End seventh section -------------------------- */
+/* -------------------------- Start eighth section -------------------------- */
+.gifts {
+  background-color: #f5f5f7;
+  padding-bottom: 54px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.gifts .main-shelf .shelf-header {
+  padding-bottom: 14px;
+  width: 980px;
+  margin: 0 auto;
+}
+.gifts .main-shelf .shelf-header .header-compact .mainHead {
+  color: #1d1d1f;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+  display: inline;
+}
+.gifts .main-shelf .shelf-header .header-compact .secondaryHead {
+  color: #6e6e73;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+  display: inline;
+}
+.gifts .main-shelf .cards-scroller {
+  position: relative;
+}
+.gifts .main-shelf .cards-scroller .scroller-content {
+  height: 29.41176rem;
+  padding-bottom: 26px;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content {
+  width: 100%;
+  vertical-align: top;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_1 {
+  background-image: url(../images/giftCard-1.jpg);
+  width: 400px;
+  height: 500px;
+  margin-right: 20px;
+  margin-left: 0;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_1:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_1 .scroller-item .card-content .content-info {
+  position: absolute;
+  left: 0;
+  padding: 30px;
+  width: 24rem;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_1 .scroller-item .card-content .content-info .content-header {
+  padding-top: 24px;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_1 .scroller-item .card-content .content-info .content-header span {
+  color: #1d1d1f;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_2 {
+  cursor: pointer;
+  background-color: #fff;
+  width: 313px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-left: 0;
+  padding: 30px;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_2:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_2 .scroller-item .recommcard-content .content-in {
+  padding-top: 41px;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_2 .scroller-item .recommcard-content .content-in .recommcard-img {
+  background-image: url(../images/giftCard-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  min-height: 230px;
+  padding-bottom: 0;
+  margin: 0 15px;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_2 .scroller-item .recommcard-content .content-in .recommcard-info {
+  display: flex;
+  flex-direction: column;
+  height: 8.76471rem;
+  position: relative;
+  padding: 20px 0 0;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_2 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-title {
+  margin-top: 7px;
+  padding-top: 3.64706rem;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_2 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-title a {
+  font-weight: 600;
+  color: #1d1d1f;
+  font-size: 18px;
+  line-height: 1.23536;
+  letter-spacing: -0.022em;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_2 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-price {
+  margin-top: 20px;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_2 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-price span {
+  color: #1d1d1f;
+  font-size: 15px;
+  line-height: 1.28577;
+  font-weight: 400;
+  letter-spacing: -0.016em;
+  padding-top: 0;
+  margin-top: auto;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_3 {
+  cursor: pointer;
+  background-color: #fff;
+  width: 313px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-left: 0;
+  padding: 30px;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_3:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in {
+  padding-top: 41px;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in .recommcard-img {
+  background-image: url(../images/giftCard-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  min-height: 230px;
+  padding-bottom: 0;
+  margin: 0 15px;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in .recommcard-info {
+  display: flex;
+  flex-direction: column;
+  height: 8.76471rem;
+  position: relative;
+  padding: 20px 0 0;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-colorimage {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 19px;
+  padding-bottom: 14px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-colorimage .colorimage {
+  margin-right: 7px;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-colorimage .colorimage img {
+  width: 12px;
+  height: 12px;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-title {
+  margin-top: 7px;
+  padding-top: 3.64706rem;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-title a {
+  font-weight: 600;
+  color: #1d1d1f;
+  font-size: 18px;
+  line-height: 1.23536;
+  letter-spacing: -0.022em;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-price {
+  margin-top: 20px;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-price span {
+  color: #1d1d1f;
+  font-size: 15px;
+  line-height: 1.28577;
+  font-weight: 400;
+  letter-spacing: -0.016em;
+  padding-top: 0;
+  margin-top: auto;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_4 {
+  cursor: pointer;
+  background-color: #fff;
+  width: 313px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-left: 0;
+  padding: 30px;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_4:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in {
+  padding-top: 41px;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-img {
+  background-image: url(../images/giftCard-4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  min-height: 230px;
+  padding-bottom: 0;
+  margin: 0 15px;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-info {
+  display: flex;
+  flex-direction: column;
+  height: 8.76471rem;
+  position: relative;
+  padding: 20px 0 0;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-colorimage {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 19px;
+  padding-bottom: 14px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-colorimage .colorimage {
+  margin-right: 7px;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-colorimage .colorimage img {
+  width: 12px;
+  height: 12px;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-violator {
+  position: absolute;
+  margin-top: 41px;
+  width: 100%;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-violator span {
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: #bf4800;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-title {
+  margin-top: 7px;
+  padding-top: 3.64706rem;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-title a {
+  font-weight: 600;
+  color: #1d1d1f;
+  font-size: 18px;
+  line-height: 1.23536;
+  letter-spacing: -0.022em;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-price {
+  margin-top: 20px;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-price span {
+  color: #1d1d1f;
+  font-size: 15px;
+  line-height: 1.28577;
+  font-weight: 400;
+  letter-spacing: -0.016em;
+  padding-top: 0;
+  margin-top: auto;
+}
+
+/* --------------------------- End eighth section --------------------------- *//*# sourceMappingURL=main.css.map */
