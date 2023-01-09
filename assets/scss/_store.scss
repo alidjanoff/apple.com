@@ -1479,7 +1479,7 @@
                         }
                       }
                     }
-                    
+
                     .recommcard-title {
                       margin-top: 7px;
                       padding-top: 3.64706rem;
@@ -1611,3 +1611,367 @@
   }
 }
 /* --------------------------- End eighth section --------------------------- */
+
+/* --------------------------- Start ninth section -------------------------- */
+.experience {
+  background-color: #f5f5f7;
+  padding-bottom: 54px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  .main-shelf {
+    .shelf-header {
+      padding-bottom: 14px;
+      width: 980px;
+      margin: 0 auto;
+      .header-compact {
+        .mainHead {
+          color: #1d1d1f;
+          font-size: 28px;
+          line-height: 1.14286;
+          font-weight: 600;
+          letter-spacing: 0.007em;
+          display: inline;
+        }
+        .secondaryHead {
+          color: #6e6e73;
+          font-size: 28px;
+          line-height: 1.14286;
+          font-weight: 600;
+          letter-spacing: 0.007em;
+          display: inline;
+        }
+      }
+    }
+    .cards-scroller {
+      position: relative;
+      .scroller-content {
+        height: 29.41176rem;
+        padding-bottom: 26px;
+        .row-content {
+          width: 100%;
+          vertical-align: top;
+          display: flex;
+          padding-top: 10px;
+          padding-bottom: 40px;
+          .cardList_1 {
+            cursor: pointer;
+            background-image: url(../images/exp-1.jpg);
+            width: 480px;
+            height: 500px;
+            margin-right: 20px;
+            margin-left: 0;
+            position: relative;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 20%);
+            }
+            .scroller-item {
+              .card-content {
+                .content-info {
+                  position: absolute;
+                  left: 0;
+                  padding: 30px;
+                  width: 25rem;
+                  .content-header {
+                    padding-top: 24px;
+                    font-size: 28px;
+                    line-height: 1.14286;
+                    font-weight: 600;
+                    letter-spacing: 0.007em;
+                    a {
+                      color: #000;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .cardList_2 {
+            cursor: pointer;
+            background-image: url(../images/exp-2.jpg);
+            width: 480px;
+            height: 500px;
+            margin-right: 20px;
+            margin-left: 0;
+            position: relative;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 20%);
+            }
+            .scroller-item {
+              .card-content {
+                .content-info {
+                  position: absolute;
+                  left: 0;
+                  padding: 30px;
+                  width: 30rem;
+                  .content-eyebrow {
+                    margin-bottom: 0.4em;
+                    font-size: 12px;
+                    line-height: 1.33337;
+                    letter-spacing: -0.01em;
+                    font-weight: 600;
+                    color: #6e6e73;
+                    width: 204px;
+                    padding-bottom: 8px;
+                  }
+                  .content-header {
+                    padding-top: 0;
+                    font-size: 28px;
+                    line-height: 1.14286;
+                    font-weight: 600;
+                    letter-spacing: 0.007em;
+                    a {
+                      color: #1d1d1f;
+                    }
+                  }
+                  .content-desk {
+                    width: 20rem;
+                    font-size: 17px;
+                    line-height: 1.23536;
+                    font-weight: 400;
+                    letter-spacing: -0.022em;
+                    color: #1d1d1f;
+                    padding-top: 10px;
+                    margin-top: 0;
+                  }
+                }
+              }
+            }
+          }
+          .cardList_3 {
+            cursor: pointer;
+            background-image: url(../images/exp-3.jpg);
+            width: 480px;
+            height: 500px;
+            margin-right: 20px;
+            margin-left: 0;
+            position: relative;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 20%);
+            }
+            .scroller-item {
+              .card-content {
+                .content-info {
+                  position: absolute;
+                  padding: 30px;
+                  left: 0;
+                  width: 25rem;
+                  .content-header {
+                    padding-top: 24px;
+                    font-size: 28px;
+                    line-height: 1.14286;
+                    font-weight: 600;
+                    letter-spacing: 0.007em;
+                    a {
+                      color: #1d1d1f;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* ---------------------------- End ninth section --------------------------- */
+
+/* --------------------------- Start tenth section -------------------------- */
+.last-section {
+  background-color: #f5f5f7;
+  padding-bottom: 54px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  .main-shelf {
+    .shelf-header {
+      padding-bottom: 14px;
+      width: 980px;
+      margin: 0 auto;
+      .header-compact {
+        .mainHead {
+          color: #1d1d1f;
+          font-size: 28px;
+          line-height: 1.14286;
+          font-weight: 600;
+          letter-spacing: 0.007em;
+          display: inline;
+        }
+        .secondaryHead {
+          color: #6e6e73;
+          font-size: 28px;
+          line-height: 1.14286;
+          font-weight: 600;
+          letter-spacing: 0.007em;
+          display: inline;
+        }
+      }
+    }
+    .cards-scroller {
+      position: relative;
+      .scroller-content {
+        height: 29.41176rem;
+        padding-bottom: 26px;
+        .row-content {
+          width: 100%;
+          vertical-align: top;
+          display: flex;
+          padding-top: 10px;
+          padding-bottom: 40px;
+          .cardList_1 {
+            cursor: pointer;
+            background-image: url(../images/last-1.jpg);
+            width: 400px;
+            height: 500px;
+            margin-right: 20px;
+            margin-left: 0;
+            position: relative;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 20%);
+            }
+            .scroller-item {
+              .card-content {
+                .content-info {
+                  position: absolute;
+                  left: 0;
+                  padding: 30px;
+                  width: 24rem;
+                  .content-eyebrow {
+                    margin-bottom: 0.4em;
+                    font-size: 12px;
+                    line-height: 1.33337;
+                    letter-spacing: -0.01em;
+                    font-weight: 600;
+                    color: #6e6e73;
+                    width: 204px;
+                    padding-bottom: 8px;
+                  }
+                  .content-header {
+                    padding-top: 0;
+                    font-size: 28px;
+                    line-height: 1.14286;
+                    font-weight: 600;
+                    letter-spacing: 0.007em;
+                    a {
+                      color: #1d1d1f;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .cardList_2 {
+            cursor: pointer;
+            background-image: url(../images/last-2.jpg);
+            width: 400px;
+            height: 500px;
+            margin-right: 20px;
+            margin-left: 0;
+            position: relative;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 20%);
+            }
+            .scroller-item {
+              .card-content {
+                .content-info {
+                  position: absolute;
+                  left: 0;
+                  padding: 30px;
+                  width: 25rem;
+                  .content-eyebrow {
+                    margin-bottom: 0.4em;
+                    font-size: 12px;
+                    line-height: 1.33337;
+                    letter-spacing: -0.01em;
+                    font-weight: 600;
+                    color: #86868b;
+                    width: 204px;
+                    padding-bottom: 8px;
+                  }
+                  .content-header {
+                    padding-top: 0;
+                    font-size: 28px;
+                    line-height: 1.14286;
+                    font-weight: 600;
+                    letter-spacing: 0.007em;
+                    a {
+                      color: #fff;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .cardList_3 {
+            cursor: pointer;
+            background-image: url(../images/last-3.jpg);
+            width: 400px;
+            height: 500px;
+            margin-right: 20px;
+            margin-left: 0;
+            position: relative;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 20%);
+            }
+            .scroller-item {
+              .card-content {
+                .content-info {
+                  position: absolute;
+                  padding: 30px;
+                  left: 0;
+                  width: 25rem;
+                  .content-eyebrow {
+                    margin-bottom: 0.4em;
+                    font-size: 12px;
+                    line-height: 1.33337;
+                    letter-spacing: -0.01em;
+                    font-weight: 600;
+                    color: #86868b;
+                    width: 204px;
+                    padding-bottom: 8px;
+                  }
+                  .content-header {
+                    padding-top: 0;
+                    font-size: 28px;
+                    line-height: 1.14286;
+                    font-weight: 600;
+                    letter-spacing: 0.007em;
+                    a {
+                      color: #fff;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* ---------------------------- End tenth section --------------------------- */

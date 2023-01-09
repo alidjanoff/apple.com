@@ -1714,4 +1714,336 @@
   margin-top: auto;
 }
 
-/* --------------------------- End eighth section --------------------------- *//*# sourceMappingURL=main.css.map */
+/* --------------------------- End eighth section --------------------------- */
+/* --------------------------- Start ninth section -------------------------- */
+.experience {
+  background-color: #f5f5f7;
+  padding-bottom: 54px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.experience .main-shelf .shelf-header {
+  padding-bottom: 14px;
+  width: 980px;
+  margin: 0 auto;
+}
+.experience .main-shelf .shelf-header .header-compact .mainHead {
+  color: #1d1d1f;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+  display: inline;
+}
+.experience .main-shelf .shelf-header .header-compact .secondaryHead {
+  color: #6e6e73;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+  display: inline;
+}
+.experience .main-shelf .cards-scroller {
+  position: relative;
+}
+.experience .main-shelf .cards-scroller .scroller-content {
+  height: 29.41176rem;
+  padding-bottom: 26px;
+}
+.experience .main-shelf .cards-scroller .scroller-content .row-content {
+  width: 100%;
+  vertical-align: top;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+.experience .main-shelf .cards-scroller .scroller-content .row-content .cardList_1 {
+  cursor: pointer;
+  background-image: url(../images/exp-1.jpg);
+  width: 480px;
+  height: 500px;
+  margin-right: 20px;
+  margin-left: 0;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.experience .main-shelf .cards-scroller .scroller-content .row-content .cardList_1:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.experience .main-shelf .cards-scroller .scroller-content .row-content .cardList_1 .scroller-item .card-content .content-info {
+  position: absolute;
+  left: 0;
+  padding: 30px;
+  width: 25rem;
+}
+.experience .main-shelf .cards-scroller .scroller-content .row-content .cardList_1 .scroller-item .card-content .content-info .content-header {
+  padding-top: 24px;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+}
+.experience .main-shelf .cards-scroller .scroller-content .row-content .cardList_1 .scroller-item .card-content .content-info .content-header a {
+  color: #000;
+}
+.experience .main-shelf .cards-scroller .scroller-content .row-content .cardList_2 {
+  cursor: pointer;
+  background-image: url(../images/exp-2.jpg);
+  width: 480px;
+  height: 500px;
+  margin-right: 20px;
+  margin-left: 0;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.experience .main-shelf .cards-scroller .scroller-content .row-content .cardList_2:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.experience .main-shelf .cards-scroller .scroller-content .row-content .cardList_2 .scroller-item .card-content .content-info {
+  position: absolute;
+  left: 0;
+  padding: 30px;
+  width: 30rem;
+}
+.experience .main-shelf .cards-scroller .scroller-content .row-content .cardList_2 .scroller-item .card-content .content-info .content-eyebrow {
+  margin-bottom: 0.4em;
+  font-size: 12px;
+  line-height: 1.33337;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+  color: #6e6e73;
+  width: 204px;
+  padding-bottom: 8px;
+}
+.experience .main-shelf .cards-scroller .scroller-content .row-content .cardList_2 .scroller-item .card-content .content-info .content-header {
+  padding-top: 0;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+}
+.experience .main-shelf .cards-scroller .scroller-content .row-content .cardList_2 .scroller-item .card-content .content-info .content-header a {
+  color: #1d1d1f;
+}
+.experience .main-shelf .cards-scroller .scroller-content .row-content .cardList_2 .scroller-item .card-content .content-info .content-desk {
+  width: 20rem;
+  font-size: 17px;
+  line-height: 1.23536;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  color: #1d1d1f;
+  padding-top: 10px;
+  margin-top: 0;
+}
+.experience .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 {
+  cursor: pointer;
+  background-image: url(../images/exp-3.jpg);
+  width: 480px;
+  height: 500px;
+  margin-right: 20px;
+  margin-left: 0;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.experience .main-shelf .cards-scroller .scroller-content .row-content .cardList_3:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.experience .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 .scroller-item .card-content .content-info {
+  position: absolute;
+  padding: 30px;
+  left: 0;
+  width: 25rem;
+}
+.experience .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 .scroller-item .card-content .content-info .content-header {
+  padding-top: 24px;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+}
+.experience .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 .scroller-item .card-content .content-info .content-header a {
+  color: #1d1d1f;
+}
+
+/* ---------------------------- End ninth section --------------------------- */
+/* --------------------------- Start tenth section -------------------------- */
+.last-section {
+  background-color: #f5f5f7;
+  padding-bottom: 54px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.last-section .main-shelf .shelf-header {
+  padding-bottom: 14px;
+  width: 980px;
+  margin: 0 auto;
+}
+.last-section .main-shelf .shelf-header .header-compact .mainHead {
+  color: #1d1d1f;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+  display: inline;
+}
+.last-section .main-shelf .shelf-header .header-compact .secondaryHead {
+  color: #6e6e73;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+  display: inline;
+}
+.last-section .main-shelf .cards-scroller {
+  position: relative;
+}
+.last-section .main-shelf .cards-scroller .scroller-content {
+  height: 29.41176rem;
+  padding-bottom: 26px;
+}
+.last-section .main-shelf .cards-scroller .scroller-content .row-content {
+  width: 100%;
+  vertical-align: top;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+.last-section .main-shelf .cards-scroller .scroller-content .row-content .cardList_1 {
+  cursor: pointer;
+  background-image: url(../images/last-1.jpg);
+  width: 400px;
+  height: 500px;
+  margin-right: 20px;
+  margin-left: 0;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.last-section .main-shelf .cards-scroller .scroller-content .row-content .cardList_1:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.last-section .main-shelf .cards-scroller .scroller-content .row-content .cardList_1 .scroller-item .card-content .content-info {
+  position: absolute;
+  left: 0;
+  padding: 30px;
+  width: 24rem;
+}
+.last-section .main-shelf .cards-scroller .scroller-content .row-content .cardList_1 .scroller-item .card-content .content-info .content-eyebrow {
+  margin-bottom: 0.4em;
+  font-size: 12px;
+  line-height: 1.33337;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+  color: #6e6e73;
+  width: 204px;
+  padding-bottom: 8px;
+}
+.last-section .main-shelf .cards-scroller .scroller-content .row-content .cardList_1 .scroller-item .card-content .content-info .content-header {
+  padding-top: 0;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+}
+.last-section .main-shelf .cards-scroller .scroller-content .row-content .cardList_1 .scroller-item .card-content .content-info .content-header a {
+  color: #1d1d1f;
+}
+.last-section .main-shelf .cards-scroller .scroller-content .row-content .cardList_2 {
+  cursor: pointer;
+  background-image: url(../images/last-2.jpg);
+  width: 400px;
+  height: 500px;
+  margin-right: 20px;
+  margin-left: 0;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.last-section .main-shelf .cards-scroller .scroller-content .row-content .cardList_2:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.last-section .main-shelf .cards-scroller .scroller-content .row-content .cardList_2 .scroller-item .card-content .content-info {
+  position: absolute;
+  left: 0;
+  padding: 30px;
+  width: 25rem;
+}
+.last-section .main-shelf .cards-scroller .scroller-content .row-content .cardList_2 .scroller-item .card-content .content-info .content-eyebrow {
+  margin-bottom: 0.4em;
+  font-size: 12px;
+  line-height: 1.33337;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+  color: #86868b;
+  width: 204px;
+  padding-bottom: 8px;
+}
+.last-section .main-shelf .cards-scroller .scroller-content .row-content .cardList_2 .scroller-item .card-content .content-info .content-header {
+  padding-top: 0;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+}
+.last-section .main-shelf .cards-scroller .scroller-content .row-content .cardList_2 .scroller-item .card-content .content-info .content-header a {
+  color: #fff;
+}
+.last-section .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 {
+  cursor: pointer;
+  background-image: url(../images/last-3.jpg);
+  width: 400px;
+  height: 500px;
+  margin-right: 20px;
+  margin-left: 0;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.last-section .main-shelf .cards-scroller .scroller-content .row-content .cardList_3:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.last-section .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 .scroller-item .card-content .content-info {
+  position: absolute;
+  padding: 30px;
+  left: 0;
+  width: 25rem;
+}
+.last-section .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 .scroller-item .card-content .content-info .content-eyebrow {
+  margin-bottom: 0.4em;
+  font-size: 12px;
+  line-height: 1.33337;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+  color: #86868b;
+  width: 204px;
+  padding-bottom: 8px;
+}
+.last-section .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 .scroller-item .card-content .content-info .content-header {
+  padding-top: 0;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+}
+.last-section .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 .scroller-item .card-content .content-info .content-header a {
+  color: #fff;
+}
+
+/* ---------------------------- End tenth section --------------------------- *//*# sourceMappingURL=main.css.map */
