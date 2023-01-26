@@ -1,1 +1,1977 @@
-//? ---------------------------- Rəsul Ağaməmmədli --------------------------- */
+//? ---------------------------- Rəsul Ağaməmmədli --------------------------- *//
+
+/* --------------------------- Start first section -------------------------- */
+.storehome-banner {
+  overflow: hidden;
+  .drop-wrapper {
+    animation: 0.8s ease-in-out forwards;
+    padding-top: 44px;
+    .content-wrapper {
+      background-color: #fff;
+      padding: 0.76471em 0;
+      text-align: center;
+      .content-row {
+        display: flex;
+        flex-wrap: wrap;
+        color: #fff;
+        margin: 0 auto;
+        width: 980px;
+        .column-in {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 980px;
+          position: relative;
+          margin: 0 auto;
+          padding: 3px 0;
+          i {
+            color: gray;
+          }
+          .column-text {
+            cursor: auto;
+            font-size: 14px;
+            line-height: 1.42859;
+            font-weight: 400;
+            letter-spacing: -0.016em;
+            color: #1d1d1f;
+            span {
+              top: -0.5em;
+              position: relative;
+              font-size: 0.6em;
+              vertical-align: baseline;
+            }
+            a {
+              color: #06c;
+              letter-spacing: inherit;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* ---------------------------- End first section --------------------------- */
+
+/* -------------------------- Start second section -------------------------- */
+.store {
+  background-color: #f5f5f7;
+  .shop-container {
+    min-height: 248px;
+    position: relative;
+    margin: 0 auto;
+    width: 980px;
+    .row-shop {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      .left-shop {
+        max-width: 640px;
+        padding: 80px 0 64px;
+        flex-basis: 66.66667%;
+        margin: 0;
+        min-width: 0;
+        span {
+          color: #1d1d1f;
+          font-size: 48px;
+          line-height: 1.08349;
+          font-weight: 600;
+          letter-spacing: -0.003em;
+          margin: 0;
+          padding: 0;
+        }
+        .shop-subheader {
+          color: #6e6e73;
+          font-size: 48px;
+          line-height: 1.08349;
+          font-weight: 600;
+          letter-spacing: -0.003em;
+        }
+      }
+      .right-shop {
+        position: absolute;
+        right: 0;
+        padding-bottom: 54px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        padding: 90px 0 54px;
+        flex-basis: 33.33333%;
+        max-width: 33.33333%;
+        margin: 0;
+        min-width: 0;
+        .generic {
+          .shop-chat {
+            .chat-section {
+              font-size: 14px;
+              line-height: 1.42859;
+              font-weight: 400;
+              letter-spacing: -0.016em;
+              padding-bottom: 16px;
+              display: flex;
+              .chatIcon {
+                img {
+                  padding-right: 8px;
+                }
+              }
+              .chat-container {
+                .chat-title {
+                  color: #1d1d1f;
+                  font-weight: 600;
+                  padding-top: 0;
+                  font-size: 14px;
+                  line-height: 1.42859;
+                  letter-spacing: -0.016em;
+                }
+                .chat-content {
+                  font-size: 14px;
+                  line-height: 1.42859;
+                  font-weight: 400;
+                  letter-spacing: -0.016em;
+                  a {
+                    color: #06c;
+                    &:hover {
+                      text-decoration: underline;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .shop-neareststore {
+            display: flex;
+            align-items: center;
+            .svgicon {
+              padding-left: 12px;
+              padding-right: 18px;
+            }
+            .near-container {
+              .near-title {
+                font-weight: 600;
+                padding-top: 0;
+                font-size: 14px;
+                line-height: 1.42859;
+                letter-spacing: -0.016em;
+                color: #1d1d1f;
+              }
+              .near-content {
+                font-size: 14px;
+                line-height: 1.42859;
+                font-weight: 400;
+                letter-spacing: -0.016em;
+                a {
+                  color: #06c;
+                  &:hover {
+                    text-decoration: underline;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* --------------------------- End second section --------------------------- */
+
+/* --------------------------- Start third section -------------------------- */
+.productNav {
+  background-color: #f5f5f7;
+  padding-bottom: 62px;
+  .card-shelf {
+    .cards-crop {
+      height: 148px;
+      padding-bottom: 26px;
+      .row-cards {
+        width: 100%;
+        vertical-align: top;
+        display: inline-flex;
+        padding-top: 10px;
+        padding-bottom: 40px;
+        .card-item {
+          margin-left: 0;
+          margin-right: 10px;
+          height: 148px;
+          display: flex;
+          transform: translateX(calc(max(1024px, 100vw) / 2 - 490px));
+          .item-in {
+            cursor: pointer;
+            vertical-align: top;
+            .card-content {
+              border-radius: 18px;
+              height: 148px;
+              min-width: 136px;
+              padding: 18px 8px 16px;
+              .card-image {
+                padding-bottom: 16px;
+              }
+              .card-info {
+                a {
+                  text-decoration: none;
+                  font-size: 14px;
+                  line-height: 1.42859;
+                  letter-spacing: -0.016em;
+                  font-weight: 600;
+                  display: block;
+                  color: #1d1d1f;
+                  text-align: center;
+                  white-space: nowrap;
+                  &:hover {
+                    text-decoration: underline;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* ---------------------------- End third section --------------------------- */
+
+/* -------------------------- Start fourth section -------------------------- */
+.cardsshelf {
+  background-color: #f5f5f7;
+  padding-bottom: 54px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  .main-shelf {
+    .shelf-header {
+      padding-bottom: 14px;
+      width: 980px;
+      margin: 0 auto;
+      .header-compact {
+        .mainHead {
+          color: #1d1d1f;
+          font-size: 28px;
+          line-height: 1.14286;
+          font-weight: 600;
+          letter-spacing: 0.007em;
+          display: inline;
+        }
+        .secondaryHead {
+          color: #6e6e73;
+          font-size: 28px;
+          line-height: 1.14286;
+          font-weight: 600;
+          letter-spacing: 0.007em;
+          display: inline;
+        }
+      }
+    }
+    .cards-scroller {
+      position: relative;
+      .scroller-content {
+        height: 29.41176rem;
+        padding-bottom: 26px;
+        .row-content {
+          width: 100%;
+          vertical-align: top;
+          display: flex;
+          padding-top: 10px;
+          padding-bottom: 40px;
+          .cardList_1 {
+            cursor: pointer;
+            background-image: url(../images/scroller-1.jpg);
+            width: 400px;
+            height: 500px;
+            margin-right: 20px;
+            margin-left: 0;
+            position: relative;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 20%);
+            }
+            .scroller-item {
+              .card-content {
+                .content-info {
+                  position: absolute;
+                  left: 0;
+                  padding: 30px;
+                  width: 20rem;
+                  .content-eyebrow {
+                    margin-bottom: 0.4em;
+                    font-size: 12px;
+                    line-height: 1.33337;
+                    letter-spacing: -0.01em;
+                    font-weight: 600;
+                    color: #6e6e73;
+                    width: 204px;
+                    padding-bottom: 8px;
+                  }
+                  .content-header {
+                    padding-top: 0;
+                    font-size: 28px;
+                    line-height: 1.14286;
+                    font-weight: 600;
+                    letter-spacing: 0.007em;
+                    a {
+                      color: #1d1d1f;
+                    }
+                  }
+                  .content-desk {
+                    font-size: 17px;
+                    line-height: 1.23536;
+                    font-weight: 400;
+                    letter-spacing: -0.022em;
+                    color: #1d1d1f;
+                    padding-top: 10px;
+                    margin-top: 0;
+                  }
+                }
+              }
+            }
+          }
+          .cardList_2 {
+            cursor: pointer;
+            background-image: url(../images/scroller-2.jpg);
+            width: 400px;
+            height: 500px;
+            margin-right: 20px;
+            margin-left: 0;
+            position: relative;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 20%);
+            }
+            .scroller-item {
+              .card-content {
+                .content-info {
+                  position: absolute;
+                  left: 0;
+                  padding: 30px;
+                  width: 20rem;
+                  .content-eyebrow {
+                    margin-bottom: 0.4em;
+                    font-size: 12px;
+                    line-height: 1.33337;
+                    letter-spacing: -0.01em;
+                    font-weight: 600;
+                    color: #f5f5f7;
+                    width: 204px;
+                    padding-bottom: 8px;
+                  }
+                  .content-header {
+                    padding-top: 0;
+                    font-size: 28px;
+                    line-height: 1.14286;
+                    font-weight: 600;
+                    letter-spacing: 0.007em;
+                    a {
+                      color: #fff;
+                    }
+                  }
+                  .content-desk {
+                    font-size: 17px;
+                    line-height: 1.23536;
+                    font-weight: 400;
+                    letter-spacing: -0.022em;
+                    color: #fff;
+                    padding-top: 10px;
+                    margin-top: 0;
+                  }
+                }
+              }
+            }
+          }
+          .cardList_3 {
+            cursor: pointer;
+            background-image: url(../images/scroller-3.jpg);
+            width: 400px;
+            height: 500px;
+            margin-right: 20px;
+            margin-left: 0;
+            position: relative;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 20%);
+            }
+            .scroller-item {
+              .card-content {
+                .content-info {
+                  position: absolute;
+                  padding: 30px;
+                  left: 0;
+                  width: 20rem;
+                  .content-eyebrow {
+                    margin-bottom: 0.4em;
+                    font-size: 12px;
+                    line-height: 1.33337;
+                    letter-spacing: -0.01em;
+                    font-weight: 600;
+                    color: #6e6e73;
+                    width: 204px;
+                    padding-bottom: 8px;
+                  }
+                  .content-header {
+                    padding-top: 0;
+                    font-size: 28px;
+                    line-height: 1.14286;
+                    font-weight: 600;
+                    letter-spacing: 0.007em;
+                    a {
+                      color: #1d1d1f;
+                    }
+                  }
+                  .content-desk {
+                    font-size: 17px;
+                    line-height: 1.23536;
+                    font-weight: 400;
+                    letter-spacing: -0.022em;
+                    color: #1d1d1f;
+                    padding-top: 10px;
+                    margin-top: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* --------------------------- End fourth section --------------------------- */
+
+/* --------------------------- Start fifth section -------------------------- */
+.cards-holidays {
+  background-color: #f5f5f7;
+  padding-bottom: 54px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  .main-shelf {
+    .shelf-header {
+      padding-bottom: 14px;
+      width: 980px;
+      margin: 0 auto;
+      .header-compact {
+        .mainHead {
+          color: #1d1d1f;
+          font-size: 28px;
+          line-height: 1.14286;
+          font-weight: 600;
+          letter-spacing: 0.007em;
+          display: inline;
+        }
+        .secondaryHead {
+          color: #6e6e73;
+          font-size: 28px;
+          line-height: 1.14286;
+          font-weight: 600;
+          letter-spacing: 0.007em;
+          display: inline;
+        }
+      }
+    }
+    .cards-scroller {
+      position: relative;
+      .scroller-content {
+        height: 29.41176rem;
+        padding-bottom: 26px;
+        .row-content {
+          width: 100%;
+          vertical-align: top;
+          display: flex;
+          padding-top: 10px;
+          padding-bottom: 40px;
+          .cardList_1 {
+            cursor: pointer;
+            background-image: url(../images/holiday-1.jpg);
+            width: 400px;
+            height: 500px;
+            margin-right: 20px;
+            margin-left: 0;
+            position: relative;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 20%);
+            }
+            .scroller-item {
+              .card-content {
+                .content-info {
+                  position: absolute;
+                  left: 0;
+                  padding: 30px;
+                  width: 20rem;
+                  .content-eyebrow {
+                    margin-bottom: 0.4em;
+                    font-size: 12px;
+                    line-height: 1.33337;
+                    letter-spacing: -0.01em;
+                    font-weight: 600;
+                    color: #f5f5f7;
+                    width: 204px;
+                    padding-bottom: 8px;
+                  }
+                  .content-header {
+                    padding-top: 0;
+                    font-size: 28px;
+                    line-height: 1.14286;
+                    font-weight: 600;
+                    letter-spacing: 0.007em;
+                    a {
+                      color: #fff;
+                    }
+                  }
+                  .content-desk {
+                    font-size: 17px;
+                    line-height: 1.23536;
+                    font-weight: 400;
+                    letter-spacing: -0.022em;
+                    color: #fff;
+                    padding-top: 10px;
+                    margin-top: 0;
+                  }
+                }
+              }
+            }
+          }
+          .cardList_2 {
+            cursor: pointer;
+            background-image: url(../images/holiday-2.jpg);
+            width: 480px;
+            height: 500px;
+            margin-right: 20px;
+            margin-left: 0;
+            position: relative;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 20%);
+            }
+            .scroller-item {
+              .card-content {
+                .content-info {
+                  position: absolute;
+                  left: 0;
+                  padding: 30px;
+                  width: 30rem;
+                  .content-eyebrow {
+                    margin-bottom: 0.4em;
+                    font-size: 12px;
+                    line-height: 1.33337;
+                    letter-spacing: -0.01em;
+                    font-weight: 600;
+                    color: #6e6e73;
+                    width: 204px;
+                    padding-bottom: 8px;
+                  }
+                  .content-header {
+                    padding-top: 0;
+                    font-size: 28px;
+                    line-height: 1.14286;
+                    font-weight: 600;
+                    letter-spacing: 0.007em;
+                    a {
+                      color: #1d1d1f;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .cardList_3 {
+            cursor: pointer;
+            background-image: url(../images/holiday-3.jpg);
+            width: 400px;
+            height: 500px;
+            margin-right: 20px;
+            margin-left: 0;
+            position: relative;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 20%);
+            }
+            .scroller-item {
+              .card-content {
+                .content-info {
+                  position: absolute;
+                  padding: 30px;
+                  left: 0;
+                  width: 22rem;
+                  .content-eyebrow {
+                    margin-bottom: 0.4em;
+                    font-size: 12px;
+                    line-height: 1.33337;
+                    letter-spacing: -0.01em;
+                    font-weight: 600;
+                    color: #f5f5f7;
+                    width: 204px;
+                    padding-bottom: 8px;
+                  }
+                  .content-header {
+                    padding-top: 0;
+                    font-size: 28px;
+                    line-height: 1.14286;
+                    font-weight: 600;
+                    letter-spacing: 0.007em;
+                    a {
+                      color: #fff;
+                    }
+                  }
+                  .content-desk {
+                    font-size: 17px;
+                    line-height: 1.23536;
+                    font-weight: 400;
+                    letter-spacing: -0.022em;
+                    color: #fff;
+                    padding-top: 10px;
+                    margin-top: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* ---------------------------- End fifth section --------------------------- */
+
+/* --------------------------- Start sixth section -------------------------- */
+.apple-store {
+  background-color: #f5f5f7;
+  padding-bottom: 54px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  .apple-shelf {
+    .apple-header {
+      padding-bottom: 14px;
+      width: 980px;
+      margin: 0 auto;
+      .apple-head {
+        color: #1d1d1f;
+        font-size: 28px;
+        line-height: 1.14286;
+        font-weight: 600;
+        letter-spacing: 0.007em;
+        display: inline;
+      }
+      .secondary-head {
+        color: #6e6e73;
+        font-size: 28px;
+        line-height: 1.14286;
+        font-weight: 600;
+        letter-spacing: 0.007em;
+        display: inline;
+      }
+    }
+    .apple-scroller {
+      position: relative;
+      .scroller-content {
+        height: 14.11765rem;
+        padding-bottom: 26px;
+        .row-content {
+          width: 100%;
+          vertical-align: top;
+          display: flex;
+          padding-top: 10px;
+          padding-bottom: 40px;
+          .apple-cards_1 {
+            cursor: pointer;
+            background-color: #fff;
+            width: 313px;
+            height: 240px;
+            margin-right: 20px;
+            margin-left: 0;
+            position: relative;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 20%);
+            }
+            .scroller-item {
+              .card-content {
+                .content-info {
+                  width: 14.88235rem;
+                  padding: 30px;
+                  padding-bottom: 0;
+                  .content-icon {
+                    height: 48px;
+                    padding-bottom: 5px;
+                    i {
+                      color: #68cc45;
+                    }
+                  }
+                  .content-header {
+                    width: 17rem;
+                    font-size: 24px;
+                    line-height: 1.16667;
+                    font-weight: 600;
+                    letter-spacing: 0.009em;
+                    margin-top: 0;
+                    a {
+                      color: #1d1d1f;
+                      span {
+                        color: #68cc45;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .apple-cards_2 {
+            cursor: pointer;
+            background-color: #fff;
+            width: 313px;
+            height: 240px;
+            margin-right: 20px;
+            margin-left: 0;
+            position: relative;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 20%);
+            }
+            .scroller-item {
+              .card-content {
+                .content-info {
+                  width: 14.88235rem;
+                  padding: 30px;
+                  padding-bottom: 0;
+                  .content-icon {
+                    height: 48px;
+                    padding-bottom: 5px;
+                    i {
+                      color: #ff0053;
+                    }
+                  }
+                  .content-header {
+                    width: 18rem;
+                    font-size: 24px;
+                    line-height: 1.16667;
+                    font-weight: 600;
+                    letter-spacing: 0.009em;
+                    margin-top: 0;
+                    a {
+                      color: #1d1d1f;
+                      span {
+                        color: #ff0053;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .apple-cards_3 {
+            cursor: pointer;
+            background-color: #fff;
+            width: 313px;
+            height: 240px;
+            margin-right: 20px;
+            margin-left: 0;
+            position: relative;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 20%);
+            }
+            .scroller-item {
+              .card-content {
+                .content-info {
+                  width: 14.88235rem;
+                  padding: 30px;
+                  padding-bottom: 0;
+                  .content-icon {
+                    height: 48px;
+                    padding-bottom: 5px;
+                    i {
+                      color: #ac39ff;
+                    }
+                  }
+                  .content-header {
+                    width: 18rem;
+                    font-size: 24px;
+                    line-height: 1.16667;
+                    font-weight: 600;
+                    letter-spacing: 0.009em;
+                    margin-top: 0;
+                    a {
+                      color: #1d1d1f;
+                      span {
+                        color: #ac39ff;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .apple-cards_4 {
+            cursor: pointer;
+            background-color: #fff;
+            width: 313px;
+            height: 240px;
+            margin-right: 20px;
+            margin-left: 0;
+            position: relative;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 20%);
+            }
+            .scroller-item {
+              .card-content {
+                .content-info {
+                  width: 14.88235rem;
+                  padding: 30px;
+                  padding-bottom: 0;
+                  .content-icon {
+                    height: 48px;
+                    padding-bottom: 5px;
+                    i {
+                      color: #68cc45;
+                    }
+                  }
+                  .content-header {
+                    width: 18rem;
+                    font-size: 24px;
+                    line-height: 1.16667;
+                    font-weight: 600;
+                    letter-spacing: 0.009em;
+                    margin-top: 0;
+                    a {
+                      color: #1d1d1f;
+                      span {
+                        color: #68cc45;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* ---------------------------- End sixth section --------------------------- */
+
+/* -------------------------- Start seventh section ------------------------- */
+.accessories {
+  background-color: #f5f5f7;
+  padding-bottom: 54px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  .main-shelf {
+    .shelf-header {
+      padding-bottom: 14px;
+      width: 980px;
+      margin: 0 auto;
+      .header-compact {
+        .mainHead {
+          color: #1d1d1f;
+          font-size: 28px;
+          line-height: 1.14286;
+          font-weight: 600;
+          letter-spacing: 0.007em;
+          display: inline;
+        }
+        .secondaryHead {
+          color: #6e6e73;
+          font-size: 28px;
+          line-height: 1.14286;
+          font-weight: 600;
+          letter-spacing: 0.007em;
+          display: inline;
+        }
+      }
+    }
+    .cards-scroller {
+      position: relative;
+      .scroller-content {
+        height: 29.41176rem;
+        padding-bottom: 26px;
+        .row-content {
+          width: 100%;
+          vertical-align: top;
+          display: flex;
+          padding-top: 10px;
+          padding-bottom: 40px;
+          .gift_1 {
+            cursor: pointer;
+            background-image: url(../images/holiday-airpod.jpg);
+            width: 400px;
+            height: 500px;
+            margin-right: 20px;
+            margin-left: 0;
+            position: relative;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 20%);
+            }
+            .scroller-item {
+              .card-content {
+                .content-info {
+                  position: absolute;
+                  left: 0;
+                  padding: 30px;
+                  width: 24rem;
+                  .content-eyebrow {
+                    margin-bottom: 0.4em;
+                    font-size: 12px;
+                    line-height: 1.33337;
+                    letter-spacing: -0.01em;
+                    font-weight: 600;
+                    color: #f5f5f7;
+                    width: 204px;
+                    padding-bottom: 8px;
+                  }
+                  .content-header {
+                    padding-top: 0;
+                    font-size: 28px;
+                    line-height: 1.14286;
+                    font-weight: 600;
+                    letter-spacing: 0.007em;
+                    a {
+                      color: #fff;
+                    }
+                  }
+                  .content-desk {
+                    font-size: 17px;
+                    line-height: 1.23536;
+                    font-weight: 400;
+                    letter-spacing: -0.022em;
+                    color: #fff;
+                    padding-top: 10px;
+                    margin-top: 0;
+                  }
+                }
+              }
+            }
+          }
+          .gift_2 {
+            cursor: pointer;
+            background-color: #fff;
+            width: 313px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            margin-right: 20px;
+            margin-left: 0;
+            padding: 30px;
+            position: relative;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 20%);
+            }
+            .scroller-item {
+              .recommcard-content {
+                .content-in {
+                  padding-top: 41px;
+                  .recommcard-img {
+                    background-image: url(../images/İphone14ProMax.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    width: 200px;
+                    height: 200px;
+                    min-height: 230px;
+                    padding-bottom: 0;
+                    margin: 0 15px;
+                  }
+                  .recommcard-info {
+                    display: flex;
+                    flex-direction: column;
+                    height: 8.76471rem;
+                    position: relative;
+                    padding: 20px 0 0;
+                    .recommcard-colorimage {
+                      display: flex;
+                      justify-content: center;
+                      margin: 0 auto;
+                      padding-top: 19px;
+                      padding-bottom: 14px;
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      width: 100%;
+                      text-align: center;
+                      .colorimage {
+                        margin-right: 7px;
+                        img {
+                          width: 12px;
+                          height: 12px;
+                        }
+                      }
+                    }
+                    .recommcard-violator {
+                      position: absolute;
+                      margin-top: 41px;
+                      width: 100%;
+                      span {
+                        font-size: 12px;
+                        line-height: 1.33337;
+                        font-weight: 400;
+                        letter-spacing: -0.01em;
+                        color: #bf4800;
+                      }
+                    }
+                    .recommcard-title {
+                      margin-top: 7px;
+                      padding-top: 3.64706rem;
+                      a {
+                        font-weight: 600;
+                        color: #1d1d1f;
+                        font-size: 18px;
+                        line-height: 1.23536;
+                        letter-spacing: -0.022em;
+                      }
+                    }
+                    .recommcard-price {
+                      margin-top: 20px;
+                      span {
+                        color: #1d1d1f;
+                        font-size: 15px;
+                        line-height: 1.28577;
+                        font-weight: 400;
+                        letter-spacing: -0.016em;
+                        padding-top: 0;
+                        margin-top: auto;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .gift_3 {
+            cursor: pointer;
+            background-color: #fff;
+            width: 313px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            margin-right: 20px;
+            margin-left: 0;
+            padding: 30px;
+            position: relative;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 20%);
+            }
+            .scroller-item {
+              .recommcard-content {
+                .content-in {
+                  padding-top: 41px;
+                  .recommcard-img {
+                    background-image: url(../images/İphone14.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    width: 200px;
+                    height: 200px;
+                    min-height: 230px;
+                    padding-bottom: 0;
+                    margin: 0 15px;
+                  }
+                  .recommcard-info {
+                    display: flex;
+                    flex-direction: column;
+                    height: 8.76471rem;
+                    position: relative;
+                    padding: 20px 0 0;
+                    .recommcard-colorimage {
+                      display: flex;
+                      justify-content: center;
+                      margin: 0 auto;
+                      padding-top: 19px;
+                      padding-bottom: 14px;
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      width: 100%;
+                      text-align: center;
+                      .colorimage {
+                        margin-right: 7px;
+                        img {
+                          width: 12px;
+                          height: 12px;
+                        }
+                      }
+                    }
+                    .recommcard-violator {
+                      position: absolute;
+                      margin-top: 41px;
+                      width: 100%;
+                      span {
+                        font-size: 12px;
+                        line-height: 1.33337;
+                        font-weight: 400;
+                        letter-spacing: -0.01em;
+                        color: #bf4800;
+                      }
+                    }
+                    .recommcard-title {
+                      margin-top: 7px;
+                      padding-top: 3.64706rem;
+                      a {
+                        font-weight: 600;
+                        color: #1d1d1f;
+                        font-size: 18px;
+                        line-height: 1.23536;
+                        letter-spacing: -0.022em;
+                      }
+                    }
+                    .recommcard-price {
+                      margin-top: 20px;
+                      span {
+                        color: #1d1d1f;
+                        font-size: 15px;
+                        line-height: 1.28577;
+                        font-weight: 400;
+                        letter-spacing: -0.016em;
+                        padding-top: 0;
+                        margin-top: auto;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .gift_4 {
+            cursor: pointer;
+            background-color: #fff;
+            width: 313px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            margin-right: 20px;
+            margin-left: 0;
+            padding: 30px;
+            position: relative;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 20%);
+            }
+            .scroller-item {
+              .recommcard-content {
+                .content-in {
+                  padding-top: 41px;
+                  .recommcard-img {
+                    background-image: url(../images/Starlight.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    width: 200px;
+                    height: 200px;
+                    min-height: 230px;
+                    padding-bottom: 0;
+                    margin: 0 15px;
+                  }
+                  .recommcard-info {
+                    display: flex;
+                    flex-direction: column;
+                    height: 8.76471rem;
+                    position: relative;
+                    padding: 20px 0 0;
+                    .recommcard-colorimage {
+                      display: flex;
+                      justify-content: center;
+                      margin: 0 auto;
+                      padding-top: 19px;
+                      padding-bottom: 14px;
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      width: 100%;
+                      text-align: center;
+                      .colorimage {
+                        margin-right: 7px;
+                        img {
+                          width: 12px;
+                          height: 12px;
+                        }
+                      }
+                    }
+                    .recommcard-violator {
+                      position: absolute;
+                      margin-top: 41px;
+                      width: 100%;
+                      span {
+                        font-size: 12px;
+                        line-height: 1.33337;
+                        font-weight: 400;
+                        letter-spacing: -0.01em;
+                        color: #bf4800;
+                      }
+                    }
+                    .recommcard-title {
+                      margin-top: 7px;
+                      padding-top: 3.64706rem;
+                      a {
+                        font-weight: 600;
+                        color: #1d1d1f;
+                        font-size: 18px;
+                        line-height: 1.23536;
+                        letter-spacing: -0.022em;
+                      }
+                    }
+                    .recommcard-price {
+                      margin-top: 42px;
+                      span {
+                        color: #1d1d1f;
+                        font-size: 15px;
+                        line-height: 1.28577;
+                        font-weight: 400;
+                        letter-spacing: -0.016em;
+                        padding-top: 0;
+                        margin-top: auto;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* --------------------------- End seventh section -------------------------- */
+
+/* -------------------------- Start eighth section -------------------------- */
+.gifts {
+  background-color: #f5f5f7;
+  padding-bottom: 54px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  .main-shelf {
+    .shelf-header {
+      padding-bottom: 14px;
+      width: 980px;
+      margin: 0 auto;
+      .header-compact {
+        .mainHead {
+          color: #1d1d1f;
+          font-size: 28px;
+          line-height: 1.14286;
+          font-weight: 600;
+          letter-spacing: 0.007em;
+          display: inline;
+        }
+        .secondaryHead {
+          color: #6e6e73;
+          font-size: 28px;
+          line-height: 1.14286;
+          font-weight: 600;
+          letter-spacing: 0.007em;
+          display: inline;
+        }
+      }
+    }
+    .cards-scroller {
+      position: relative;
+      .scroller-content {
+        height: 29.41176rem;
+        padding-bottom: 26px;
+        .row-content {
+          width: 100%;
+          vertical-align: top;
+          display: flex;
+          padding-top: 10px;
+          padding-bottom: 40px;
+          .gift_1 {
+            background-image: url(../images/giftCard-1.jpg);
+            width: 400px;
+            height: 500px;
+            margin-right: 20px;
+            margin-left: 0;
+            position: relative;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 20%);
+            }
+            .scroller-item {
+              .card-content {
+                .content-info {
+                  position: absolute;
+                  left: 0;
+                  padding: 30px;
+                  width: 24rem;
+                  .content-header {
+                    padding-top: 24px;
+                    font-size: 28px;
+                    line-height: 1.14286;
+                    font-weight: 600;
+                    letter-spacing: 0.007em;
+                    span {
+                      color: #1d1d1f;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .gift_2 {
+            cursor: pointer;
+            background-color: #fff;
+            width: 313px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            margin-right: 20px;
+            margin-left: 0;
+            padding: 30px;
+            position: relative;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 20%);
+            }
+            .scroller-item {
+              .recommcard-content {
+                .content-in {
+                  padding-top: 41px;
+                  .recommcard-img {
+                    background-image: url(../images/giftCard-2.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    width: 200px;
+                    height: 200px;
+                    min-height: 230px;
+                    padding-bottom: 0;
+                    margin: 0 15px;
+                  }
+                  .recommcard-info {
+                    display: flex;
+                    flex-direction: column;
+                    height: 8.76471rem;
+                    position: relative;
+                    padding: 20px 0 0;
+                    .recommcard-title {
+                      margin-top: 7px;
+                      padding-top: 3.64706rem;
+                      a {
+                        font-weight: 600;
+                        color: #1d1d1f;
+                        font-size: 18px;
+                        line-height: 1.23536;
+                        letter-spacing: -0.022em;
+                      }
+                    }
+                    .recommcard-price {
+                      margin-top: 20px;
+                      span {
+                        color: #1d1d1f;
+                        font-size: 15px;
+                        line-height: 1.28577;
+                        font-weight: 400;
+                        letter-spacing: -0.016em;
+                        padding-top: 0;
+                        margin-top: auto;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .gift_3 {
+            cursor: pointer;
+            background-color: #fff;
+            width: 313px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            margin-right: 20px;
+            margin-left: 0;
+            padding: 30px;
+            position: relative;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 20%);
+            }
+            .scroller-item {
+              .recommcard-content {
+                .content-in {
+                  padding-top: 41px;
+                  .recommcard-img {
+                    background-image: url(../images/giftCard-3.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    width: 200px;
+                    height: 200px;
+                    min-height: 230px;
+                    padding-bottom: 0;
+                    margin: 0 15px;
+                  }
+                  .recommcard-info {
+                    display: flex;
+                    flex-direction: column;
+                    height: 8.76471rem;
+                    position: relative;
+                    padding: 20px 0 0;
+                    .recommcard-colorimage {
+                      display: flex;
+                      justify-content: center;
+                      margin: 0 auto;
+                      padding-top: 19px;
+                      padding-bottom: 14px;
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      width: 100%;
+                      text-align: center;
+                      .colorimage {
+                        margin-right: 7px;
+                        img {
+                          width: 12px;
+                          height: 12px;
+                        }
+                      }
+                    }
+
+                    .recommcard-title {
+                      margin-top: 7px;
+                      padding-top: 3.64706rem;
+                      a {
+                        font-weight: 600;
+                        color: #1d1d1f;
+                        font-size: 18px;
+                        line-height: 1.23536;
+                        letter-spacing: -0.022em;
+                      }
+                    }
+                    .recommcard-price {
+                      margin-top: 20px;
+                      span {
+                        color: #1d1d1f;
+                        font-size: 15px;
+                        line-height: 1.28577;
+                        font-weight: 400;
+                        letter-spacing: -0.016em;
+                        padding-top: 0;
+                        margin-top: auto;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .gift_4 {
+            cursor: pointer;
+            background-color: #fff;
+            width: 313px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            margin-right: 20px;
+            margin-left: 0;
+            padding: 30px;
+            position: relative;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 20%);
+            }
+            .scroller-item {
+              .recommcard-content {
+                .content-in {
+                  padding-top: 41px;
+                  .recommcard-img {
+                    background-image: url(../images/giftCard-4.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    width: 200px;
+                    height: 200px;
+                    min-height: 230px;
+                    padding-bottom: 0;
+                    margin: 0 15px;
+                  }
+                  .recommcard-info {
+                    display: flex;
+                    flex-direction: column;
+                    height: 8.76471rem;
+                    position: relative;
+                    padding: 20px 0 0;
+                    .recommcard-colorimage {
+                      display: flex;
+                      justify-content: center;
+                      margin: 0 auto;
+                      padding-top: 19px;
+                      padding-bottom: 14px;
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      width: 100%;
+                      text-align: center;
+                      .colorimage {
+                        margin-right: 7px;
+                        img {
+                          width: 12px;
+                          height: 12px;
+                        }
+                      }
+                    }
+                    .recommcard-violator {
+                      position: absolute;
+                      margin-top: 41px;
+                      width: 100%;
+                      span {
+                        font-size: 12px;
+                        line-height: 1.33337;
+                        font-weight: 400;
+                        letter-spacing: -0.01em;
+                        color: #bf4800;
+                      }
+                    }
+                    .recommcard-title {
+                      margin-top: 7px;
+                      padding-top: 3.64706rem;
+                      a {
+                        font-weight: 600;
+                        color: #1d1d1f;
+                        font-size: 18px;
+                        line-height: 1.23536;
+                        letter-spacing: -0.022em;
+                      }
+                    }
+                    .recommcard-price {
+                      margin-top: 20px;
+                      span {
+                        color: #1d1d1f;
+                        font-size: 15px;
+                        line-height: 1.28577;
+                        font-weight: 400;
+                        letter-spacing: -0.016em;
+                        padding-top: 0;
+                        margin-top: auto;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* --------------------------- End eighth section --------------------------- */
+
+/* --------------------------- Start ninth section -------------------------- */
+.experience {
+  background-color: #f5f5f7;
+  padding-bottom: 54px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  .main-shelf {
+    .shelf-header {
+      padding-bottom: 14px;
+      width: 980px;
+      margin: 0 auto;
+      .header-compact {
+        .mainHead {
+          color: #1d1d1f;
+          font-size: 28px;
+          line-height: 1.14286;
+          font-weight: 600;
+          letter-spacing: 0.007em;
+          display: inline;
+        }
+        .secondaryHead {
+          color: #6e6e73;
+          font-size: 28px;
+          line-height: 1.14286;
+          font-weight: 600;
+          letter-spacing: 0.007em;
+          display: inline;
+        }
+      }
+    }
+    .cards-scroller {
+      position: relative;
+      .scroller-content {
+        height: 29.41176rem;
+        padding-bottom: 26px;
+        .row-content {
+          width: 100%;
+          vertical-align: top;
+          display: flex;
+          padding-top: 10px;
+          padding-bottom: 40px;
+          .cardList_1 {
+            cursor: pointer;
+            background-image: url(../images/exp-1.jpg);
+            width: 480px;
+            height: 500px;
+            margin-right: 20px;
+            margin-left: 0;
+            position: relative;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 20%);
+            }
+            .scroller-item {
+              .card-content {
+                .content-info {
+                  position: absolute;
+                  left: 0;
+                  padding: 30px;
+                  width: 25rem;
+                  .content-header {
+                    padding-top: 24px;
+                    font-size: 28px;
+                    line-height: 1.14286;
+                    font-weight: 600;
+                    letter-spacing: 0.007em;
+                    a {
+                      color: #000;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .cardList_2 {
+            cursor: pointer;
+            background-image: url(../images/exp-2.jpg);
+            width: 480px;
+            height: 500px;
+            margin-right: 20px;
+            margin-left: 0;
+            position: relative;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 20%);
+            }
+            .scroller-item {
+              .card-content {
+                .content-info {
+                  position: absolute;
+                  left: 0;
+                  padding: 30px;
+                  width: 30rem;
+                  .content-eyebrow {
+                    margin-bottom: 0.4em;
+                    font-size: 12px;
+                    line-height: 1.33337;
+                    letter-spacing: -0.01em;
+                    font-weight: 600;
+                    color: #6e6e73;
+                    width: 204px;
+                    padding-bottom: 8px;
+                  }
+                  .content-header {
+                    padding-top: 0;
+                    font-size: 28px;
+                    line-height: 1.14286;
+                    font-weight: 600;
+                    letter-spacing: 0.007em;
+                    a {
+                      color: #1d1d1f;
+                    }
+                  }
+                  .content-desk {
+                    width: 20rem;
+                    font-size: 17px;
+                    line-height: 1.23536;
+                    font-weight: 400;
+                    letter-spacing: -0.022em;
+                    color: #1d1d1f;
+                    padding-top: 10px;
+                    margin-top: 0;
+                  }
+                }
+              }
+            }
+          }
+          .cardList_3 {
+            cursor: pointer;
+            background-image: url(../images/exp-3.jpg);
+            width: 480px;
+            height: 500px;
+            margin-right: 20px;
+            margin-left: 0;
+            position: relative;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 20%);
+            }
+            .scroller-item {
+              .card-content {
+                .content-info {
+                  position: absolute;
+                  padding: 30px;
+                  left: 0;
+                  width: 25rem;
+                  .content-header {
+                    padding-top: 24px;
+                    font-size: 28px;
+                    line-height: 1.14286;
+                    font-weight: 600;
+                    letter-spacing: 0.007em;
+                    a {
+                      color: #1d1d1f;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* ---------------------------- End ninth section --------------------------- */
+
+/* --------------------------- Start tenth section -------------------------- */
+.last-section {
+  background-color: #f5f5f7;
+  padding-bottom: 54px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  .main-shelf {
+    .shelf-header {
+      padding-bottom: 14px;
+      width: 980px;
+      margin: 0 auto;
+      .header-compact {
+        .mainHead {
+          color: #1d1d1f;
+          font-size: 28px;
+          line-height: 1.14286;
+          font-weight: 600;
+          letter-spacing: 0.007em;
+          display: inline;
+        }
+        .secondaryHead {
+          color: #6e6e73;
+          font-size: 28px;
+          line-height: 1.14286;
+          font-weight: 600;
+          letter-spacing: 0.007em;
+          display: inline;
+        }
+      }
+    }
+    .cards-scroller {
+      position: relative;
+      .scroller-content {
+        height: 29.41176rem;
+        padding-bottom: 26px;
+        .row-content {
+          width: 100%;
+          vertical-align: top;
+          display: flex;
+          padding-top: 10px;
+          padding-bottom: 40px;
+          .cardList_1 {
+            cursor: pointer;
+            background-image: url(../images/last-1.jpg);
+            width: 400px;
+            height: 500px;
+            margin-right: 20px;
+            margin-left: 0;
+            position: relative;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 20%);
+            }
+            .scroller-item {
+              .card-content {
+                .content-info {
+                  position: absolute;
+                  left: 0;
+                  padding: 30px;
+                  width: 24rem;
+                  .content-eyebrow {
+                    margin-bottom: 0.4em;
+                    font-size: 12px;
+                    line-height: 1.33337;
+                    letter-spacing: -0.01em;
+                    font-weight: 600;
+                    color: #6e6e73;
+                    width: 204px;
+                    padding-bottom: 8px;
+                  }
+                  .content-header {
+                    padding-top: 0;
+                    font-size: 28px;
+                    line-height: 1.14286;
+                    font-weight: 600;
+                    letter-spacing: 0.007em;
+                    a {
+                      color: #1d1d1f;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .cardList_2 {
+            cursor: pointer;
+            background-image: url(../images/last-2.jpg);
+            width: 400px;
+            height: 500px;
+            margin-right: 20px;
+            margin-left: 0;
+            position: relative;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 20%);
+            }
+            .scroller-item {
+              .card-content {
+                .content-info {
+                  position: absolute;
+                  left: 0;
+                  padding: 30px;
+                  width: 25rem;
+                  .content-eyebrow {
+                    margin-bottom: 0.4em;
+                    font-size: 12px;
+                    line-height: 1.33337;
+                    letter-spacing: -0.01em;
+                    font-weight: 600;
+                    color: #86868b;
+                    width: 204px;
+                    padding-bottom: 8px;
+                  }
+                  .content-header {
+                    padding-top: 0;
+                    font-size: 28px;
+                    line-height: 1.14286;
+                    font-weight: 600;
+                    letter-spacing: 0.007em;
+                    a {
+                      color: #fff;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .cardList_3 {
+            cursor: pointer;
+            background-image: url(../images/last-3.jpg);
+            width: 400px;
+            height: 500px;
+            margin-right: 20px;
+            margin-left: 0;
+            position: relative;
+            border-radius: 18px;
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 2px 4px 12px rgb(0 0 0 / 20%);
+            }
+            .scroller-item {
+              .card-content {
+                .content-info {
+                  position: absolute;
+                  padding: 30px;
+                  left: 0;
+                  width: 25rem;
+                  .content-eyebrow {
+                    margin-bottom: 0.4em;
+                    font-size: 12px;
+                    line-height: 1.33337;
+                    letter-spacing: -0.01em;
+                    font-weight: 600;
+                    color: #86868b;
+                    width: 204px;
+                    padding-bottom: 8px;
+                  }
+                  .content-header {
+                    padding-top: 0;
+                    font-size: 28px;
+                    line-height: 1.14286;
+                    font-weight: 600;
+                    letter-spacing: 0.007em;
+                    a {
+                      color: #fff;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* ---------------------------- End tenth section --------------------------- */
