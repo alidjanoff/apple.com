@@ -19,3 +19,12 @@ headerOverlay.addEventListener("click", () => {
   cartBox.display = "none";
   headerOverlay.style = "display: none";
 });
+
+// Mobile Menu
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}

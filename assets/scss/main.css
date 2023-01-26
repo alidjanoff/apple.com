@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
 @font-face {
   font-family: "Myriad";
@@ -17,22 +18,23 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  font-family: "SFProText", "SFProDisplay", "Myriad", "Mulish", sans-serif;
+  font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 .header {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.8);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-          backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
   z-index: 9999;
+  top: 0;
   width: 100%;
-  min-width: 1024px;
   height: 44px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 .header .outClickOverlay {
   display: none;
@@ -46,29 +48,36 @@
   top: 0;
   left: 0;
 }
-.header .navBar {
-  margin: 0 auto;
-  max-width: 980px;
+.header .container .navBar {
   padding: 0 22px;
   position: relative;
   z-index: 2;
-  box-sizing: content-box;
 }
-.header .navBar .navList {
+.header .container .navBar .navList {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 -8px;
-  width: auto;
   height: 44px;
   box-sizing: content-box;
 }
-.header .navBar .navList .navItem {
+.header .container .navBar .navList .mobileMenuIcon {
+  display: none;
+}
+.header .container .navBar .navList .mobileMenuIcon .fa-bars {
+  font-size: 18px;
+  color: #f5f5f7;
+  opacity: 0.8;
+}
+.header .container .navBar .navList .mobileMenuIcon .fa-bars:hover {
+  opacity: 1;
+}
+.header .container .navBar .navList .navItem {
   box-sizing: border-box;
   position: relative;
   z-index: 1;
 }
-.header .navBar .navList .navItem a {
+.header .container .navBar .navList .navItem a {
   font-size: 12px;
   line-height: 3.66667;
   font-weight: 300;
@@ -81,29 +90,29 @@
   transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
   box-sizing: content-box;
 }
-.header .navBar .navList .navItem a .logo {
+.header .container .navBar .navList .navItem a .logo {
   font-size: 18px;
   color: #f5f5f7;
   opacity: 0.8;
 }
-.header .navBar .navList .navItem a i {
+.header .container .navBar .navList .navItem a i {
   font-size: 14px;
   color: #f5f5f7;
   opacity: 0.8;
 }
-.header .navBar .navList .navItem a:hover {
+.header .container .navBar .navList .navItem a:hover {
   opacity: 1;
 }
-.header .navBar .navList .navItem a:hover .logo {
+.header .container .navBar .navList .navItem a:hover .logo {
   opacity: 1;
 }
-.header .navBar .navList .navItem a:hover i {
+.header .container .navBar .navList .navItem a:hover i {
   opacity: 1;
 }
-.header .navBar .navList .cart {
+.header .container .navBar .navList .cart {
   position: relative;
 }
-.header .navBar .navList .cart .cartBox {
+.header .container .navBar .navList .cart .cartBox {
   display: none;
   position: absolute;
   right: -130px;
@@ -114,7 +123,7 @@
   height: 324px;
   border-radius: 18px;
 }
-.header .navBar .navList .cart .cartBox .triangle::after {
+.header .container .navBar .navList .cart .cartBox .triangle::after {
   content: "";
   background: #fff;
   border-radius: 2px 0 0 0;
@@ -131,14 +140,14 @@
   transform-origin: 0% 0;
   z-index: 1;
 }
-.header .navBar .navList .cart .cartBox .cartBoxContent {
+.header .container .navBar .navList .cart .cartBox .cartBoxContent {
   margin: 0 auto;
   min-height: 90px;
   padding: 0 20px;
   position: relative;
   z-index: 2;
 }
-.header .navBar .navList .cart .cartBox .cartBoxContent .cartTitle {
+.header .container .navBar .navList .cart .cartBox .cartBoxContent .cartTitle {
   color: #6e6e73;
   padding: 35px 0 23px;
   text-align: center;
@@ -146,18 +155,18 @@
   font-size: 14px;
   font-weight: 600;
 }
-.header .navBar .navList .cart .cartBox .cartBoxContent .cartNav {
+.header .container .navBar .navList .cart .cartBox .cartBoxContent .cartNav {
   margin-bottom: 9px;
 }
-.header .navBar .navList .cart .cartBox .cartBoxContent .cartNav ul {
+.header .container .navBar .navList .cart .cartBox .cartBoxContent .cartNav ul {
   margin: 12px 0 0;
 }
-.header .navBar .navList .cart .cartBox .cartBoxContent .cartNav ul li {
+.header .container .navBar .navList .cart .cartBox .cartBoxContent .cartNav ul li {
   border-top: none;
   border-top: 0.5px solid #d2d2d7;
   transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
-.header .navBar .navList .cart .cartBox .cartBoxContent .cartNav ul li a {
+.header .container .navBar .navList .cart .cartBox .cartBoxContent .cartNav ul li a {
   color: #06c;
   line-height: 44px;
   padding: 0 28px;
@@ -167,7 +176,7 @@
   opacity: 1;
   transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
-.header .navBar .navList .cart .cartBox .cartBoxContent .cartNav ul li a i {
+.header .container .navBar .navList .cart .cartBox .cartBoxContent .cartNav ul li a i {
   color: #06c;
   margin-left: -28px;
   margin-right: 12px;
@@ -457,4 +466,2373 @@ main .ipad-accessories .accessories .apple-pencil .info-accessories p {
 }
 main .ipad-accessories .accessories .apple-pencil .info-accessories span {
   margin-top: 40px;
-}/*# sourceMappingURL=main.css.map */
+}
+
+.chapternav {
+  padding: 8px 0px;
+  margin: 0px 34px;
+  padding: 44px 0px 30px 30px;
+  margin-top: 15px;
+}
+.chapternav .chapternav-items {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  text-align: center;
+  gap: 39px;
+  height: 80px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.chapternav .chapternav-items .chapter-item {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.chapternav .chapternav-items .chapter-item span:nth-child(1) {
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: #1d1d1f;
+}
+.chapternav .chapternav-items .chapter-item span:nth-child(2) {
+  font-size: 10px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: -0.008em;
+  color: #bf4800;
+  width: 100%;
+}
+.chapternav .chapternav-items .chapter-item:nth-child(4) img {
+  width: 28px;
+  height: 54px;
+}
+.chapternav .chapternav-items .chapter-item:nth-child(5) img {
+  width: 28px;
+  height: 54px;
+}
+.chapternav .chapternav-items .chapter-item:nth-child(6) img {
+  width: 35px;
+  height: 54px;
+}
+.chapternav .chapternav-items .chapter-item:nth-child(7) img {
+  width: 50px;
+  height: 54px;
+}
+.chapternav .chapternav-items .chapter-item:nth-child(8) img {
+  width: 72px;
+  height: 54px;
+}
+.chapternav .chapternav-items .chapter-item:nth-child(9) img {
+  width: 33px;
+  height: 54px;
+}
+.chapternav .chapternav-items .chapter-item:nth-child(10) img {
+  width: 35px;
+  height: 54px;
+}
+.chapternav .chapternav-items .chapter-item:nth-child(10):hover {
+  background-color: pink;
+  color: #0066cc;
+}
+.chapternav .chapternav-items .chapter-item .chapternav-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+}
+
+.ribbon {
+  background-color: #f5f5f7;
+  text-align: center;
+  padding-top: 0.94118em;
+  padding-bottom: 0.94118em;
+}
+.ribbon p {
+  color: #1d1d1f;
+  font-size: 14px;
+  font-weight: 100;
+  letter-spacing: 0.3px;
+}
+.ribbon p a {
+  color: #0066cc;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.macbookAirSection {
+  padding: 60px 0px;
+}
+.macbookAirSection .container .macbook-air {
+  height: 694px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.macbookAirSection .container .macbook-air span {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  background: rgba(0, 0, 0, 0);
+  border-color: #bf4800;
+  color: #f56300;
+}
+.macbookAirSection .container .macbook-air h2 {
+  font-size: 56px;
+  line-height: 1.07143;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  color: #1d1d1f;
+}
+.macbookAirSection .container .macbook-air h3 {
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+}
+.macbookAirSection .container .macbook-air h5 {
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  color: #1d1d1f;
+  padding-top: 18px;
+}
+.macbookAirSection .container .macbook-air .section-content {
+  background: url(../images/macbook_air_m2__r1jrymq4ftea_large.jpg);
+  background-position: center bottom;
+  margin-top: 46px;
+  width: 483px;
+  height: 369px;
+}
+.macbookAirSection .container .macbook-air .macbook-air-content-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.macbookAirSection .container .macbook-air .macbook-air-content-row button {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 17px;
+  line-height: 1.17648;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  border: none;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  min-width: 28px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 980px;
+  background: #0071e3;
+  color: #fff;
+}
+.macbookAirSection .container .macbook-air .macbook-air-content-row a {
+  color: #06c;
+}
+
+.macbookProSection {
+  background-color: black;
+}
+.macbookProSection .container .macbook-pro {
+  text-align: center;
+  background: url(../images/macbook_pro_13__e3r46kd69eoi_large.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  width: 100%;
+  height: 699px;
+}
+.macbookProSection .container .macbook-pro .macbook-pro-content {
+  padding-top: 90px;
+}
+.macbookProSection .container .macbook-pro .macbook-pro-content span {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  background: rgba(0, 0, 0, 0);
+  border-color: #bf4800;
+  color: #f56300;
+  margin-top: 90px;
+}
+.macbookProSection .container .macbook-pro .macbook-pro-content h2 {
+  font-size: 56px;
+  line-height: 1.07143;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  color: #f5f5f7;
+}
+
+/* --------------------------- Start first section -------------------------- */
+.storehome-banner {
+  overflow: hidden;
+}
+.storehome-banner .drop-wrapper {
+  -webkit-animation: 0.8s ease-in-out forwards;
+          animation: 0.8s ease-in-out forwards;
+  padding-top: 44px;
+}
+.storehome-banner .drop-wrapper .content-wrapper {
+  background-color: #fff;
+  padding: 0.76471em 0;
+  text-align: center;
+}
+.storehome-banner .drop-wrapper .content-wrapper .content-row {
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+  margin: 0 auto;
+  width: 980px;
+}
+.storehome-banner .drop-wrapper .content-wrapper .content-row .column-in {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 980px;
+  position: relative;
+  margin: 0 auto;
+  padding: 3px 0;
+}
+.storehome-banner .drop-wrapper .content-wrapper .content-row .column-in i {
+  color: gray;
+}
+.storehome-banner .drop-wrapper .content-wrapper .content-row .column-in .column-text {
+  cursor: auto;
+  font-size: 14px;
+  line-height: 1.42859;
+  font-weight: 400;
+  letter-spacing: -0.016em;
+  color: #1d1d1f;
+}
+.storehome-banner .drop-wrapper .content-wrapper .content-row .column-in .column-text span {
+  top: -0.5em;
+  position: relative;
+  font-size: 0.6em;
+  vertical-align: baseline;
+}
+.storehome-banner .drop-wrapper .content-wrapper .content-row .column-in .column-text a {
+  color: #06c;
+  letter-spacing: inherit;
+}
+.storehome-banner .drop-wrapper .content-wrapper .content-row .column-in .column-text a:hover {
+  text-decoration: underline;
+}
+
+/* ---------------------------- End first section --------------------------- */
+/* -------------------------- Start second section -------------------------- */
+.store {
+  background-color: #f5f5f7;
+}
+.store .shop-container {
+  min-height: 248px;
+  position: relative;
+  margin: 0 auto;
+  width: 980px;
+}
+.store .shop-container .row-shop {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.store .shop-container .row-shop .left-shop {
+  max-width: 640px;
+  padding: 80px 0 64px;
+  flex-basis: 66.66667%;
+  margin: 0;
+  min-width: 0;
+}
+.store .shop-container .row-shop .left-shop span {
+  color: #1d1d1f;
+  font-size: 48px;
+  line-height: 1.08349;
+  font-weight: 600;
+  letter-spacing: -0.003em;
+  margin: 0;
+  padding: 0;
+}
+.store .shop-container .row-shop .left-shop .shop-subheader {
+  color: #6e6e73;
+  font-size: 48px;
+  line-height: 1.08349;
+  font-weight: 600;
+  letter-spacing: -0.003em;
+}
+.store .shop-container .row-shop .right-shop {
+  position: absolute;
+  right: 0;
+  padding-bottom: 54px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  padding: 90px 0 54px;
+  flex-basis: 33.33333%;
+  max-width: 33.33333%;
+  margin: 0;
+  min-width: 0;
+}
+.store .shop-container .row-shop .right-shop .generic .shop-chat .chat-section {
+  font-size: 14px;
+  line-height: 1.42859;
+  font-weight: 400;
+  letter-spacing: -0.016em;
+  padding-bottom: 16px;
+  display: flex;
+}
+.store .shop-container .row-shop .right-shop .generic .shop-chat .chat-section .chatIcon img {
+  padding-right: 8px;
+}
+.store .shop-container .row-shop .right-shop .generic .shop-chat .chat-section .chat-container .chat-title {
+  color: #1d1d1f;
+  font-weight: 600;
+  padding-top: 0;
+  font-size: 14px;
+  line-height: 1.42859;
+  letter-spacing: -0.016em;
+}
+.store .shop-container .row-shop .right-shop .generic .shop-chat .chat-section .chat-container .chat-content {
+  font-size: 14px;
+  line-height: 1.42859;
+  font-weight: 400;
+  letter-spacing: -0.016em;
+}
+.store .shop-container .row-shop .right-shop .generic .shop-chat .chat-section .chat-container .chat-content a {
+  color: #06c;
+}
+.store .shop-container .row-shop .right-shop .generic .shop-chat .chat-section .chat-container .chat-content a:hover {
+  text-decoration: underline;
+}
+.store .shop-container .row-shop .right-shop .generic .shop-neareststore {
+  display: flex;
+  align-items: center;
+}
+.store .shop-container .row-shop .right-shop .generic .shop-neareststore .svgicon {
+  padding-left: 12px;
+  padding-right: 18px;
+}
+.store .shop-container .row-shop .right-shop .generic .shop-neareststore .near-container .near-title {
+  font-weight: 600;
+  padding-top: 0;
+  font-size: 14px;
+  line-height: 1.42859;
+  letter-spacing: -0.016em;
+  color: #1d1d1f;
+}
+.store .shop-container .row-shop .right-shop .generic .shop-neareststore .near-container .near-content {
+  font-size: 14px;
+  line-height: 1.42859;
+  font-weight: 400;
+  letter-spacing: -0.016em;
+}
+.store .shop-container .row-shop .right-shop .generic .shop-neareststore .near-container .near-content a {
+  color: #06c;
+}
+.store .shop-container .row-shop .right-shop .generic .shop-neareststore .near-container .near-content a:hover {
+  text-decoration: underline;
+}
+
+/* --------------------------- End second section --------------------------- */
+/* --------------------------- Start third section -------------------------- */
+.productNav {
+  background-color: #f5f5f7;
+  padding-bottom: 62px;
+}
+.productNav .card-shelf .cards-crop {
+  height: 148px;
+  padding-bottom: 26px;
+}
+.productNav .card-shelf .cards-crop .row-cards {
+  width: 100%;
+  vertical-align: top;
+  display: inline-flex;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+.productNav .card-shelf .cards-crop .row-cards .card-item {
+  margin-left: 0;
+  margin-right: 10px;
+  height: 148px;
+  display: flex;
+  transform: translateX(calc(max(1024px, 100vw) / 2 - 490px));
+}
+.productNav .card-shelf .cards-crop .row-cards .card-item .item-in {
+  cursor: pointer;
+  vertical-align: top;
+}
+.productNav .card-shelf .cards-crop .row-cards .card-item .item-in .card-content {
+  border-radius: 18px;
+  height: 148px;
+  min-width: 136px;
+  padding: 18px 8px 16px;
+}
+.productNav .card-shelf .cards-crop .row-cards .card-item .item-in .card-content .card-image {
+  padding-bottom: 16px;
+}
+.productNav .card-shelf .cards-crop .row-cards .card-item .item-in .card-content .card-info a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.42859;
+  letter-spacing: -0.016em;
+  font-weight: 600;
+  display: block;
+  color: #1d1d1f;
+  text-align: center;
+  white-space: nowrap;
+}
+.productNav .card-shelf .cards-crop .row-cards .card-item .item-in .card-content .card-info a:hover {
+  text-decoration: underline;
+}
+
+/* ---------------------------- End third section --------------------------- */
+/* -------------------------- Start fourth section -------------------------- */
+.cardsshelf {
+  background-color: #f5f5f7;
+  padding-bottom: 54px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.cardsshelf .main-shelf .shelf-header {
+  padding-bottom: 14px;
+  width: 980px;
+  margin: 0 auto;
+}
+.cardsshelf .main-shelf .shelf-header .header-compact .mainHead {
+  color: #1d1d1f;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+  display: inline;
+}
+.cardsshelf .main-shelf .shelf-header .header-compact .secondaryHead {
+  color: #6e6e73;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+  display: inline;
+}
+.cardsshelf .main-shelf .cards-scroller {
+  position: relative;
+}
+.cardsshelf .main-shelf .cards-scroller .scroller-content {
+  height: 29.41176rem;
+  padding-bottom: 26px;
+}
+.cardsshelf .main-shelf .cards-scroller .scroller-content .row-content {
+  width: 100%;
+  vertical-align: top;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+.cardsshelf .main-shelf .cards-scroller .scroller-content .row-content .cardList_1 {
+  cursor: pointer;
+  background-image: url(../images/scroller-1.jpg);
+  width: 400px;
+  height: 500px;
+  margin-right: 20px;
+  margin-left: 0;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.cardsshelf .main-shelf .cards-scroller .scroller-content .row-content .cardList_1:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.cardsshelf .main-shelf .cards-scroller .scroller-content .row-content .cardList_1 .scroller-item .card-content .content-info {
+  position: absolute;
+  left: 0;
+  padding: 30px;
+  width: 20rem;
+}
+.cardsshelf .main-shelf .cards-scroller .scroller-content .row-content .cardList_1 .scroller-item .card-content .content-info .content-eyebrow {
+  margin-bottom: 0.4em;
+  font-size: 12px;
+  line-height: 1.33337;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+  color: #6e6e73;
+  width: 204px;
+  padding-bottom: 8px;
+}
+.cardsshelf .main-shelf .cards-scroller .scroller-content .row-content .cardList_1 .scroller-item .card-content .content-info .content-header {
+  padding-top: 0;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+  color: #f5f5f7;
+}
+.macbookProSection .container .macbook-pro .macbook-pro-content h5 {
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  color: #f5f5f7;
+  padding-top: 18px;
+}
+.macbookProSection .container .macbook-pro .macbook-pro-content .macbook-pro-content-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 15px;
+}
+.macbookProSection .container .macbook-pro .macbook-pro-content .macbook-pro-content-row button {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 17px;
+  line-height: 1.17648;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  border: none;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  min-width: 28px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 980px;
+  background: #0071e3;
+  color: #fff;
+}
+.macbookProSection .container .macbook-pro .macbook-pro-content .macbook-pro-content-row a {
+  color: #06c;
+}
+
+.compare-gallery-section {
+  padding: 110px 0px 0px;
+}
+.compare-gallery-section h2 {
+  text-align: center;
+}
+.compare-gallery-section .compare-table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.compare-gallery-section .compare-table .compare-table-items {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 39px;
+}
+.compare-gallery-section .compare-table .compare-table-items .compare-table-item {
+  text-align: center;
+  width: 219px;
+  border-bottom: 1px solid #d2d2d7;
+  padding: 6px 0px 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 39px;
+  -moz-column-gap: 34px;
+       column-gap: 34px;
+}
+.compare-gallery-section .compare-table .compare-table-items .compare-table-item .device-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid #d2d2d7;
+}
+.compare-gallery-section .compare-table .compare-table-items .compare-table-item .device-content h3 {
+  font-size: 24px;
+  line-height: 1.16667;
+  font-weight: 600;
+  letter-spacing: 0.009em;
+}
+.compare-gallery-section .compare-table .compare-table-items .compare-table-item .device-content .chip-model {
+  font-weight: 500;
+  margin-top: 4px;
+  font-size: 14px;
+  line-height: 1.42859;
+  letter-spacing: -0.016em;
+}
+.compare-gallery-section .compare-table .compare-table-items .compare-table-item .device-content img:nth-child(2) {
+  margin: 11px 0px 31px;
+}
+.compare-gallery-section .compare-table .compare-table-items .compare-table-item .device-content .new {
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: #bf4800;
+  position: absolute;
+  top: 206px;
+  left: 0px;
+  right: 0;
+}
+.compare-gallery-section .compare-table .compare-table-items .compare-table-item .device-content button {
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  background: #0071e3;
+  color: #fff;
+  border-radius: 980px;
+  border: none;
+  outline: none;
+  min-width: 23px;
+  padding-left: 11px;
+  padding-right: 11px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.compare-gallery-section .compare-table .compare-table-items .compare-table-item .device-content a {
+  font-size: 14px;
+  line-height: 1.42859;
+  font-weight: 400;
+  letter-spacing: -0.016em;
+  color: #06c;
+  margin-top: 8px;
+  padding-bottom: 22px;
+}
+.compare-gallery-section .compare-table .compare-table-items .compare-table-item .device-content .price {
+  padding-top: 16px;
+  font-size: 14px;
+  line-height: 1.42859;
+  font-weight: 400;
+  letter-spacing: -0.016em;
+}
+.compare-gallery-section .compare-table .compare-table-items .compare-table-item .device-content .price:nth-child(4) {
+  padding-top: 8px;
+}
+.compare-gallery-section .compare-table .compare-table-items .compare-table-item .chip-cell {
+  padding: 8px 0px 0px;
+}
+.compare-gallery-section .compare-table .compare-table-items .compare-table-item .cpu-cell {
+  padding: 15px 0px 0px;
+}
+.compare-gallery-section .compare-table .compare-table-items .compare-table-item .gpu-cell {
+  padding: 15px 0px 0px;
+}
+.compare-gallery-section .compare-table .compare-table-items .compare-table-item .memory-cell {
+  padding: 4px 0px 0px;
+}
+.compare-gallery-section .compare-table .compare-table-items .compare-table-item .keyboard.cell {
+  padding: 6px 0px 45px;
+}
+.compare-gallery-section .compare-table .compare-table-items .compare-table-item h4 {
+  font-size: 21px;
+  line-height: 1.19048;
+  font-weight: 600;
+  letter-spacing: 0.011em;
+}
+.compare-gallery-section .compare-table .compare-table-items .compare-table-item p {
+  font-size: 14px;
+  line-height: 1.42859;
+  font-weight: 400;
+  letter-spacing: -0.016em;
+}
+.compare-gallery-section .link-wrapper {
+  padding-top: 44px;
+  text-align: center;
+}
+.compare-gallery-section .link-wrapper a:nth-child(1) {
+  padding-right: 50px;
+}
+
+.holiday-section {
+  margin: 30px 70px;
+  height: 559px;
+}
+.holiday-section .holiday-contents {
+  background-color: #01012a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 17px 14px 13px 0px;
+}
+.holiday-section .holiday-contents .holiday-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.holiday-section .holiday-contents .holiday-content h3 {
+  font-size: 48px;
+  line-height: 1.08349;
+  font-weight: 600;
+  letter-spacing: -0.003em;
+  color: #fff;
+  padding: 0;
+}
+.holiday-section .holiday-contents .holiday-content p {
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  color: #fff;
+  margin: 17px 0;
+  width: 240px;
+}
+.holiday-section .holiday-contents .holiday-content a {
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  color: #2997ff;
+}
+
+.retail-section {
+  background: url(../images/btm_tile__background-yy.jpg);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+}
+.retail-section .retail-contents {
+  margin-left: 98px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+}
+.retail-section .retail-contents .retail-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.retail-section .retail-contents .retail-content h2 {
+  color: #f5f5f7;
+}
+.cardsshelf .main-shelf .cards-scroller .scroller-content .row-content .cardList_1 .scroller-item .card-content .content-info .content-header a {
+  color: #1d1d1f;
+}
+.cardsshelf .main-shelf .cards-scroller .scroller-content .row-content .cardList_1 .scroller-item .card-content .content-info .content-desk {
+  font-size: 17px;
+  line-height: 1.23536;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  color: #1d1d1f;
+  padding-top: 10px;
+  margin-top: 0;
+}
+.cardsshelf .main-shelf .cards-scroller .scroller-content .row-content .cardList_2 {
+  cursor: pointer;
+  background-image: url(../images/scroller-2.jpg);
+  width: 400px;
+  height: 500px;
+  margin-right: 20px;
+  margin-left: 0;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.cardsshelf .main-shelf .cards-scroller .scroller-content .row-content .cardList_2:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.cardsshelf .main-shelf .cards-scroller .scroller-content .row-content .cardList_2 .scroller-item .card-content .content-info {
+  position: absolute;
+  left: 0;
+  padding: 30px;
+  width: 20rem;
+}
+.cardsshelf .main-shelf .cards-scroller .scroller-content .row-content .cardList_2 .scroller-item .card-content .content-info .content-eyebrow {
+  margin-bottom: 0.4em;
+  font-size: 12px;
+  line-height: 1.33337;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+  color: #f5f5f7;
+  width: 204px;
+  padding-bottom: 8px;
+}
+.cardsshelf .main-shelf .cards-scroller .scroller-content .row-content .cardList_2 .scroller-item .card-content .content-info .content-header {
+  padding-top: 0;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+}
+.cardsshelf .main-shelf .cards-scroller .scroller-content .row-content .cardList_2 .scroller-item .card-content .content-info .content-header a {
+  color: #fff;
+}
+.cardsshelf .main-shelf .cards-scroller .scroller-content .row-content .cardList_2 .scroller-item .card-content .content-info .content-desk {
+  font-size: 17px;
+  line-height: 1.23536;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  color: #fff;
+  padding-top: 10px;
+  margin-top: 0;
+}
+.cardsshelf .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 {
+  cursor: pointer;
+  background-image: url(../images/scroller-3.jpg);
+  width: 400px;
+  height: 500px;
+  margin-right: 20px;
+  margin-left: 0;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.cardsshelf .main-shelf .cards-scroller .scroller-content .row-content .cardList_3:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.cardsshelf .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 .scroller-item .card-content .content-info {
+  position: absolute;
+  padding: 30px;
+  left: 0;
+  width: 20rem;
+}
+.cardsshelf .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 .scroller-item .card-content .content-info .content-eyebrow {
+  margin-bottom: 0.4em;
+  font-size: 12px;
+  line-height: 1.33337;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+  color: #6e6e73;
+  width: 204px;
+  padding-bottom: 8px;
+}
+.cardsshelf .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 .scroller-item .card-content .content-info .content-header {
+  padding-top: 0;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+}
+.cardsshelf .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 .scroller-item .card-content .content-info .content-header a {
+  color: #1d1d1f;
+}
+.cardsshelf .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 .scroller-item .card-content .content-info .content-desk {
+  font-size: 17px;
+  line-height: 1.23536;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  color: #1d1d1f;
+  padding-top: 10px;
+  margin-top: 0;
+}
+
+/* --------------------------- End fourth section --------------------------- */
+/* --------------------------- Start fifth section -------------------------- */
+.cards-holidays {
+  background-color: #f5f5f7;
+  padding-bottom: 54px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.cards-holidays .main-shelf .shelf-header {
+  padding-bottom: 14px;
+  width: 980px;
+  margin: 0 auto;
+}
+.cards-holidays .main-shelf .shelf-header .header-compact .mainHead {
+  color: #1d1d1f;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+  display: inline;
+}
+.cards-holidays .main-shelf .shelf-header .header-compact .secondaryHead {
+  color: #6e6e73;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+  display: inline;
+}
+.cards-holidays .main-shelf .cards-scroller {
+  position: relative;
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content {
+  height: 29.41176rem;
+  padding-bottom: 26px;
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content {
+  width: 100%;
+  vertical-align: top;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content .cardList_1 {
+  cursor: pointer;
+  background-image: url(../images/holiday-1.jpg);
+  width: 400px;
+  height: 500px;
+  margin-right: 20px;
+  margin-left: 0;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content .cardList_1:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content .cardList_1 .scroller-item .card-content .content-info {
+  position: absolute;
+  left: 0;
+  padding: 30px;
+  width: 20rem;
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content .cardList_1 .scroller-item .card-content .content-info .content-eyebrow {
+  margin-bottom: 0.4em;
+  font-size: 12px;
+  line-height: 1.33337;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+  color: #f5f5f7;
+  width: 204px;
+  padding-bottom: 8px;
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content .cardList_1 .scroller-item .card-content .content-info .content-header {
+  padding-top: 0;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content .cardList_1 .scroller-item .card-content .content-info .content-header a {
+  color: #fff;
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content .cardList_1 .scroller-item .card-content .content-info .content-desk {
+  font-size: 17px;
+  line-height: 1.23536;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  color: #fff;
+  padding-top: 10px;
+  margin-top: 0;
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content .cardList_2 {
+  cursor: pointer;
+  background-image: url(../images/holiday-2.jpg);
+  width: 480px;
+  height: 500px;
+  margin-right: 20px;
+  margin-left: 0;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content .cardList_2:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content .cardList_2 .scroller-item .card-content .content-info {
+  position: absolute;
+  left: 0;
+  padding: 30px;
+  width: 30rem;
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content .cardList_2 .scroller-item .card-content .content-info .content-eyebrow {
+  margin-bottom: 0.4em;
+  font-size: 12px;
+  line-height: 1.33337;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+  color: #6e6e73;
+  width: 204px;
+  padding-bottom: 8px;
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content .cardList_2 .scroller-item .card-content .content-info .content-header {
+  padding-top: 0;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content .cardList_2 .scroller-item .card-content .content-info .content-header a {
+  color: #1d1d1f;
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 {
+  cursor: pointer;
+  background-image: url(../images/holiday-3.jpg);
+  width: 400px;
+  height: 500px;
+  margin-right: 20px;
+  margin-left: 0;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content .cardList_3:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 .scroller-item .card-content .content-info {
+  position: absolute;
+  padding: 30px;
+  left: 0;
+  width: 22rem;
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 .scroller-item .card-content .content-info .content-eyebrow {
+  margin-bottom: 0.4em;
+  font-size: 12px;
+  line-height: 1.33337;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+  color: #f5f5f7;
+  width: 204px;
+  padding-bottom: 8px;
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 .scroller-item .card-content .content-info .content-header {
+  padding-top: 0;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 .scroller-item .card-content .content-info .content-header a {
+  color: #fff;
+}
+.cards-holidays .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 .scroller-item .card-content .content-info .content-desk {
+  font-size: 17px;
+  line-height: 1.23536;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  color: #fff;
+  padding-top: 10px;
+  margin-top: 0;
+}
+
+/* ---------------------------- End fifth section --------------------------- */
+/* --------------------------- Start sixth section -------------------------- */
+.apple-store {
+  background-color: #f5f5f7;
+  padding-bottom: 54px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.apple-store .apple-shelf .apple-header {
+  padding-bottom: 14px;
+  width: 980px;
+  margin: 0 auto;
+}
+.apple-store .apple-shelf .apple-header .apple-head {
+  color: #1d1d1f;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+  display: inline;
+}
+.apple-store .apple-shelf .apple-header .secondary-head {
+  color: #6e6e73;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+  display: inline;
+}
+.apple-store .apple-shelf .apple-scroller {
+  position: relative;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content {
+  height: 14.11765rem;
+  padding-bottom: 26px;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content {
+  width: 100%;
+  vertical-align: top;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_1 {
+  cursor: pointer;
+  background-color: #fff;
+  width: 313px;
+  height: 240px;
+  margin-right: 20px;
+  margin-left: 0;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_1:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_1 .scroller-item .card-content .content-info {
+  width: 14.88235rem;
+  padding: 30px;
+  padding-bottom: 0;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_1 .scroller-item .card-content .content-info .content-icon {
+  height: 48px;
+  padding-bottom: 5px;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_1 .scroller-item .card-content .content-info .content-icon i {
+  color: #68cc45;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_1 .scroller-item .card-content .content-info .content-header {
+  width: 17rem;
+  font-size: 24px;
+  line-height: 1.16667;
+  font-weight: 600;
+  letter-spacing: 0.009em;
+
+}
+.retail-section .retail-contents .retail-content h3 {
+  color: #f5f5f7;
+  font-size: 48px;
+  line-height: 1.08349;
+  font-weight: 600;
+  letter-spacing: -0.003em;
+}
+.retail-section .retail-contents .retail-content p {
+  color: #f5f5f7;
+  margin-top: 20px;
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  width: 324px;
+  height: 50px;
+}
+.retail-section .retail-contents .retail-content a {
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  color: #2997ff;
+  margin-top: 14px;
+}
+
+.promo-section {
+  background: url(../images/apple_card_holiday2022__fh62atrzfgq6_large.jpg);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.promo-section .promo-contents {
+  margin-left: 98px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin: 0px 100px;
+  width: 40%;
+  z-index: 1;
+}
+.promo-section .promo-contents .promo-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px 40px;
+}
+.promo-section .promo-contents .promo-content h2 {
+  font-size: 48px;
+  line-height: 1.08349;
+  font-weight: 600;
+  letter-spacing: -0.003em;
+  color: #f5f5f7;
+}
+.promo-section .promo-contents .promo-content h3 {
+  color: #f5f5f7;
+  font-size: 48px;
+  line-height: 1.08349;
+  font-weight: 600;
+  letter-spacing: -0.003em;
+}
+.promo-section .promo-contents .promo-content p {
+  color: #f5f5f7;
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  width: 552px;
+  height: 58px;
+}
+.promo-section .promo-contents .promo-content a {
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  color: #2997ff;
+  margin-top: 14px;
+  padding-left: 30px;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_1 .scroller-item .card-content .content-info .content-header a {
+  color: #1d1d1f;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_1 .scroller-item .card-content .content-info .content-header a span {
+  color: #68cc45;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_2 {
+  cursor: pointer;
+  background-color: #fff;
+  width: 313px;
+  height: 240px;
+  margin-right: 20px;
+  margin-left: 0;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_2:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_2 .scroller-item .card-content .content-info {
+  width: 14.88235rem;
+  padding: 30px;
+  padding-bottom: 0;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_2 .scroller-item .card-content .content-info .content-icon {
+  height: 48px;
+  padding-bottom: 5px;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_2 .scroller-item .card-content .content-info .content-icon i {
+  color: #ff0053;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_2 .scroller-item .card-content .content-info .content-header {
+  width: 18rem;
+  font-size: 24px;
+  line-height: 1.16667;
+  font-weight: 600;
+  letter-spacing: 0.009em;
+  margin-top: 0;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_2 .scroller-item .card-content .content-info .content-header a {
+  color: #1d1d1f;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_2 .scroller-item .card-content .content-info .content-header a span {
+  color: #ff0053;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_3 {
+  cursor: pointer;
+  background-color: #fff;
+  width: 313px;
+  height: 240px;
+  margin-right: 20px;
+  margin-left: 0;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_3:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_3 .scroller-item .card-content .content-info {
+  width: 14.88235rem;
+  padding: 30px;
+  padding-bottom: 0;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_3 .scroller-item .card-content .content-info .content-icon {
+  height: 48px;
+  padding-bottom: 5px;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_3 .scroller-item .card-content .content-info .content-icon i {
+  color: #ac39ff;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_3 .scroller-item .card-content .content-info .content-header {
+  width: 18rem;
+  font-size: 24px;
+  line-height: 1.16667;
+  font-weight: 600;
+  letter-spacing: 0.009em;
+  margin-top: 0;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_3 .scroller-item .card-content .content-info .content-header a {
+  color: #1d1d1f;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_3 .scroller-item .card-content .content-info .content-header a span {
+  color: #ac39ff;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_4 {
+  cursor: pointer;
+  background-color: #fff;
+  width: 313px;
+  height: 240px;
+  margin-right: 20px;
+  margin-left: 0;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_4:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_4 .scroller-item .card-content .content-info {
+  width: 14.88235rem;
+  padding: 30px;
+  padding-bottom: 0;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_4 .scroller-item .card-content .content-info .content-icon {
+  height: 48px;
+  padding-bottom: 5px;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_4 .scroller-item .card-content .content-info .content-icon i {
+  color: #68cc45;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_4 .scroller-item .card-content .content-info .content-header {
+  width: 18rem;
+  font-size: 24px;
+  line-height: 1.16667;
+  font-weight: 600;
+  letter-spacing: 0.009em;
+  margin-top: 0;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_4 .scroller-item .card-content .content-info .content-header a {
+  color: #1d1d1f;
+}
+.apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_4 .scroller-item .card-content .content-info .content-header a span {
+  color: #68cc45;
+}
+
+/* ---------------------------- End sixth section --------------------------- */
+/* -------------------------- Start seventh section ------------------------- */
+.accessories {
+  background-color: #f5f5f7;
+  padding-bottom: 54px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.accessories .main-shelf .shelf-header {
+  padding-bottom: 14px;
+  width: 980px;
+  margin: 0 auto;
+}
+.accessories .main-shelf .shelf-header .header-compact .mainHead {
+  color: #1d1d1f;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+  display: inline;
+}
+.accessories .main-shelf .shelf-header .header-compact .secondaryHead {
+  color: #6e6e73;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+  display: inline;
+}
+.accessories .main-shelf .cards-scroller {
+  position: relative;
+}
+.accessories .main-shelf .cards-scroller .scroller-content {
+  height: 29.41176rem;
+  padding-bottom: 26px;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content {
+  width: 100%;
+  vertical-align: top;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_1 {
+  cursor: pointer;
+  background-image: url(../images/holiday-airpod.jpg);
+  width: 400px;
+  height: 500px;
+  margin-right: 20px;
+  margin-left: 0;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_1:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_1 .scroller-item .card-content .content-info {
+  position: absolute;
+  left: 0;
+  padding: 30px;
+  width: 24rem;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_1 .scroller-item .card-content .content-info .content-eyebrow {
+  margin-bottom: 0.4em;
+  font-size: 12px;
+  line-height: 1.33337;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+  color: #f5f5f7;
+  width: 204px;
+  padding-bottom: 8px;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_1 .scroller-item .card-content .content-info .content-header {
+  padding-top: 0;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_1 .scroller-item .card-content .content-info .content-header a {
+  color: #fff;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_1 .scroller-item .card-content .content-info .content-desk {
+  font-size: 17px;
+  line-height: 1.23536;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  color: #fff;
+  padding-top: 10px;
+  margin-top: 0;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_2 {
+  cursor: pointer;
+  background-color: #fff;
+  width: 313px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-left: 0;
+  padding: 30px;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_2:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_2 .scroller-item .recommcard-content .content-in {
+  padding-top: 41px;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_2 .scroller-item .recommcard-content .content-in .recommcard-img {
+  background-image: url(../images/İphone14ProMax.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  min-height: 230px;
+  padding-bottom: 0;
+  margin: 0 15px;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_2 .scroller-item .recommcard-content .content-in .recommcard-info {
+  display: flex;
+  flex-direction: column;
+  height: 8.76471rem;
+  position: relative;
+  padding: 20px 0 0;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_2 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-colorimage {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 19px;
+  padding-bottom: 14px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_2 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-colorimage .colorimage {
+  margin-right: 7px;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_2 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-colorimage .colorimage img {
+  width: 12px;
+  height: 12px;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_2 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-violator {
+  position: absolute;
+  margin-top: 41px;
+  width: 100%;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_2 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-violator span {
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: #bf4800;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_2 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-title {
+  margin-top: 7px;
+  padding-top: 3.64706rem;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_2 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-title a {
+  font-weight: 600;
+  color: #1d1d1f;
+  font-size: 18px;
+  line-height: 1.23536;
+  letter-spacing: -0.022em;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_2 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-price {
+  margin-top: 20px;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_2 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-price span {
+  color: #1d1d1f;
+  font-size: 15px;
+  line-height: 1.28577;
+  font-weight: 400;
+  letter-spacing: -0.016em;
+  padding-top: 0;
+  margin-top: auto;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_3 {
+  cursor: pointer;
+  background-color: #fff;
+  width: 313px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-left: 0;
+  padding: 30px;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_3:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in {
+  padding-top: 41px;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in .recommcard-img {
+  background-image: url(../images/İphone14.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  min-height: 230px;
+  padding-bottom: 0;
+  margin: 0 15px;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in .recommcard-info {
+  display: flex;
+  flex-direction: column;
+  height: 8.76471rem;
+  position: relative;
+  padding: 20px 0 0;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-colorimage {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 19px;
+  padding-bottom: 14px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-colorimage .colorimage {
+  margin-right: 7px;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-colorimage .colorimage img {
+  width: 12px;
+  height: 12px;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-violator {
+  position: absolute;
+  margin-top: 41px;
+  width: 100%;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-violator span {
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: #bf4800;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-title {
+  margin-top: 7px;
+  padding-top: 3.64706rem;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-title a {
+  font-weight: 600;
+  color: #1d1d1f;
+  font-size: 18px;
+  line-height: 1.23536;
+  letter-spacing: -0.022em;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-price {
+  margin-top: 20px;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-price span {
+  color: #1d1d1f;
+  font-size: 15px;
+  line-height: 1.28577;
+  font-weight: 400;
+  letter-spacing: -0.016em;
+  padding-top: 0;
+  margin-top: auto;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_4 {
+  cursor: pointer;
+  background-color: #fff;
+  width: 313px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-left: 0;
+  padding: 30px;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_4:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in {
+  padding-top: 41px;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-img {
+  background-image: url(../images/Starlight.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  min-height: 230px;
+  padding-bottom: 0;
+  margin: 0 15px;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-info {
+  display: flex;
+  flex-direction: column;
+  height: 8.76471rem;
+  position: relative;
+  padding: 20px 0 0;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-colorimage {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 19px;
+  padding-bottom: 14px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-colorimage .colorimage {
+  margin-right: 7px;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-colorimage .colorimage img {
+  width: 12px;
+  height: 12px;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-violator {
+  position: absolute;
+  margin-top: 41px;
+  width: 100%;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-violator span {
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: #bf4800;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-title {
+  margin-top: 7px;
+  padding-top: 3.64706rem;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-title a {
+  font-weight: 600;
+  color: #1d1d1f;
+  font-size: 18px;
+  line-height: 1.23536;
+  letter-spacing: -0.022em;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-price {
+  margin-top: 42px;
+}
+.accessories .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-price span {
+  color: #1d1d1f;
+  font-size: 15px;
+  line-height: 1.28577;
+  font-weight: 400;
+  letter-spacing: -0.016em;
+  padding-top: 0;
+  margin-top: auto;
+}
+
+/* --------------------------- End seventh section -------------------------- */
+/* -------------------------- Start eighth section -------------------------- */
+.gifts {
+  background-color: #f5f5f7;
+  padding-bottom: 54px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.gifts .main-shelf .shelf-header {
+  padding-bottom: 14px;
+  width: 980px;
+  margin: 0 auto;
+}
+.gifts .main-shelf .shelf-header .header-compact .mainHead {
+  color: #1d1d1f;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+  display: inline;
+}
+.gifts .main-shelf .shelf-header .header-compact .secondaryHead {
+  color: #6e6e73;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+  display: inline;
+}
+.gifts .main-shelf .cards-scroller {
+  position: relative;
+}
+.gifts .main-shelf .cards-scroller .scroller-content {
+  height: 29.41176rem;
+  padding-bottom: 26px;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content {
+  width: 100%;
+  vertical-align: top;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_1 {
+  background-image: url(../images/giftCard-1.jpg);
+  width: 400px;
+  height: 500px;
+  margin-right: 20px;
+  margin-left: 0;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_1:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_1 .scroller-item .card-content .content-info {
+  position: absolute;
+  left: 0;
+  padding: 30px;
+  width: 24rem;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_1 .scroller-item .card-content .content-info .content-header {
+  padding-top: 24px;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_1 .scroller-item .card-content .content-info .content-header span {
+  color: #1d1d1f;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_2 {
+  cursor: pointer;
+  background-color: #fff;
+  width: 313px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-left: 0;
+  padding: 30px;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_2:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_2 .scroller-item .recommcard-content .content-in {
+  padding-top: 41px;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_2 .scroller-item .recommcard-content .content-in .recommcard-img {
+  background-image: url(../images/giftCard-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  min-height: 230px;
+  padding-bottom: 0;
+  margin: 0 15px;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_2 .scroller-item .recommcard-content .content-in .recommcard-info {
+  display: flex;
+  flex-direction: column;
+  height: 8.76471rem;
+  position: relative;
+  padding: 20px 0 0;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_2 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-title {
+  margin-top: 7px;
+  padding-top: 3.64706rem;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_2 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-title a {
+  font-weight: 600;
+  color: #1d1d1f;
+  font-size: 18px;
+  line-height: 1.23536;
+  letter-spacing: -0.022em;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_2 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-price {
+  margin-top: 20px;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_2 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-price span {
+  color: #1d1d1f;
+  font-size: 15px;
+  line-height: 1.28577;
+  font-weight: 400;
+  letter-spacing: -0.016em;
+  padding-top: 0;
+  margin-top: auto;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_3 {
+  cursor: pointer;
+  background-color: #fff;
+  width: 313px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-left: 0;
+  padding: 30px;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_3:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in {
+  padding-top: 41px;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in .recommcard-img {
+  background-image: url(../images/giftCard-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  min-height: 230px;
+  padding-bottom: 0;
+  margin: 0 15px;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in .recommcard-info {
+  display: flex;
+  flex-direction: column;
+  height: 8.76471rem;
+  position: relative;
+  padding: 20px 0 0;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-colorimage {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 19px;
+  padding-bottom: 14px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-colorimage .colorimage {
+  margin-right: 7px;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-colorimage .colorimage img {
+  width: 12px;
+  height: 12px;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-title {
+  margin-top: 7px;
+  padding-top: 3.64706rem;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-title a {
+  font-weight: 600;
+  color: #1d1d1f;
+  font-size: 18px;
+  line-height: 1.23536;
+  letter-spacing: -0.022em;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-price {
+  margin-top: 20px;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_3 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-price span {
+  color: #1d1d1f;
+  font-size: 15px;
+  line-height: 1.28577;
+  font-weight: 400;
+  letter-spacing: -0.016em;
+  padding-top: 0;
+  margin-top: auto;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_4 {
+  cursor: pointer;
+  background-color: #fff;
+  width: 313px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-left: 0;
+  padding: 30px;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_4:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in {
+  padding-top: 41px;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-img {
+  background-image: url(../images/giftCard-4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  min-height: 230px;
+  padding-bottom: 0;
+  margin: 0 15px;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-info {
+  display: flex;
+  flex-direction: column;
+  height: 8.76471rem;
+  position: relative;
+  padding: 20px 0 0;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-colorimage {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 19px;
+  padding-bottom: 14px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-colorimage .colorimage {
+  margin-right: 7px;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-colorimage .colorimage img {
+  width: 12px;
+  height: 12px;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-violator {
+  position: absolute;
+  margin-top: 41px;
+  width: 100%;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-violator span {
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: #bf4800;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-title {
+  margin-top: 7px;
+  padding-top: 3.64706rem;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-title a {
+  font-weight: 600;
+  color: #1d1d1f;
+  font-size: 18px;
+  line-height: 1.23536;
+  letter-spacing: -0.022em;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-price {
+  margin-top: 20px;
+}
+.gifts .main-shelf .cards-scroller .scroller-content .row-content .gift_4 .scroller-item .recommcard-content .content-in .recommcard-info .recommcard-price span {
+  color: #1d1d1f;
+  font-size: 15px;
+  line-height: 1.28577;
+  font-weight: 400;
+  letter-spacing: -0.016em;
+  padding-top: 0;
+  margin-top: auto;
+}
+
+/* --------------------------- End eighth section --------------------------- */
+/* --------------------------- Start ninth section -------------------------- */
+.experience {
+  background-color: #f5f5f7;
+  padding-bottom: 54px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.experience .main-shelf .shelf-header {
+  padding-bottom: 14px;
+  width: 980px;
+  margin: 0 auto;
+}
+.experience .main-shelf .shelf-header .header-compact .mainHead {
+  color: #1d1d1f;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+  display: inline;
+}
+.experience .main-shelf .shelf-header .header-compact .secondaryHead {
+  color: #6e6e73;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+  display: inline;
+}
+.experience .main-shelf .cards-scroller {
+  position: relative;
+}
+.experience .main-shelf .cards-scroller .scroller-content {
+  height: 29.41176rem;
+  padding-bottom: 26px;
+}
+.experience .main-shelf .cards-scroller .scroller-content .row-content {
+  width: 100%;
+  vertical-align: top;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+.experience .main-shelf .cards-scroller .scroller-content .row-content .cardList_1 {
+  cursor: pointer;
+  background-image: url(../images/exp-1.jpg);
+  width: 480px;
+  height: 500px;
+  margin-right: 20px;
+  margin-left: 0;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.experience .main-shelf .cards-scroller .scroller-content .row-content .cardList_1:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.experience .main-shelf .cards-scroller .scroller-content .row-content .cardList_1 .scroller-item .card-content .content-info {
+  position: absolute;
+  left: 0;
+  padding: 30px;
+  width: 25rem;
+}
+.experience .main-shelf .cards-scroller .scroller-content .row-content .cardList_1 .scroller-item .card-content .content-info .content-header {
+  padding-top: 24px;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+}
+.experience .main-shelf .cards-scroller .scroller-content .row-content .cardList_1 .scroller-item .card-content .content-info .content-header a {
+  color: #000;
+}
+.experience .main-shelf .cards-scroller .scroller-content .row-content .cardList_2 {
+  cursor: pointer;
+  background-image: url(../images/exp-2.jpg);
+  width: 480px;
+  height: 500px;
+  margin-right: 20px;
+  margin-left: 0;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.experience .main-shelf .cards-scroller .scroller-content .row-content .cardList_2:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.experience .main-shelf .cards-scroller .scroller-content .row-content .cardList_2 .scroller-item .card-content .content-info {
+  position: absolute;
+  left: 0;
+  padding: 30px;
+  width: 30rem;
+}
+.experience .main-shelf .cards-scroller .scroller-content .row-content .cardList_2 .scroller-item .card-content .content-info .content-eyebrow {
+  margin-bottom: 0.4em;
+  font-size: 12px;
+  line-height: 1.33337;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+  color: #6e6e73;
+  width: 204px;
+  padding-bottom: 8px;
+}
+.experience .main-shelf .cards-scroller .scroller-content .row-content .cardList_2 .scroller-item .card-content .content-info .content-header {
+  padding-top: 0;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+}
+.experience .main-shelf .cards-scroller .scroller-content .row-content .cardList_2 .scroller-item .card-content .content-info .content-header a {
+  color: #1d1d1f;
+}
+.experience .main-shelf .cards-scroller .scroller-content .row-content .cardList_2 .scroller-item .card-content .content-info .content-desk {
+  width: 20rem;
+  font-size: 17px;
+  line-height: 1.23536;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  color: #1d1d1f;
+  padding-top: 10px;
+  margin-top: 0;
+}
+.experience .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 {
+  cursor: pointer;
+  background-image: url(../images/exp-3.jpg);
+  width: 480px;
+  height: 500px;
+  margin-right: 20px;
+  margin-left: 0;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.experience .main-shelf .cards-scroller .scroller-content .row-content .cardList_3:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.experience .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 .scroller-item .card-content .content-info {
+  position: absolute;
+  padding: 30px;
+  left: 0;
+  width: 25rem;
+}
+.experience .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 .scroller-item .card-content .content-info .content-header {
+  padding-top: 24px;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+}
+.experience .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 .scroller-item .card-content .content-info .content-header a {
+  color: #1d1d1f;
+}
+
+/* ---------------------------- End ninth section --------------------------- */
+/* --------------------------- Start tenth section -------------------------- */
+.last-section {
+  background-color: #f5f5f7;
+  padding-bottom: 54px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.last-section .main-shelf .shelf-header {
+  padding-bottom: 14px;
+  width: 980px;
+  margin: 0 auto;
+}
+.last-section .main-shelf .shelf-header .header-compact .mainHead {
+  color: #1d1d1f;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+  display: inline;
+}
+.last-section .main-shelf .shelf-header .header-compact .secondaryHead {
+  color: #6e6e73;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+  display: inline;
+}
+.last-section .main-shelf .cards-scroller {
+  position: relative;
+}
+.last-section .main-shelf .cards-scroller .scroller-content {
+  height: 29.41176rem;
+  padding-bottom: 26px;
+}
+.last-section .main-shelf .cards-scroller .scroller-content .row-content {
+  width: 100%;
+  vertical-align: top;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+.last-section .main-shelf .cards-scroller .scroller-content .row-content .cardList_1 {
+  cursor: pointer;
+  background-image: url(../images/last-1.jpg);
+  width: 400px;
+  height: 500px;
+  margin-right: 20px;
+  margin-left: 0;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.last-section .main-shelf .cards-scroller .scroller-content .row-content .cardList_1:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.last-section .main-shelf .cards-scroller .scroller-content .row-content .cardList_1 .scroller-item .card-content .content-info {
+  position: absolute;
+  left: 0;
+  padding: 30px;
+  width: 24rem;
+}
+.last-section .main-shelf .cards-scroller .scroller-content .row-content .cardList_1 .scroller-item .card-content .content-info .content-eyebrow {
+  margin-bottom: 0.4em;
+  font-size: 12px;
+  line-height: 1.33337;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+  color: #6e6e73;
+  width: 204px;
+  padding-bottom: 8px;
+}
+.last-section .main-shelf .cards-scroller .scroller-content .row-content .cardList_1 .scroller-item .card-content .content-info .content-header {
+  padding-top: 0;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+}
+.last-section .main-shelf .cards-scroller .scroller-content .row-content .cardList_1 .scroller-item .card-content .content-info .content-header a {
+  color: #1d1d1f;
+}
+.last-section .main-shelf .cards-scroller .scroller-content .row-content .cardList_2 {
+  cursor: pointer;
+  background-image: url(../images/last-2.jpg);
+  width: 400px;
+  height: 500px;
+  margin-right: 20px;
+  margin-left: 0;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.last-section .main-shelf .cards-scroller .scroller-content .row-content .cardList_2:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.last-section .main-shelf .cards-scroller .scroller-content .row-content .cardList_2 .scroller-item .card-content .content-info {
+  position: absolute;
+  left: 0;
+  padding: 30px;
+  width: 25rem;
+}
+.last-section .main-shelf .cards-scroller .scroller-content .row-content .cardList_2 .scroller-item .card-content .content-info .content-eyebrow {
+  margin-bottom: 0.4em;
+  font-size: 12px;
+  line-height: 1.33337;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+  color: #86868b;
+  width: 204px;
+  padding-bottom: 8px;
+}
+.last-section .main-shelf .cards-scroller .scroller-content .row-content .cardList_2 .scroller-item .card-content .content-info .content-header {
+  padding-top: 0;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+}
+.last-section .main-shelf .cards-scroller .scroller-content .row-content .cardList_2 .scroller-item .card-content .content-info .content-header a {
+  color: #fff;
+}
+.last-section .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 {
+  cursor: pointer;
+  background-image: url(../images/last-3.jpg);
+  width: 400px;
+  height: 500px;
+  margin-right: 20px;
+  margin-left: 0;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+}
+.last-section .main-shelf .cards-scroller .scroller-content .row-content .cardList_3:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.last-section .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 .scroller-item .card-content .content-info {
+  position: absolute;
+  padding: 30px;
+  left: 0;
+  width: 25rem;
+}
+.last-section .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 .scroller-item .card-content .content-info .content-eyebrow {
+  margin-bottom: 0.4em;
+  font-size: 12px;
+  line-height: 1.33337;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+  color: #86868b;
+  width: 204px;
+  padding-bottom: 8px;
+}
+.last-section .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 .scroller-item .card-content .content-info .content-header {
+  padding-top: 0;
+  font-size: 28px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+}
+.last-section .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 .scroller-item .card-content .content-info .content-header a {
+  color: #fff;
+}

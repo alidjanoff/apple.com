@@ -1,1 +1,276 @@
 //? ---------------------------- Hüseyn İsgəndərov --------------------------- */
+//watch-bar
+.watch-bar {
+  width: 100%;
+  height: auto;
+  padding: 12px 0;
+  .watch-navBar {
+    width: 100%;
+    height: 100px;
+    margin-top: 44px;
+    .row-navBar {
+      text-align: center;
+      .watch-items {
+        display: flex;
+        margin: 0 34px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        justify-content: center;
+        .item {
+          margin-top: 3px;
+          padding: 0 5px 0 4px;
+          display: inline-block;
+          vertical-align: top;
+          margin: 0 -0.1176470588em;
+          text-align: center;
+          display: inline-block;
+          &:nth-child(2) {
+            padding: 0 9px;
+          }
+          &:nth-child(3) {
+            padding: 0 9px;
+          }
+          &:nth-child(4) {
+            padding: 0 9px;
+          }
+          &:nth-child(5) {
+            padding: 0 9px;
+            .figure {
+              width: 38px;
+              height: 54px;
+            }
+          }
+          &:nth-child(6) {
+            padding: 0 9px;
+            .figure {
+              width: 56px;
+              height: 54px;
+            }
+          }
+          &:nth-child(7) {
+            padding: 0 16px;
+            .figure {
+              width: 45px;
+              height: 54px;
+            }
+          }
+          &:nth-child(8) {
+            padding: 0 15px;
+            a {
+              img {
+                width: 28px;
+                height: 54px;
+              }
+            }
+          }
+          &:nth-child(9) {
+            padding: 0 20px;
+            .figure {
+              width: 39px;
+              height: 54px;
+            }
+          }
+          &:nth-child(10) {
+            padding: 0 9px;
+          }
+          &:nth-child(11) {
+            padding: 0 20px;
+            .figure {
+              width: 35px;
+              height: 54px;
+            }
+          }
+          &:nth-child(12) {
+            padding: 0 20px;
+            .figure {
+              width: 35px;
+              height: 54px;
+            }
+          }
+          &:nth-child(13) {
+            padding: 0 4px 0 9px;
+            .figure {
+              width: 63px;
+              height: 54px;
+            }
+          }
+          .figure {
+            width: 28px;
+            height: 54px;
+            margin: 0 auto 3px;
+          }
+          .item-main-text {
+            font-size: 12px;
+            line-height: 1.3333733333;
+            font-weight: 400;
+            letter-spacing: -0.01em;
+            white-space: normal;
+            max-width: 7em;
+            margin: 0 auto;
+            a {
+              color: black;
+              &:hover {
+                color: #06c;
+              }
+            }
+          }
+          .item-date-text {
+            font-size: 10px;
+            line-height: 1.2;
+            font-weight: 400;
+            letter-spacing: -0.008em;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            a {
+              color: #bf4800;
+            }
+          }
+        }
+      }
+      .holiday-gift {
+        padding-top: 1em;
+        padding-bottom: 0.94118em;
+        p {
+          font-size: 14px;
+          line-height: 1.42859;
+          font-weight: 400;
+          letter-spacing: -0.016em;
+          a {
+            color: #06c;
+            &:hover {
+              text-decoration: underline;
+            }
+            .icon {
+              display: inline;
+              position: static;
+              padding-left: 0.3em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//end watch bar
+//watch ultra start
+.watch-ultra-section {
+  overflow: visible;
+  margin: 0 auto;
+  padding: 30px 30px 0;
+  max-width: 1440px;
+  .watch-colum {
+    display: flex;
+    justify-content: flex-end;
+    background: transparent;
+    padding: 3px 30px 150px;
+    flex-flow: column;
+    overflow: visible;
+    align-items: center;
+    text-align: center;
+    .watch-ultra-content {
+      width: 50%;
+      text-align: center;
+      .content-size {
+        width: 485px;
+        margin: 15px auto 5px;
+        img {
+          width: 132px;
+          height: 51px;
+        }
+        .headline {
+          margin-top: 12px;
+          font-size: 48px;
+          line-height: 1.0834933333;
+          font-weight: 600;
+          letter-spacing: 0em;
+          font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica,
+            Arial, sans-serif;
+        }
+        .price {
+          font-weight: 600;
+          margin-top: 22px;
+          margin-bottom: 23px;
+          letter-spacing: 0.0045em;
+          font-size: 21px;
+          line-height: 1.381002381;
+          font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica,
+            Arial, sans-serif;
+        }
+        .button-links {
+          flex-direction: row;
+          flex-wrap: wrap;
+          grid-row-gap: 2px;
+          row-gap: 2px;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          margin-top: 0.8em;
+          flex-direction: column;
+          button {
+            padding: 8px 16px;
+            border-radius: 980px;
+            background: #0071e3;
+            border: none;
+
+            a {
+              font-size: 17px;
+              line-height: 1.1764805882;
+              font-weight: 400;
+              letter-spacing: -0.022em;
+              font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica,
+                Arial, sans-serif;
+              min-width: 28px;
+              color: #fff;
+            }
+          }
+          .links {
+            display: flex;
+            p {
+              margin-top: 0.8em;
+              margin-right: 20px;
+              a {
+                color: #06c;
+                font-size: 21px;
+                line-height: 1.1904761905;
+                font-weight: 400;
+                letter-spacing: 0.011em;
+                font-family: SF Pro Display, SF Pro Icons, Helvetica Neue,
+                  Helvetica, Arial, sans-serif;
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+            span {
+              margin-top: 0.8em;
+              a {
+                color: #06c;
+                font-size: 21px;
+                line-height: 1.1904761905;
+                font-weight: 400;
+                letter-spacing: 0.011em;
+                font-family: SF Pro Display, SF Pro Icons, Helvetica Neue,
+                  Helvetica, Arial, sans-serif;
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .watch-ultra-image {
+      margin-top: 60px;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      width: unset;
+      img {
+        width: 1730px;
+        height: 587px;
+      }
+    }
+  }
+}
