@@ -26,24 +26,14 @@
   margin: 0 auto;
 }
 
-@media (max-width: 1024px) {
-  .container {
-    max-width: 100%;
-    margin: 0 auto;
-  }
-}
 .header {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.8);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-          backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
   z-index: 9999;
   width: 100%;
   height: 44px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 .header .outClickOverlay {
   display: none;
@@ -193,20 +183,7 @@
   transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-@media (max-width: 833px) {
-  .header .container .navBar .navList .mobileMenuIcon {
-    display: block;
-  }
-  .header .container .navBar .navList .navItem {
-    display: none;
-  }
-  .header .container .navBar .navList .logoItem {
-    display: block;
-  }
-  .header .container .navBar .navList .cart {
-    display: block;
-  }
-}
+
 /* --------------------------- Start first section -------------------------- */
 .storehome-banner {
   overflow: hidden;
@@ -2045,5 +2022,3 @@
 .last-section .main-shelf .cards-scroller .scroller-content .row-content .cardList_3 .scroller-item .card-content .content-info .content-header a {
   color: #fff;
 }
-
-/* ---------------------------- End tenth section --------------------------- *//*# sourceMappingURL=main.css.map */
