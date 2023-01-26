@@ -184,6 +184,290 @@
   transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
+main .navbar-2 {
+  margin: 0 17%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+main .navbar-2 a,
+main .navbar-2 span {
+  margin-top: 50px;
+  font-size: 21px;
+  color: #1d1d1f;
+  cursor: pointer;
+  display: block;
+}
+main .navbar-2 span:hover {
+  color: #d2d2d7;
+}
+main .info-left {
+  padding: 80px 0 80px 17%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f7;
+  background-image: url(../images/accessories-background.jfif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 400px 0px;
+}
+main .info-left h2 {
+  font-size: 48px;
+  line-height: 1.08349;
+  font-weight: 600;
+  color: #1d1d1f;
+  font-family: "SFProText";
+}
+main .info-left p {
+  margin-top: 13px;
+  font-size: 21px;
+  line-height: 1.381;
+  letter-spacing: -1px;
+}
+main .info-left a {
+  margin-top: 17px;
+  color: #06c;
+  font-size: 21px;
+  line-height: 1.381;
+  font-weight: 400;
+}
+main .info-left a:hover {
+  text-decoration: underline;
+}
+main form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main form h2 {
+  padding: 70px 17% 0px 17%;
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+main form .search-bar {
+  text-align: left;
+  margin-top: 30px;
+  height: 56px;
+  width: 37%;
+  color: #1d1d1f;
+  border: 1px solid #d2d2d7;
+  font-size: 18px;
+  padding-left: 20px;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+}
+main form .search-bar .search {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+main .browse-types .container {
+  padding: 50px 20% 0px 20%;
+}
+main .browse-types .container .browse {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #d2d2d7;
+  margin-bottom: 30px;
+}
+main .browse-types .container .browse .product,
+main .browse-types .container .browse .category {
+  padding: 9px 0 11px;
+  color: #1d1d1f;
+  font-size: 17px;
+  font-weight: 400;
+  margin-right: 50px;
+}
+main .browse-types .container .browse .product:hover,
+main .browse-types .container .browse .category:hover {
+  color: black;
+  border-bottom: 1px solid black;
+}
+main .browse-types .container .types {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #d2d2d7;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+main .browse-types .container .types .mac,
+main .browse-types .container .types .iPad,
+main .browse-types .container .types .iPhone,
+main .browse-types .container .types .watch,
+main .browse-types .container .types .tv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+main .browse-types .container .types .mac:hover p,
+main .browse-types .container .types .iPad:hover p,
+main .browse-types .container .types .iPhone:hover p,
+main .browse-types .container .types .watch:hover p,
+main .browse-types .container .types .tv:hover p {
+  color: #06c;
+}
+main .browse-types .container .types .mac .icon-product,
+main .browse-types .container .types .iPad .icon-product,
+main .browse-types .container .types .iPhone .icon-product,
+main .browse-types .container .types .watch .icon-product,
+main .browse-types .container .types .tv .icon-product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px;
+  height: 75px;
+  width: 75px;
+  font-size: 45px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+main .browse-types .container .types .mac p,
+main .browse-types .container .types .iPad p,
+main .browse-types .container .types .iPhone p,
+main .browse-types .container .types .watch p,
+main .browse-types .container .types .tv p {
+  margin-top: 17px;
+}
+main .holiday-gifts {
+  padding: 0px 17% 50px 17%;
+  cursor: pointer;
+}
+main .holiday-gifts h2 {
+  text-align: center;
+  padding: 90px 0 20px 0;
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+main .holiday-gifts span {
+  display: block;
+  margin-top: 17px;
+  color: #06c;
+  font-size: 18px;
+  line-height: 1.381;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: -1px;
+}
+main .holiday-gifts .gifts {
+  display: flex;
+  justify-content: center;
+}
+main .holiday-gifts .gifts .airpods,
+main .holiday-gifts .gifts .pencil,
+main .holiday-gifts .gifts .magsafe {
+  padding: 63px 40px;
+  border-radius: 20px;
+  margin-right: 10px;
+  width: 33%;
+  background-color: #f2f2f2;
+}
+main .holiday-gifts .gifts .airpods:hover .info-gift p,
+main .holiday-gifts .gifts .pencil:hover .info-gift p,
+main .holiday-gifts .gifts .magsafe:hover .info-gift p {
+  color: #06c;
+}
+main .holiday-gifts .gifts .airpods .image-gift img,
+main .holiday-gifts .gifts .pencil .image-gift img,
+main .holiday-gifts .gifts .magsafe .image-gift img {
+  width: 100%;
+  margin-bottom: 14px;
+}
+main .holiday-gifts .gifts .airpods .info-gift h3,
+main .holiday-gifts .gifts .pencil .info-gift h3,
+main .holiday-gifts .gifts .magsafe .info-gift h3 {
+  padding: 4px 0 6px;
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  color: #bf4800;
+  text-align: center;
+  cursor: pointer;
+}
+main .holiday-gifts .gifts .airpods .info-gift p,
+main .holiday-gifts .gifts .pencil .info-gift p,
+main .holiday-gifts .gifts .magsafe .info-gift p {
+  font-size: 14px;
+  line-height: 1.42859;
+  font-weight: 600;
+  color: #1d1d1f;
+  cursor: pointer;
+  text-align: center;
+}
+main .holiday-gifts .gifts .airpods .info-gift span,
+main .holiday-gifts .gifts .pencil .info-gift span,
+main .holiday-gifts .gifts .magsafe .info-gift span {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.42859;
+  font-weight: 400;
+  color: #1d1d1f;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+main .holiday-gifts .gifts .magsafe p {
+  margin-top: 25px;
+}
+main .wow-never .container {
+  display: flex;
+  margin: 0 17% 0 17%;
+  background-color: #01012a;
+}
+main .wow-never .container .left-navigation {
+  padding: 0 0 0 100px;
+  width: 50%;
+}
+main .wow-never .container .left-navigation img {
+  width: 115px;
+  height: 115px;
+  margin: 120px 0 -20px 140px;
+  display: flex;
+  justify-content: center;
+}
+main .wow-never .container .left-navigation h3 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+}
+main .wow-never .container .left-navigation span {
+  color: #2997ff;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+}
+main .wow-never .container .left-navigation span:hover {
+  text-decoration: underline;
+}
+main .wow-never .container .right-image {
+  width: 50%;
+}
+main .wow-never .container .right-image img {
+  width: 411px;
+  height: 411px;
+}
+main .iphone-accessories .accessories .magsafe-charger .info-accessories p {
+  margin-top: 30px;
+}
+main .iphone-accessories .accessories .magsafe-charger .info-accessories span {
+  margin-top: 35px;
+}
+main .iphone-accessories .accessories .iphone14-black .info-accessories p {
+  margin-top: 0;
+}
+main .ipad-accessories .accessories .apple-pencil .info-accessories p {
+  margin-top: 25px;
+}
+main .ipad-accessories .accessories .apple-pencil .info-accessories span {
+  margin-top: 40px;
+}
+
 .chapternav {
   padding: 8px 0px;
   margin: 0px 34px;
@@ -382,8 +666,6 @@
   letter-spacing: -0.005em;
   color: #f5f5f7;
 }
-.macbookProSection .container .macbook-pro .macbook-pro-content h3 {
-=======
 
 /* --------------------------- Start first section -------------------------- */
 .storehome-banner {
@@ -1402,9 +1684,6 @@
   color: #2997ff;
   margin-top: 14px;
   padding-left: 30px;
-}/*# sourceMappingURL=main.css.map */
-=======
-  margin-top: 0;
 }
 .apple-store .apple-shelf .apple-scroller .scroller-content .row-content .apple-cards_1 .scroller-item .card-content .content-info .content-header a {
   color: #1d1d1f;
